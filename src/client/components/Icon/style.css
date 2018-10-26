@@ -1,0 +1,67 @@
+.icon {
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  background-color: transparent;
+}
+
+.icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .icon {
+    height: 48px;
+    width: 48px;
+    background-size: 48px;
+  }
+}
+
+.icon[type="avatar"] {
+  background-image: url("../../assets/images/avatar2.jpg");
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .icon[type="avatar"]:hover:after {
+    content: 'Home';
+    font-family: 'Arvo', serif;
+    font-size: 1.4em;
+    position: relative;
+    left: 2.4em;
+    top: 0.5em;
+    width: 300px;
+    height: 1.25rem;
+    background-color: #436187;
+    color: white;
+    padding: 0.51em;
+  }
+}
+
+.icon[type="mail"] {
+  background-image: url("../../assets/images/1495142137_mail-square-social-media.svg");
+}
+
+.icon[type="flickr"] {
+  background-image: url("../../assets/images/1495142190_flickr-square-social-media.svg");
+}
+
+.icon[type="twitter"] {
+  background-image: url("../../assets/images/1495142142_twitter-square-social-media.svg");
+}
+
+.icon[type="arrowleft"] {
+  background-image: url("../../assets/images/1495294636_arrow_left.svg");
+}
+
+.icon[type="arrowright"] {
+  background-image: url("../../assets/images/1495294629_arrow_right.svg");
+}

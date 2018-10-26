@@ -106,7 +106,7 @@ const buildEntry = (md, id) => {
 
 };
 
-const wrangleJournalData = (data) => {
+const wrangleData = (data) => {
   return new Promise((resolve, reject) => {
     const sep = '\r\n\r\n----\r\n\r\n';
     const md = splitMarkdown(data, sep);
@@ -120,4 +120,4 @@ const wrangleJournalData = (data) => {
   });
 };
 
-module.exports = wrangleJournalData;
+module.exports = wrangleData;

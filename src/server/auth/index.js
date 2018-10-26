@@ -18,7 +18,7 @@ function getData(auth, fileId) {
       alt: 'media'
     }, (err, data) => {
       if (err) reject(err);
-      resolve(data);
+      resolve(data.data);
     });
   });
 }

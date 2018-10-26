@@ -4,18 +4,20 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
-const { authorise, getGPXList } = require('./auth');
+const { authorise, getData } = require('./auth');
+const wrangleData = require('./lib/wrangleData');
+
 const getCredentials = require('./auth/getCredentials');
 
 const app = express();
 
-app.name = 'uws-journal';
+const applicationName = 'uws-journal';
 
 app.set('port', (process.env.PORT || 3001));
 app.use(compression());
 app.use(bodyParser.json());
-
 app.use(bodyParser.urlencoded({ extended: false }));
+
 if (process.env.NODE_ENV === 'production') {
   const fixedPath = path.resolve(__dirname, '../dist');
   app.use(express.static(fixedPath));
@@ -29,40 +31,36 @@ function storeCredentials({ credentials, token }) {
   });
 }
 
-function getGPX(query) {
+function getJournalData() {
   const { credentials, token } = app;
-  const query = '"1K12a4Shmg4sWbAstNPkRKM08bzQO9ix8" in parents';
+  const fileId = '0BxWypIdOuW0YZ3Nidk16SDZLQzA';
   return new Promise((resolve) => {
     authorise({ credentials, token }, (authentication) => {
-      getGPXList(authentication, query).then((data) => {
+      getData(authentication, fileId).then((data) => {
         resolve(data);
       });
     });
   });
 }
 
-function extractIds(arr) {
-  return Promise.resolve(arr.map(el => el.id));
+function storeJournalData(data) {
+  app.dataStore = data;
 }
 
-function showIds(arr) {
-  console.log(arr);
-}
-
-getCredentials(app.name)
+getCredentials(applicationName)
   .then(storeCredentials)
-  .then(getGPX)
-  .then(extractIds)
-  .then(showIds);
+  .then(getJournalData)
+  .then(wrangleData)
+  .then(storeJournalData);
 
-app.get('/api', (req, res) => {
-  res.json(app.data);
+app.get('/entries', (req, res) => {
+  res.json(app.dataStore);
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
-  //  res.sendFile(path.join(`${__dirname}/../build/index.html`));
+  res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
 });
 
 http.createServer(app).listen(app.get('port'));
+
 console.log('Server created on port', app.get('port'));
