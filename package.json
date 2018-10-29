@@ -67,6 +67,5 @@
   },
   "jest": {
     "rootDir": "./src"
-  },
-  "proxy": "http://localhost:3001"
+  }
 }

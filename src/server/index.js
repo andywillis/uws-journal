@@ -1,4 +1,5 @@
 const http = require('http');
+const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
@@ -11,7 +12,7 @@ const app = express();
 
 const applicationName = 'uws-journal';
 
-app.set('port', (process.env.PORT || 3001));
+app.set('port', (process.env.PORT || 8080));
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -51,6 +52,10 @@ app.get('/entries', (req, res) => {
   res.json(app.dataStore);
 });
 
-http.createServer(app).listen(app.get('port'));
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
+// });
 
-console.log('Server created on port', app.get('port'));
+http.createServer(app).listen(app.get('port'), () => {
+  console.log('Listening on port', app.get('port'));
+});

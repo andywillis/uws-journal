@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -10,6 +11,15 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
+  },
+  optimization: {
+    minimizer: [new UglifyJsPlugin({
+      uglifyOptions: {
+        output: {
+          comments: false
+        }
+      }
+    })]
   },
   module: {
     rules: [
@@ -44,8 +54,9 @@ module.exports = {
   },
   devServer: {
     proxy: {
+      port: 3000,
       open: true,
-      '/entries': 'http://localhost:3001'
+      '/entries': 'http://localhost:8080'
     }
   },
   plugins: [
