@@ -1,23 +1,30 @@
-const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: [
-    'react-hot-loader/patch',
-    './src/client/index.js'
+    '@babel/polyfill',
+    './src/client/index.js',
   ],
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: {
+          loader: 'babel-loader'
+        }
       },
       {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader',
+            loader: 'style-loader'
           },
           {
             loader: 'css-loader',
@@ -27,24 +34,25 @@ module.exports = {
               localIdentName: '[local]___[hash:base64:5]'
             }
           }
-        ],
+        ]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
+        loader: 'url-loader?limit=100000'
       }
     ]
   },
-  resolve: {
-    extensions: ['*', '.js', '.jsx']
-  },
-  output: {
-    path: path.join(__dirname, '/dist'),
-    publicPath: '/',
-    filename: 'bundle.js'
+  devServer: {
+    proxy: {
+      open: true,
+      '/entries': 'http://localhost:3001'
+    }
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
-  devServer: {
-    proxy: { '/api': 'http://localhost:3001'},
-    contentBase: './dist',
-    hot: true
-  }
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      favicon: './public/favicon.ico'
+    })
+  ]
 };

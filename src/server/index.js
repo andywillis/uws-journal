@@ -17,11 +17,7 @@ app.set('port', (process.env.PORT || 3001));
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-if (process.env.NODE_ENV === 'production') {
-  const fixedPath = path.resolve(__dirname, '../dist');
-  app.use(express.static(fixedPath));
-}
+app.use(express.static('dist'));
 
 function storeCredentials({ credentials, token }) {
   return new Promise((resolve) => {
@@ -57,9 +53,9 @@ app.get('/entries', (req, res) => {
   res.json(app.dataStore);
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
+// });
 
 http.createServer(app).listen(app.get('port'));
 

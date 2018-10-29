@@ -1,32 +1,13 @@
 const webpack = require('webpack');
-const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const path = require('path');
 
 module.exports = {
-  mode: 'production',
-  devtool: 'source-map',
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        uglifyOptions: {
-          compress: true,
-          ecma: 6,
-          mangle: true,
-        },
-        sourceMap: false
-      })
-    ]
-  },
   entry: [
-    'react-hot-loader/patch',
     '@babel/polyfill',
     './src/client/index.js'
   ],
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: __dirname,
     publicPath: '/src/client/assets/',
     filename: 'bundle.js'
   },
@@ -40,7 +21,9 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
+          {
+            loader: 'style-loader',
+          },
           {
             loader: 'css-loader',
             options: {
@@ -49,7 +32,7 @@ module.exports = {
               localIdentName: '[local]___[hash:base64:5]'
             }
           }
-        ],
+        ]
       },
       {
         test: /\.(svg|jpg)$/,
@@ -66,9 +49,10 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
-    })
-  ]
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    proxy: { '/api': 'http://localhost:3001' },
+    open: true
+  }
 };
