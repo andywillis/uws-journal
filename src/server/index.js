@@ -1,12 +1,10 @@
 const http = require('http');
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
 const { authorise, getData } = require('./auth');
 const wrangleData = require('./lib/wrangleData');
-
 const getCredentials = require('./auth/getCredentials');
 
 const app = express();
@@ -52,10 +50,6 @@ getCredentials(applicationName)
 app.get('/entries', (req, res) => {
   res.json(app.dataStore);
 });
-
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
-// });
 
 http.createServer(app).listen(app.get('port'));
 
