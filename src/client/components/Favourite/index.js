@@ -48,7 +48,7 @@ class Favourite extends Component {
         <span
           tabIndex="0"
           role="button"
-          className={this.state.status}
+          className={style[this.state.status]}
           onClick={this.handleClick}
         >&#x2605;</span>
       </div>

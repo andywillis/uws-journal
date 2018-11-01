@@ -9,21 +9,18 @@ import Keyword from '../Keyword';
 import style from './style.css';
 
 function getByline(type, value) {
-
   if (value) {
     return (
       <div className={style.byline}>
-        Arranged by
-        {type}
+        Arranged by {type}
         <Keyword keyword={value} />
       </div>
     );
   }
 
   return (
-    <div className="Byline">
-      Arranged by
-      {type}
+    <div className={style.byline}>
+      Arranged by {type}
     </div>
   );
 

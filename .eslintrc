@@ -17,6 +17,7 @@
   "rules": {
     "no-underscore-dangle": 0,
     "no-plusplus": 0,
+    "react/jsx-one-expression-per-line": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prop-types": 0,
     "jsx-a11y/img-has-alt": 0,

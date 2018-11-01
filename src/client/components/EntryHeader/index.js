@@ -19,7 +19,7 @@ const EntryHeader = (props) => {
   return (
     <div className={style.entryHeader}>
       <Title link={link} type={type}>{title}</Title>
-      <div className="inline">
+      <div className={style.inline}>
         <Date date={date} />
         <Favourite id={id} status="inactive" />
       </div>

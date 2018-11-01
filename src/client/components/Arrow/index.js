@@ -15,9 +15,11 @@ const Arrow = (props) => {
 
   const { disabled, type, location } = props;
 
+  console.log(disabled)
+
   return (
     <div
-      className={disabled ? style.arrow : classnames('arrow', 'enabled')}
+      className={disabled ? style.arrow : classnames(style.arrow, style.enabled)}
       type={type}
       data-location={location}
     />

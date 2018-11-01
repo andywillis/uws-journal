@@ -65,7 +65,7 @@ class EntryList extends Component {
 
   render() {
     const entryList = this.buildEntryList();
-    return <div className="EntryList">{entryList}</div>;
+    return <div>{entryList}</div>;
   }
 }
 

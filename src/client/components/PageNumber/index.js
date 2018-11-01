@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 // Style
 import style from './style.css';
@@ -15,12 +15,12 @@ import style from './style.css';
 const PageNumber = (props) => {
 
   const { status, number } = props;
-  const classNames = classnames(style.pagenumber, style[status]);
+  const pageNumberClasses = classNames(style.pageNumber, style[status]);
 
   return (
     <Link to={{ pathname: `/page/${number}` }}>
       <div
-        className={classNames}
+        className={pageNumberClasses}
         data-number={number}
       >
         {number}
