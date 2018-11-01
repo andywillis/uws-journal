@@ -46,7 +46,7 @@ const buildJournal = (props) => {
 
   return (
     <div>
-      {!isEntry && createByline(filter)}
+      {createByline(filter)}
       {!isEntry && getPaginator(totalEntries, pageNumber, pageLimit)}
       <EntryList
         entries={entries}
