@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: [
@@ -13,13 +14,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   optimization: {
-    minimizer: [new UglifyJsPlugin({
-      uglifyOptions: {
-        output: {
-          comments: false
-        }
-      }
-    })]
+    minimizer: [new UglifyJsPlugin()]
   },
   module: {
     rules: [
@@ -59,6 +54,7 @@ module.exports = {
     }
   },
   plugins: [
+  	new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: './public/index.html',
