@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     publicPath: '/',
-    path: path.join(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   optimization: {
@@ -49,6 +49,7 @@ module.exports = {
     ]
   },
   devServer: {
+    historyApiFallback: true,
     proxy: {
       open: true,
       '/entries': 'http://localhost:8080'
