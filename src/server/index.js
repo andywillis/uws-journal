@@ -16,7 +16,7 @@ app.set('port', (process.env.PORT || 8080));
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('dist'));
+app.use(express.static(path.join(__dirname, '../../dist')));
 
 function storeCredentials({ credentials, token }) {
   return new Promise((resolve) => {
@@ -52,9 +52,9 @@ app.get('/entries', (req, res) => {
   res.json(app.dataStore);
 });
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../../dist', 'index.html'));
+});
 
 http.createServer(app).listen(app.get('port'), () => {
   console.log('Listening on port', app.get('port'));

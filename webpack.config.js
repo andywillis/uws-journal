@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: [
@@ -10,6 +10,7 @@ module.exports = {
     './src/client/index.js',
   ],
   output: {
+    publicPath: '/',
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
@@ -54,7 +55,7 @@ module.exports = {
     }
   },
   plugins: [
-  	new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: './public/index.html',
