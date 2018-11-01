@@ -10,7 +10,7 @@ import {
 } from '../../redux/actions/user';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Favourite
@@ -44,7 +44,7 @@ class Favourite extends Component {
 
   render() {
     return (
-      <div className="Favourite">
+      <div className={style.favourite}>
         <span
           tabIndex="0"
           role="button"

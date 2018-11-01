@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import renderHTML from 'react-render-html';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Para
@@ -13,7 +13,7 @@ import './style.css';
  */
 const Para = ({ html }) => {
   return (
-    <div className="Para">{renderHTML(html)}</div>
+    <div className={style.para}>{renderHTML(html)}</div>
   );
 };
 
@@ -23,4 +23,3 @@ export default Para;
 Para.propTypes = {
   html: PropTypes.string.isRequired
 };
-

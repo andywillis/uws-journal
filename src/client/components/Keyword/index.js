@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Keyword
@@ -11,7 +11,7 @@ import './style.css';
  * @return {jsx} Component
  */
 const Keyword = ({ keyword }) => (
-  <li className="Keyword">{keyword}</li>
+  <li className={style.keyword}>{keyword}</li>
 );
 
 export default Keyword;

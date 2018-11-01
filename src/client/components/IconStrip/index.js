@@ -5,7 +5,7 @@ import React from 'react';
 import Icon from '../Icon';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 function processAnchor(e) {
   const type = e.target.getAttribute('type');
@@ -37,7 +37,7 @@ const locations = [
 const IconStrip = () => {
 
   return (
-    <div role="Group" className="IconStrip" onClick={processAnchor}>
+    <div role="Group" className={style.iconStrip} onClick={processAnchor}>
       {locations.map((location) => {
         return <Icon key={location.id} type={location.type} />;
       })}

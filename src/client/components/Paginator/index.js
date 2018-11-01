@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import PageNumber from '../PageNumber';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 function getNumbers(props) {
   const { totalEntries, pageLimit, pageNumber } = props;
@@ -33,7 +33,7 @@ function getNumbers(props) {
  */
 const Paginator = (props) => {
   return (
-    <div className="Paginator">
+    <div className={style.paginator}>
       {getNumbers(props)}
     </div>
   );

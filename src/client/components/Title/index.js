@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function getTitle
@@ -15,11 +15,11 @@ import './style.css';
  */
 function getTitle({ type, link, children }) {
   if (type === 'entry') {
-    return <div className="Title" type={type}>{children}</div>;
+    return <div className={style.title} type={type}>{children}</div>;
   }
   return (
     <Link to={{ pathname: `/entry/${link}` }}>
-      <div className="Title" type="list">{children}</div>
+      <div className={style.title} type="list">{children}</div>
     </Link>
   );
 }

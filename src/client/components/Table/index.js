@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import renderHTML from 'react-render-html';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Table
@@ -13,7 +13,7 @@ import './style.css';
  */
 const Table = ({ html }) => {
   return (
-    <div className="Table">
+    <div className={style.table}>
       <table>{renderHTML(html)}</table>
     </div>
   );
@@ -25,4 +25,3 @@ export default Table;
 Table.propTypes = {
   html: PropTypes.string.isRequired
 };
-

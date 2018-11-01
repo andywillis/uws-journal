@@ -1,4 +1,4 @@
-.Byline {
+.byline {
   display: flex;
   color: #883333;
   font-family: 'Arvo', serif;
@@ -9,7 +9,7 @@
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
-  .Byline {
+  .byline {
     font-size: 1.6em;
   }
 }

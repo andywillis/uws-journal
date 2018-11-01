@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import renderHTML from 'react-render-html';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 
 /**
@@ -14,7 +14,7 @@ import './style.css';
  */
 const Blockquote = ({ html }) => {
   return (
-    <div className="Blockquote">{renderHTML(html)}</div>
+    <div className={style.blockquote}>{renderHTML(html)}</div>
   );
 };
 

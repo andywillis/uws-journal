@@ -8,14 +8,16 @@ import Date from '../Date';
 import Favourite from '../Favourite';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 const EntryHeader = (props) => {
 
-  const { link, type, title, date, id } = props;
+  const {
+    link, type, title, date, id
+  } = props;
 
   return (
-    <div className="EntryHeader">
+    <div className={style.entryHeader}>
       <Title link={link} type={type}>{title}</Title>
       <div className="inline">
         <Date date={date} />

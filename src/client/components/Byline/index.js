@@ -6,14 +6,15 @@ import PropTypes from 'prop-types';
 import Keyword from '../Keyword';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 function getByline(type, value) {
 
   if (value) {
     return (
-      <div className="Byline">
-        Arranged by {type}
+      <div className={style.byline}>
+        Arranged by
+        {type}
         <Keyword keyword={value} />
       </div>
     );
@@ -21,7 +22,8 @@ function getByline(type, value) {
 
   return (
     <div className="Byline">
-      Arranged by {type}
+      Arranged by
+      {type}
     </div>
   );
 

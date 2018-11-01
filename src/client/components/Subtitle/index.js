@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function SubTitle
@@ -11,7 +11,7 @@ import './style.css';
  * @return {jsx} Component
  */
 const SubTitle = ({ txt }) => {
-  return <div className="SubTitle">{txt}</div>;
+  return <div className={style.subTitle}>{txt}</div>;
 };
 
 export default SubTitle;

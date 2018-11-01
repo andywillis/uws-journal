@@ -2,14 +2,14 @@
 import React from 'react';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Spinner
  * @return {jsx} Component
  */
 const Spinner = () => {
-  return <div className="Spinner">&nbsp;</div>;
+  return <div className={style.spinner}>&nbsp;</div>;
 };
 
 export default Spinner;

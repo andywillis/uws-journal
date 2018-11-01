@@ -1,30 +1,30 @@
-.Para {
+.para {
   font-size: 1.4em;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
 }
 
-.Para a,
-.Para a:link,
-.Para a:visited,
-.Para a:active {
+.para a,
+.para a:link,
+.para a:visited,
+.para a:active {
   text-decoration: none;
   color: #c60000;
 }
 
-.Para a:hover {
+.para a:hover {
   cursor: pointer;
   background-color: #CFE6FD;
 }
 
-.Para:first-child + .Blockquote {
+.para:first-child + .blockquote {
   margin-top: 2.6em;
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
-  .Para {
+  .para {
     font-size: 1.7em;
   }
 }

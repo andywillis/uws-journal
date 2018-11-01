@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Tag
@@ -14,7 +14,7 @@ import './style.css';
 const Tag = ({ txt }) => {
   return (
     <Link to={{ pathname: `/tag/${txt}` }}>
-      <li className="Tag">{txt}</li>
+      <li className={style.tag}>{txt}</li>
     </Link>
   );
 };

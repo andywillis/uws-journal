@@ -1,4 +1,4 @@
-.Tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -7,10 +7,10 @@
   margin-top: 1em;
 }
 
-.Tags a,
-.Tags a:link
-.Tags a:visited,
-.Tags a:active {
+.tags a,
+.tags a:link
+.tags a:visited,
+.tags a:active {
   text-decoration: none;
   color: black;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Date
@@ -11,7 +11,7 @@ import './style.css';
  * @return {jsx} Component
  */
 const Date = ({ date }) => {
-  return <div className="Date">{date}</div>;
+  return <div className={style.date}>{date}</div>;
 };
 
 export default Date;

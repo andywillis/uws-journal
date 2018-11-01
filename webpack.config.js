@@ -54,7 +54,6 @@ module.exports = {
   },
   devServer: {
     proxy: {
-      port: 3000,
       open: true,
       '/entries': 'http://localhost:8080'
     }

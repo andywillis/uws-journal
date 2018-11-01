@@ -1,4 +1,4 @@
-.Blockquote {
+.blockquote {
   margin-left: 1em;
   margin-right:  1em;
   margin-top: 1.3em;
@@ -8,20 +8,20 @@
   font-size: 1.4em;
 }
 
-.Blockquote + .Blockquote {
+.blockquote + .blockquote {
   margin-top: -1.3em;
 }
 
-.Blockquote a,
-.Blockquote a:link,
-.Blockquote a:visited,
-.Blockquote a:active {
+.blockquote a,
+.blockquote a:link,
+.blockquote a:visited,
+.blockquote a:active {
   font-size: 1em;
   text-decoration: none;
   color: #c60000;
 }
 
-.Blockquote a:hover {
+.blockquote a:hover {
   cursor: pointer;
   background-color: #CFE6FD;
 }
@@ -29,7 +29,7 @@
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
-  .Blockquote {
+  .blockquote {
     font-size: 1.7em;
   }
 }

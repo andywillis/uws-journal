@@ -8,7 +8,7 @@ import EntryBody from '../EntryBody';
 import EntryFooter from '../EntryFooter';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Entry
@@ -17,10 +17,12 @@ import './style.css';
  */
 const Entry = (props) => {
 
-  const { id, title, link, date, type, body, tags } = props;
+  const {
+    id, title, link, date, type, body, tags
+  } = props;
 
   return (
-    <div className="Entry" id={id}>
+    <div className={style.entry} id={id}>
       <EntryHeader
         id={id}
         title={title}

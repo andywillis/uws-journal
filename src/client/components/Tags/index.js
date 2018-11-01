@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Tag from '../Tag';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Tags
@@ -15,7 +15,7 @@ import './style.css';
  */
 const Tags = ({ tags }) => {
   return (
-    <div className="Tags">
+    <div className={style.tags}>
       <ul>
         {tags.map((tag) => {
           return <Tag key={tag.id} txt={tag.txt} />;

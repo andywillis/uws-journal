@@ -5,9 +5,6 @@ import PropTypes from 'prop-types';
 // React
 import Tags from '../Tags';
 
-// Style
-import './style.css';
-
 const EntryFooter = ({ tags }) => {
   return <Tags tags={tags} />;
 };

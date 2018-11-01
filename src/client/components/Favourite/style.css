@@ -1,34 +1,34 @@
-.Favourite {
+.favourite {
   font-size: 1.4em;
   margin-left: 1em;
 }
 
-.Favourite span {
+.favourite span {
   padding: 0 0.3em 0 0.3em;
 }
 
-.Favourite span.active {
+.favourite span.active {
   background-color: #E3D04B;
   border: 1px solid #E3D04B;
 }
 
-.Favourite span.inactive {
+.favourite span.inactive {
   border: 1px solid #efefef;
   background-color:  #efefef;
 }
 
-.Favourite span:hover {
+.favourite span:hover {
   cursor: pointer;
 }
 
-.Favourite span.inactive:hover {
+.favourite span.inactive:hover {
   border: 1px solid #898989;
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
-  .Favourite {
+  .favourite {
     font-size: 2em;
   }
 }

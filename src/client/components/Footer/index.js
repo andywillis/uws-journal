@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 /**
  * @function Header
@@ -10,7 +10,7 @@ import './style.css';
  */
 const Header = () => {
   return (
-    <div className="Footer">
+    <div className={style.footer}>
       &copy; Andy Willis 2018
     </div>
   );

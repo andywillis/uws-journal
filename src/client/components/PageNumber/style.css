@@ -1,4 +1,4 @@
-.PageNumber {
+.pageNumber {
   font-family: 'Arvo', serif;
   font-size: 1.4em;
   display: inline-flex;
@@ -7,11 +7,11 @@
   border: 1px solid #565656;
 }
 
-.PageNumber.active {
+.pageNumber.active {
   background-color: #9dc19e;
 }
 
-.PageNumber.inactive:hover {
+.pageNumber.inactive:hover {
   cursor: pointer;
   background-color: #dfdfdf;
 }
@@ -19,7 +19,7 @@
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
-  .PageNumber {
+  .pageNumber {
     font-size: 1.6em;
   }
 }

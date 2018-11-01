@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { getDimensions } from '../../lib/device';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 const getResponsiveSrc = (x, src) => {
   src = src.replace('.jpg', '');
@@ -21,7 +21,7 @@ const getResponsiveSrc = (x, src) => {
 const Image = ({ src, alt }) => {
   const { x } = getDimensions();
   return (
-    <img className="Image" src={getResponsiveSrc(x, src)} alt={alt} />
+    <img className={style.image} src={getResponsiveSrc(x, src)} alt={alt} />
   );
 };
 

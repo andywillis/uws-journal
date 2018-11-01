@@ -8,7 +8,7 @@ import Paginator from '../Paginator';
 import EntryList from '../EntryList';
 
 // Style
-import './style.css';
+import style from './style.css';
 
 const createByline = ({ type, value }) => {
   return (
@@ -67,7 +67,7 @@ const buildJournal = (props) => {
  */
 const Journal = (props) => {
   return (
-    <div className="Journal">
+    <div className={style.journal}>
       {buildJournal(props)}
     </div>
   );
