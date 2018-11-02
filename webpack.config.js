@@ -50,7 +50,8 @@ module.exports = {
   devServer: {
     proxy: {
       open: true,
-      '/entries': 'http://localhost:8080'
+      '/entries': 'http://localhost:8080',
+      '/reload': 'http://localhost:8080'
     }
   },
   plugins: [
@@ -59,7 +60,7 @@ module.exports = {
       generateStatsFile: true,
       statsOptions: { source: false }
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist/*.*']),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico'
