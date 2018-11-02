@@ -17,7 +17,6 @@ function getByline(type, value) {
       </div>
     );
   }
-
   return (
     <div className={style.byline}>
       Arranged by {type}

@@ -1,7 +1,6 @@
 // Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import renderHTML from 'react-render-html';
 
 // Style
 import style from './style.css';
@@ -13,7 +12,10 @@ import style from './style.css';
  */
 const Para = ({ html }) => {
   return (
-    <div className={style.para}>{renderHTML(html)}</div>
+    <div
+      className={style.para}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
 };
 

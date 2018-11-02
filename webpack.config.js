@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: [
@@ -10,7 +10,8 @@ module.exports = {
     './src/client/index.js',
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    publicPath: '/',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   optimization: {
@@ -48,6 +49,7 @@ module.exports = {
     ]
   },
   devServer: {
+    historyApiFallback: true,
     proxy: {
       open: true,
       '/entries': 'http://localhost:8080',

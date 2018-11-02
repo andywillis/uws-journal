@@ -18,7 +18,7 @@ app.set('root', __dirname);
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('dist'));
+app.use(express.static(path.join(__dirname, '../../dist')));
 
 function storeCredentials({ credentials, token }) {
   return new Promise((resolve) => {

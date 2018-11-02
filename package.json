@@ -9,7 +9,7 @@
     "serverdev": "nodemon src/server/index.js development",
     "serverprod": "nodemon src/server/index.js production",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "dev": "concurrently \"npm run client\" \"npm run serverdev\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "report": "webpack-bundle-analyzer --port 4200 dist/stats.json",
     "test": "jest"
   },
