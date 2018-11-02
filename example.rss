@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>Deviation blog feed</title>
+		<link>http://deviation.nodejitsu.com</link>
+		<description>All the posts from the Deviation blog.</description>
+		<item>
+			<title>Galaga</title>
+			<link>http://deviation.nodejitsu.com/blog/view/s1ogtlwbiual6c7bk0ylfwh7rn3rwghn</link>
+			<description>
+				<![CDATA[<div class='image'><img class='main' src='/deviation/images/galaga.png' alt='Operations officer playing Galaga during office hours - The Avengers.'/></div><p>&quot;That man is playing Galaga... thought we wouldn&#39;t notice, but we did.&quot;</p>
+			]]>
+			</description>
+		</item>
+	</channel>
+</rss>

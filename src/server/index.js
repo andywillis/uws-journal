@@ -1,5 +1,5 @@
 const http = require('http');
-const path = require('path');
+// const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
@@ -7,12 +7,14 @@ const compression = require('compression');
 const { authorise, getData } = require('./auth');
 const wrangleData = require('./lib/wrangleData');
 const getCredentials = require('./auth/getCredentials');
+const createRSS = require('./lib/createRss');
 
 const app = express();
 
 const applicationName = 'uws-journal';
 
 app.set('port', (process.env.PORT || 8080));
+app.set('root', __dirname);
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -39,23 +41,38 @@ function getJournalData() {
 }
 
 function storeJournalData(data) {
-  app.dataStore = data;
+  return new Promise((resolve) => {
+    app.dataStore = data;
+    resolve(data);
+  });
 }
 
-getCredentials(applicationName)
-  .then(storeCredentials)
-  .then(getJournalData)
-  .then(wrangleData)
-  .then(storeJournalData);
+function init() {
+  getCredentials(applicationName)
+    .then(storeCredentials)
+    .then(getJournalData)
+    .then(wrangleData)
+    .then(storeJournalData)
+    .then(createRSS);
+}
+
+init();
 
 app.get('/entries', (req, res) => {
   res.json(app.dataStore);
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../../dist', 'index.html'));
+app.get('/reload', (req, res) => {
+  init();
+  res.send('Data reloaded.');
 });
 
-http.createServer(app).listen(app.get('port'), () => {
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
+// });
+
+const server = http.createServer(app);
+
+server.listen(app.get('port'), () => {
   console.log('Listening on port', app.get('port'));
 });
