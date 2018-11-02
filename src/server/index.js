@@ -67,9 +67,9 @@ app.get('/reload', (req, res) => {
   res.send('Data reloaded.');
 });
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './dist', 'index.html'));
+});
 
 const server = http.createServer(app);
 
