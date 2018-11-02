@@ -47,17 +47,23 @@ const getLink = (id, title) => {
 };
 
 const getBody = (el) => {
+
   const selector = 'p, h2, h3, h4, blockquote, img, table';
+
   return [...el.querySelectorAll(selector)].reduce((p, c, i) => {
+
     switch (c.nodeName) {
+
       case 'TABLE': {
         p.push({ id: i, type: 'table', html: c.innerHTML });
         break;
       }
+
       case 'IMG': {
         p.push({ id: i, type: 'image', src: c.src, alt: c.alt });
         break;
       }
+
       case 'P': {
         if (c.firstChild.nodeName !== 'IMG') {
           const name = c.parentNode.nodeName;
@@ -66,18 +72,22 @@ const getBody = (el) => {
         }
         break;
       }
+
       case 'H2': {
         p.push({ id: i, type: 'h2', txt: c.textContent });
         break;
       }
+
       case 'H3': {
         p.push({ id: i, type: 'h3', txt: c.textContent });
         break;
       }
+
       case 'H4': {
         p.push({ id: i, type: 'h4', txt: c.textContent });
         break;
       }
+
     }
     return p;
   }, []);
@@ -92,6 +102,7 @@ const buildEntry = (md, id) => {
   const tags = getTags(div);
   const link = getLink(id, title);
   const body = getBody(div);
+  const cdata = div.innerHTML.trim();
 
   const entry = {
     id: ++id,
@@ -99,7 +110,8 @@ const buildEntry = (md, id) => {
     date,
     tags,
     link,
-    body
+    body,
+    cdata
   };
 
   return entry;

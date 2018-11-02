@@ -1,11 +1,8 @@
-# react-boilerplate
+# uws-journal
 
-A React boilerplate.
+# to do
 
-* React
-* CSS modules
-* ESLint
-* Jest
-* Express server (3001)
-
-Hot module replacement for React, Express running on nodemon.
+* RSS
+* tests
+* favourites filter
+* image pre-fetch

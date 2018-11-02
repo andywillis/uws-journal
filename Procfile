@@ -1,1 +1,1 @@
-web: node src/server.js -port 8000
+web: node src/server/index.js -port 8000 -mode production
