@@ -2,7 +2,7 @@
 
 # to do
 
-* RSS
+* home icon for filtered entries
 * tests
 * favourites filter
 * image pre-fetch
