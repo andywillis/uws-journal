@@ -32,7 +32,7 @@ module.exports = function (appName) {
             credentials: {
               client_id: credentials.client_id,
               client_secret: credentials.client_secret,
-              redirect_uris: credentials.redirect_uris
+              redirect_url: credentials.redirect_uris[0]
             },
             token: {
               access_token: token.access_token,
