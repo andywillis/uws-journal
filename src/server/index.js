@@ -47,15 +47,24 @@ function storeJournalData(data) {
   });
 }
 
-getCredentials(applicationName)
-  .then(storeCredentials)
-  .then(getJournalData)
-  .then(wrangleData)
-  .then(storeJournalData)
-  .then(createRSS);
+function init() {
+  getCredentials(applicationName)
+    .then(storeCredentials)
+    .then(getJournalData)
+    .then(wrangleData)
+    .then(storeJournalData)
+    .then(createRSS);
+}
+
+init();
 
 app.get('/entries', (req, res) => {
   res.json(app.dataStore);
+});
+
+app.get('/reload', (req, res) => {
+  init();
+  res.send('Data reloaded.');
 });
 
 // app.get('*', (req, res) => {
