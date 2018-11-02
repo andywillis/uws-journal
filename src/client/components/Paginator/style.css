@@ -10,4 +10,5 @@
 .paginator a:active {
   text-decoration: none;
   color: black;
+  padding: 0.45em 0 0.45em 0;
 }

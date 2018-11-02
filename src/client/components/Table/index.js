@@ -1,7 +1,6 @@
 // Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import renderHTML from 'react-render-html';
 
 // Style
 import style from './style.css';
@@ -14,7 +13,7 @@ import style from './style.css';
 const Table = ({ html }) => {
   return (
     <div className={style.table}>
-      <table>{renderHTML(html)}</table>
+      <table dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
 };

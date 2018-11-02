@@ -9,6 +9,7 @@
     "server": "nodemon src/server/index.js",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "report": "webpack-bundle-analyzer --port 4200 dist/stats.json",
     "test": "jest"
   },
   "keywords": [],
