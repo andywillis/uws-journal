@@ -6,10 +6,18 @@
 }
 
 .entry:first-child {
-  margin-top: 4em;
+  margin-top: 4.5em;
 }
 
 .entry a {
   cursor: pointer;
   text-decoration: none;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .entry:first-child {
+    margin-top: 6em;
+  }  
 }
