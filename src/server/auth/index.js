@@ -11,6 +11,7 @@ function authorise({ credentials, token }, callback) {
 
 function getData(auth, fileId) {
   const drive = google.drive('v3');
+  console.log(auth)
   return new Promise((resolve, reject) => {
     drive.files.get({
       auth,
