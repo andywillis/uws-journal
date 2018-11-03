@@ -4,7 +4,6 @@ module.exports = function (appName) {
   return new Promise((resolve, reject) => {
 
     if (process.env.NODE_ENV === 'production') {
-    	console.log(process.env.NODE_ENV);
       resolve({
         credentials: {
           client_id: process.env.CLIENT_ID,

@@ -52,8 +52,8 @@ module.exports = {
     historyApiFallback: true,
     proxy: {
       open: true,
-      '/entries': 'http://localhost:8080',
-      '/reload': 'http://localhost:8080'
+      '/entries': 'http://localhost:3000',
+      '/reload': 'http://localhost:3000'
     }
   },
   plugins: [
