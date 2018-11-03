@@ -13,7 +13,7 @@ const app = express();
 
 const applicationName = 'uws-journal';
 
-app.set('port', (process.env.PORT || 8080));
+app.set('port', (process.env.PORT || 3000));
 app.set('root', __dirname);
 app.use(compression());
 app.use(bodyParser.json());
