@@ -62,7 +62,7 @@ module.exports = {
       generateStatsFile: true,
       statsOptions: { source: false }
     }),
-    new CleanWebpackPlugin(['dist/*.*']),
+    // new CleanWebpackPlugin(['dist/*.*']),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico'
