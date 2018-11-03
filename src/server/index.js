@@ -2,7 +2,7 @@ const http = require('http');
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
-const compression = require('compression');
+// const compression = require('compression');
 
 const { authorise, getData } = require('./auth');
 const wrangleData = require('./lib/wrangleData');
@@ -15,9 +15,17 @@ const applicationName = 'uws-journal';
 
 app.set('port', (process.env.PORT || 3000));
 app.set('root', __dirname);
-app.use(compression());
+// app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('*.js', (request, response, next) => {
+  request.url = `${request.url}.gz`;
+  response.set('Content-Encoding', 'gzip');
+  response.set('Content-Type', 'text/javascript');
+  next();
+});
+
 app.use(express.static(path.join(__dirname, '../../dist')));
 
 function storeCredentials({ credentials, token }) {
