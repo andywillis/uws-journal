@@ -9,7 +9,7 @@
 
 .visible {
   opacity: 1;
-  animation: fadeIn 1s linear;
+  animation: fadeIn 0.3s linear;
 }
 
 @keyframes fadeIn { 
