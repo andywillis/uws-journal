@@ -4,20 +4,20 @@
   "warnings": [
   ],
   "version": "4.24.0",
-  "hash": "d5f37a3f1f54bbb0e94f",
-  "time": 37610,
-  "builtAt": 1541451197976,
+  "hash": "02c54668a34011a78195",
+  "time": 43459,
+  "builtAt": 1541455733479,
   "publicPath": "/",
   "outputPath": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\dist",
   "assetsByChunkName": {
     "main": [
-      "main.d5f37a3f1f54bbb0e94f.css",
-      "bundle.d5f37a3f1f54bbb0e94f.js"
+      "main.02c54668a34011a78195.css",
+      "bundle.02c54668a34011a78195.js"
     ]
   },
   "assets": [
     {
-      "name": "bundle.d5f37a3f1f54bbb0e94f.js",
+      "name": "bundle.02c54668a34011a78195.js",
       "size": 165534,
       "chunks": [
         0
@@ -46,8 +46,8 @@
       "emitted": true
     },
     {
-      "name": "main.d5f37a3f1f54bbb0e94f.css",
-      "size": 44077,
+      "name": "main.02c54668a34011a78195.css",
+      "size": 44078,
       "chunks": [
         0
       ],
@@ -64,8 +64,8 @@
         0
       ],
       "assets": [
-        "main.d5f37a3f1f54bbb0e94f.css",
-        "bundle.d5f37a3f1f54bbb0e94f.js"
+        "main.02c54668a34011a78195.css",
+        "bundle.02c54668a34011a78195.js"
       ],
       "children": {
       },
@@ -79,8 +79,8 @@
         0
       ],
       "assets": [
-        "main.d5f37a3f1f54bbb0e94f.css",
-        "bundle.d5f37a3f1f54bbb0e94f.js"
+        "main.02c54668a34011a78195.css",
+        "bundle.02c54668a34011a78195.js"
       ],
       "children": {
       },
@@ -94,15 +94,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 511960,
+      "size": 511962,
       "names": [
         "main"
       ],
       "files": [
-        "main.d5f37a3f1f54bbb0e94f.css",
-        "bundle.d5f37a3f1f54bbb0e94f.js"
+        "main.02c54668a34011a78195.css",
+        "bundle.02c54668a34011a78195.js"
       ],
-      "hash": "ed855b75f8f26883441e",
+      "hash": "724405abd73560bd83ef",
       "siblings": [
       ],
       "parents": [
@@ -5349,9 +5349,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.array.includes.js",
-          "issuerId": 297,
-          "issuerName": "./node_modules/core-js/modules/es7.array.includes.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+          "issuerId": 301,
+          "issuerName": "./node_modules/core-js/modules/es7.string.pad-end.js",
           "issuerPath": [
             {
               "id": 150,
@@ -5364,14 +5364,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 296,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\array\\includes.js",
-              "name": "./node_modules/core-js/fn/array/includes.js"
+              "id": 300,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-end.js",
+              "name": "./node_modules/core-js/fn/string/pad-end.js"
             },
             {
-              "id": 297,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.array.includes.js",
-              "name": "./node_modules/core-js/modules/es7.array.includes.js"
+              "id": 301,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+              "name": "./node_modules/core-js/modules/es7.string.pad-end.js"
             }
           ],
           "failed": false,
@@ -6616,9 +6616,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-          "issuerId": 313,
-          "issuerName": "./node_modules/core-js/modules/web.timers.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "issuerId": 178,
+          "issuerName": "./node_modules/core-js/modules/es6.number.constructor.js",
           "issuerPath": [
             {
               "id": 150,
@@ -6631,14 +6631,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 312,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
-              "name": "./node_modules/core-js/web/index.js"
+              "id": 152,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+              "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 313,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-              "name": "./node_modules/core-js/modules/web.timers.js"
+              "id": 178,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.number.constructor.js"
             }
           ],
           "failed": false,
@@ -6930,9 +6930,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.freeze.js",
-          "issuerId": 162,
-          "issuerName": "./node_modules/core-js/modules/es6.object.freeze.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.prevent-extensions.js",
+          "issuerId": 164,
+          "issuerName": "./node_modules/core-js/modules/es6.object.prevent-extensions.js",
           "issuerPath": [
             {
               "id": 150,
@@ -6950,9 +6950,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 162,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.freeze.js",
-              "name": "./node_modules/core-js/modules/es6.object.freeze.js"
+              "id": 164,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.prevent-extensions.js",
+              "name": "./node_modules/core-js/modules/es6.object.prevent-extensions.js"
             }
           ],
           "failed": false,
@@ -7244,9 +7244,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_promise-resolve.js",
-          "issuerId": 122,
-          "issuerName": "./node_modules/core-js/modules/_promise-resolve.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
+          "issuerId": 153,
+          "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
           "issuerPath": [
             {
               "id": 150,
@@ -7259,19 +7259,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 310,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
-              "name": "./node_modules/core-js/fn/promise/finally.js"
+              "id": 152,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+              "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 311,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es7.promise.finally.js"
-            },
-            {
-              "id": 122,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_promise-resolve.js",
-              "name": "./node_modules/core-js/modules/_promise-resolve.js"
+              "id": 153,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
+              "name": "./node_modules/core-js/modules/es6.symbol.js"
             }
           ],
           "failed": false,
@@ -8020,9 +8015,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
           "issuerId": null,
-          "issuerName": "./node_modules/history/es/createMemoryHistory.js",
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "issuerPath": [
             {
               "id": 150,
@@ -8051,8 +8046,8 @@
             },
             {
               "id": null,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
-              "name": "./node_modules/history/es/createMemoryHistory.js"
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
+              "name": "./node_modules/history/es/createBrowserHistory.js"
             }
           ],
           "failed": false,
@@ -8654,9 +8649,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_for-of.js",
-          "issuerId": 58,
-          "issuerName": "./node_modules/core-js/modules/_for-of.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_string-pad.js",
+          "issuerId": 127,
+          "issuerName": "./node_modules/core-js/modules/_string-pad.js",
           "issuerPath": [
             {
               "id": 150,
@@ -8669,19 +8664,19 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 310,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
-              "name": "./node_modules/core-js/fn/promise/finally.js"
+              "id": 298,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-start.js",
+              "name": "./node_modules/core-js/fn/string/pad-start.js"
             },
             {
-              "id": 120,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
-              "name": "./node_modules/core-js/modules/es6.promise.js"
+              "id": 299,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-start.js",
+              "name": "./node_modules/core-js/modules/es7.string.pad-start.js"
             },
             {
-              "id": 58,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_for-of.js",
-              "name": "./node_modules/core-js/modules/_for-of.js"
+              "id": 127,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_string-pad.js",
+              "name": "./node_modules/core-js/modules/_string-pad.js"
             }
           ],
           "failed": false,
@@ -9872,9 +9867,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "issuerId": 153,
-          "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
+          "issuerId": 315,
+          "issuerName": "./node_modules/core-js/modules/web.dom.iterable.js",
           "issuerPath": [
             {
               "id": 150,
@@ -9887,14 +9882,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 152,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-              "name": "./node_modules/core-js/es6/index.js"
+              "id": 312,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
+              "name": "./node_modules/core-js/web/index.js"
             },
             {
-              "id": 153,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-              "name": "./node_modules/core-js/modules/es6.symbol.js"
+              "id": 315,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
+              "name": "./node_modules/core-js/modules/web.dom.iterable.js"
             }
           ],
           "failed": false,
@@ -10194,9 +10189,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.get-prototype-of.js",
-          "issuerId": 159,
-          "issuerName": "./node_modules/core-js/modules/es6.object.get-prototype-of.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.keys.js",
+          "issuerId": 160,
+          "issuerName": "./node_modules/core-js/modules/es6.object.keys.js",
           "issuerPath": [
             {
               "id": 150,
@@ -10214,9 +10209,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 159,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.get-prototype-of.js",
-              "name": "./node_modules/core-js/modules/es6.object.get-prototype-of.js"
+              "id": 160,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.keys.js",
+              "name": "./node_modules/core-js/modules/es6.object.keys.js"
             }
           ],
           "failed": false,
@@ -10793,9 +10788,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-          "issuerId": 257,
-          "issuerName": "./node_modules/core-js/modules/es6.array.find-index.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+          "issuerId": 269,
+          "issuerName": "./node_modules/core-js/modules/es6.weak-map.js",
           "issuerPath": [
             {
               "id": 150,
@@ -10813,9 +10808,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 257,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-              "name": "./node_modules/core-js/modules/es6.array.find-index.js"
+              "id": 269,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+              "name": "./node_modules/core-js/modules/es6.weak-map.js"
             }
           ],
           "failed": false,
@@ -10951,14 +10946,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 296,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\array\\includes.js",
-              "name": "./node_modules/core-js/fn/array/includes.js"
+              "id": 300,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-end.js",
+              "name": "./node_modules/core-js/fn/string/pad-end.js"
             },
             {
-              "id": 297,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.array.includes.js",
-              "name": "./node_modules/core-js/modules/es7.array.includes.js"
+              "id": 301,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+              "name": "./node_modules/core-js/modules/es7.string.pad-end.js"
             },
             {
               "id": 2,
@@ -11075,9 +11070,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_species-constructor.js",
-          "issuerId": 59,
-          "issuerName": "./node_modules/core-js/modules/_species-constructor.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_bind.js",
+          "issuerId": 106,
+          "issuerName": "./node_modules/core-js/modules/_bind.js",
           "issuerPath": [
             {
               "id": 150,
@@ -11090,19 +11085,19 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 310,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
-              "name": "./node_modules/core-js/fn/promise/finally.js"
+              "id": 152,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+              "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 311,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+              "id": 173,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.function.bind.js",
+              "name": "./node_modules/core-js/modules/es6.function.bind.js"
             },
             {
-              "id": 59,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_species-constructor.js",
-              "name": "./node_modules/core-js/modules/_species-constructor.js"
+              "id": 106,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_bind.js",
+              "name": "./node_modules/core-js/modules/_bind.js"
             }
           ],
           "failed": false,
@@ -11368,9 +11363,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 159,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.get-prototype-of.js",
-              "name": "./node_modules/core-js/modules/es6.object.get-prototype-of.js"
+              "id": 160,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.keys.js",
+              "name": "./node_modules/core-js/modules/es6.object.keys.js"
             },
             {
               "id": 20,
@@ -11621,9 +11616,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.uint32-array.js",
-          "issuerId": 279,
-          "issuerName": "./node_modules/core-js/modules/es6.typed.uint32-array.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.float32-array.js",
+          "issuerId": 280,
+          "issuerName": "./node_modules/core-js/modules/es6.typed.float32-array.js",
           "issuerPath": [
             {
               "id": 150,
@@ -11641,9 +11636,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 279,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.uint32-array.js",
-              "name": "./node_modules/core-js/modules/es6.typed.uint32-array.js"
+              "id": 280,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.float32-array.js",
+              "name": "./node_modules/core-js/modules/es6.typed.float32-array.js"
             }
           ],
           "failed": false,
@@ -12358,9 +12353,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "issuerId": 153,
-          "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/core-js/modules/_object-to-array.js",
           "issuerPath": [
             {
               "id": 150,
@@ -12373,14 +12368,19 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 152,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-              "name": "./node_modules/core-js/es6/index.js"
+              "id": 306,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+              "name": "./node_modules/core-js/fn/object/values.js"
             },
             {
-              "id": 153,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-              "name": "./node_modules/core-js/modules/es6.symbol.js"
+              "id": 307,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+              "name": "./node_modules/core-js/modules/es7.object.values.js"
+            },
+            {
+              "id": 128,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+              "name": "./node_modules/core-js/modules/_object-to-array.js"
             }
           ],
           "failed": false,
@@ -12595,9 +12595,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-          "issuerId": 155,
-          "issuerName": "./node_modules/core-js/modules/es6.object.create.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "issuerId": 178,
+          "issuerName": "./node_modules/core-js/modules/es6.number.constructor.js",
           "issuerPath": [
             {
               "id": 150,
@@ -12615,9 +12615,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 155,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-              "name": "./node_modules/core-js/modules/es6.object.create.js"
+              "id": 178,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.number.constructor.js"
             }
           ],
           "failed": false,
@@ -12943,9 +12943,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "issuerId": 153,
-          "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "issuerId": 120,
+          "issuerName": "./node_modules/core-js/modules/es6.promise.js",
           "issuerPath": [
             {
               "id": 150,
@@ -12958,14 +12958,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 152,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-              "name": "./node_modules/core-js/es6/index.js"
+              "id": 310,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
+              "name": "./node_modules/core-js/fn/promise/finally.js"
             },
             {
-              "id": 153,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-              "name": "./node_modules/core-js/modules/es6.symbol.js"
+              "id": 120,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+              "name": "./node_modules/core-js/modules/es6.promise.js"
             }
           ],
           "failed": false,
@@ -13050,9 +13050,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.iterator.js",
-          "issuerId": 86,
-          "issuerName": "./node_modules/core-js/modules/es6.array.iterator.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
+          "issuerId": 315,
+          "issuerName": "./node_modules/core-js/modules/web.dom.iterable.js",
           "issuerPath": [
             {
               "id": 150,
@@ -13073,11 +13073,6 @@
               "id": 315,
               "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
               "name": "./node_modules/core-js/modules/web.dom.iterable.js"
-            },
-            {
-              "id": 86,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es6.array.iterator.js"
             }
           ],
           "failed": false,
@@ -13590,9 +13585,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-          "issuerId": 268,
-          "issuerName": "./node_modules/core-js/modules/es6.set.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+          "issuerId": 267,
+          "issuerName": "./node_modules/core-js/modules/es6.map.js",
           "issuerPath": [
             {
               "id": 150,
@@ -13610,9 +13605,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 268,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-              "name": "./node_modules/core-js/modules/es6.set.js"
+              "id": 267,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+              "name": "./node_modules/core-js/modules/es6.map.js"
             }
           ],
           "failed": false,
@@ -13904,9 +13899,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "issuerId": 153,
-          "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/core-js/modules/_object-to-array.js",
           "issuerPath": [
             {
               "id": 150,
@@ -13919,14 +13914,19 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 152,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-              "name": "./node_modules/core-js/es6/index.js"
+              "id": 306,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+              "name": "./node_modules/core-js/fn/object/values.js"
             },
             {
-              "id": 153,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-              "name": "./node_modules/core-js/modules/es6.symbol.js"
+              "id": 307,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+              "name": "./node_modules/core-js/modules/es7.object.values.js"
+            },
+            {
+              "id": 128,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+              "name": "./node_modules/core-js/modules/_object-to-array.js"
             }
           ],
           "failed": false,
@@ -14447,9 +14447,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.replace.js",
-          "issuerId": 262,
-          "issuerName": "./node_modules/core-js/modules/es6.regexp.replace.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
+          "issuerId": 264,
+          "issuerName": "./node_modules/core-js/modules/es6.regexp.split.js",
           "issuerPath": [
             {
               "id": 150,
@@ -14467,9 +14467,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 262,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.replace.js",
-              "name": "./node_modules/core-js/modules/es6.regexp.replace.js"
+              "id": 264,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
+              "name": "./node_modules/core-js/modules/es6.regexp.split.js"
             }
           ],
           "failed": false,
@@ -14625,9 +14625,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "issuerId": 311,
-          "issuerName": "./node_modules/core-js/modules/es7.promise.finally.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "issuerId": 120,
+          "issuerName": "./node_modules/core-js/modules/es6.promise.js",
           "issuerPath": [
             {
               "id": 150,
@@ -14645,9 +14645,9 @@
               "name": "./node_modules/core-js/fn/promise/finally.js"
             },
             {
-              "id": 311,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+              "id": 120,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+              "name": "./node_modules/core-js/modules/es6.promise.js"
             }
           ],
           "failed": false,
@@ -14714,9 +14714,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-          "issuerId": 313,
-          "issuerName": "./node_modules/core-js/modules/web.timers.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+          "issuerId": 301,
+          "issuerName": "./node_modules/core-js/modules/es7.string.pad-end.js",
           "issuerPath": [
             {
               "id": 150,
@@ -14729,14 +14729,14 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 312,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
-              "name": "./node_modules/core-js/web/index.js"
+              "id": 300,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-end.js",
+              "name": "./node_modules/core-js/fn/string/pad-end.js"
             },
             {
-              "id": 313,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-              "name": "./node_modules/core-js/modules/web.timers.js"
+              "id": 301,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+              "name": "./node_modules/core-js/modules/es7.string.pad-end.js"
             }
           ],
           "failed": false,
@@ -14803,9 +14803,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-          "issuerId": 268,
-          "issuerName": "./node_modules/core-js/modules/es6.set.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+          "issuerId": 267,
+          "issuerName": "./node_modules/core-js/modules/es6.map.js",
           "issuerPath": [
             {
               "id": 150,
@@ -14823,9 +14823,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 268,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-              "name": "./node_modules/core-js/modules/es6.set.js"
+              "id": 267,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+              "name": "./node_modules/core-js/modules/es6.map.js"
             }
           ],
           "failed": false,
@@ -14892,9 +14892,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.array-buffer.js",
-          "issuerId": 271,
-          "issuerName": "./node_modules/core-js/modules/es6.typed.array-buffer.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.data-view.js",
+          "issuerId": 272,
+          "issuerName": "./node_modules/core-js/modules/es6.typed.data-view.js",
           "issuerPath": [
             {
               "id": 150,
@@ -14912,9 +14912,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 271,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.array-buffer.js",
-              "name": "./node_modules/core-js/modules/es6.typed.array-buffer.js"
+              "id": 272,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.data-view.js",
+              "name": "./node_modules/core-js/modules/es6.typed.data-view.js"
             }
           ],
           "failed": false,
@@ -15162,9 +15162,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_task.js",
-          "issuerId": 88,
-          "issuerName": "./node_modules/core-js/modules/_task.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
+          "issuerId": 39,
+          "issuerName": "./node_modules/core-js/modules/_object-create.js",
           "issuerPath": [
             {
               "id": 150,
@@ -15177,19 +15177,19 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 312,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
-              "name": "./node_modules/core-js/web/index.js"
+              "id": 152,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+              "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 314,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.immediate.js",
-              "name": "./node_modules/core-js/modules/web.immediate.js"
+              "id": 178,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.number.constructor.js"
             },
             {
-              "id": 88,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_task.js",
-              "name": "./node_modules/core-js/modules/_task.js"
+              "id": 39,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
+              "name": "./node_modules/core-js/modules/_object-create.js"
             }
           ],
           "failed": false,
@@ -15427,9 +15427,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 155,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-              "name": "./node_modules/core-js/modules/es6.object.create.js"
+              "id": 178,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.number.constructor.js"
             },
             {
               "id": 39,
@@ -15492,9 +15492,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
-          "issuerId": 39,
-          "issuerName": "./node_modules/core-js/modules/_object-create.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+          "issuerId": 37,
+          "issuerName": "./node_modules/core-js/modules/_object-keys.js",
           "issuerPath": [
             {
               "id": 150,
@@ -15507,19 +15507,24 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 152,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-              "name": "./node_modules/core-js/es6/index.js"
+              "id": 306,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+              "name": "./node_modules/core-js/fn/object/values.js"
             },
             {
-              "id": 155,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-              "name": "./node_modules/core-js/modules/es6.object.create.js"
+              "id": 307,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+              "name": "./node_modules/core-js/modules/es7.object.values.js"
             },
             {
-              "id": 39,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
-              "name": "./node_modules/core-js/modules/_object-create.js"
+              "id": 128,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+              "name": "./node_modules/core-js/modules/_object-to-array.js"
+            },
+            {
+              "id": 37,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+              "name": "./node_modules/core-js/modules/_object-keys.js"
             }
           ],
           "failed": false,
@@ -15677,9 +15682,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 155,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-              "name": "./node_modules/core-js/modules/es6.object.create.js"
+              "id": 178,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.number.constructor.js"
             },
             {
               "id": 39,
@@ -16392,9 +16397,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
-          "issuerId": 264,
-          "issuerName": "./node_modules/core-js/modules/es6.regexp.split.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
+          "issuerId": 259,
+          "issuerName": "./node_modules/core-js/modules/es6.regexp.constructor.js",
           "issuerPath": [
             {
               "id": 150,
@@ -16412,9 +16417,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 264,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
-              "name": "./node_modules/core-js/modules/es6.regexp.split.js"
+              "id": 259,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.regexp.constructor.js"
             }
           ],
           "failed": false,
@@ -18249,9 +18254,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-gopn.js",
-          "issuerId": 40,
-          "issuerName": "./node_modules/core-js/modules/_object-gopn.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+          "issuerId": 37,
+          "issuerName": "./node_modules/core-js/modules/_object-keys.js",
           "issuerPath": [
             {
               "id": 150,
@@ -18264,19 +18269,24 @@
               "name": "./node_modules/@babel/polyfill/lib/index.js"
             },
             {
-              "id": 152,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-              "name": "./node_modules/core-js/es6/index.js"
+              "id": 306,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+              "name": "./node_modules/core-js/fn/object/values.js"
             },
             {
-              "id": 153,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-              "name": "./node_modules/core-js/modules/es6.symbol.js"
+              "id": 307,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+              "name": "./node_modules/core-js/modules/es7.object.values.js"
             },
             {
-              "id": 40,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-gopn.js",
-              "name": "./node_modules/core-js/modules/_object-gopn.js"
+              "id": 128,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+              "name": "./node_modules/core-js/modules/_object-to-array.js"
+            },
+            {
+              "id": 37,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+              "name": "./node_modules/core-js/modules/_object-keys.js"
             }
           ],
           "failed": false,
@@ -19040,9 +19050,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.iterator.js",
-          "issuerId": 211,
-          "issuerName": "./node_modules/core-js/modules/es6.string.iterator.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.code-point-at.js",
+          "issuerId": 212,
+          "issuerName": "./node_modules/core-js/modules/es6.string.code-point-at.js",
           "issuerPath": [
             {
               "id": 150,
@@ -19060,9 +19070,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 211,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.iterator.js",
-              "name": "./node_modules/core-js/modules/es6.string.iterator.js"
+              "id": 212,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.code-point-at.js",
+              "name": "./node_modules/core-js/modules/es6.string.code-point-at.js"
             }
           ],
           "failed": false,
@@ -19268,9 +19278,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce.js",
-          "issuerId": 250,
-          "issuerName": "./node_modules/core-js/modules/es6.array.reduce.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce-right.js",
+          "issuerId": 251,
+          "issuerName": "./node_modules/core-js/modules/es6.array.reduce-right.js",
           "issuerPath": [
             {
               "id": 150,
@@ -19288,9 +19298,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 250,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce.js",
-              "name": "./node_modules/core-js/modules/es6.array.reduce.js"
+              "id": 251,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce-right.js",
+              "name": "./node_modules/core-js/modules/es6.array.reduce-right.js"
             }
           ],
           "failed": false,
@@ -19638,9 +19648,9 @@
               "name": "./node_modules/core-js/fn/promise/finally.js"
             },
             {
-              "id": 311,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+              "id": 120,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+              "name": "./node_modules/core-js/modules/es6.promise.js"
             },
             {
               "id": 122,
@@ -19694,9 +19704,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "issuerId": 311,
-          "issuerName": "./node_modules/core-js/modules/es7.promise.finally.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "issuerId": 120,
+          "issuerName": "./node_modules/core-js/modules/es6.promise.js",
           "issuerPath": [
             {
               "id": 150,
@@ -19714,9 +19724,9 @@
               "name": "./node_modules/core-js/fn/promise/finally.js"
             },
             {
-              "id": 311,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+              "id": 120,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+              "name": "./node_modules/core-js/modules/es6.promise.js"
             }
           ],
           "failed": false,
@@ -21701,9 +21711,9 @@
           "chunks": [
             0
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\generatePath.js",
-          "issuerId": 336,
-          "issuerName": "./node_modules/react-router/es/generatePath.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\matchPath.js",
+          "issuerId": null,
+          "issuerName": "./node_modules/react-router/es/matchPath.js",
           "issuerPath": [
             {
               "id": 150,
@@ -21721,14 +21731,14 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": 330,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\generatePath.js",
-              "name": "./node_modules/react-router-dom/es/generatePath.js"
+              "id": 331,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\matchPath.js",
+              "name": "./node_modules/react-router-dom/es/matchPath.js"
             },
             {
-              "id": 336,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\generatePath.js",
-              "name": "./node_modules/react-router/es/generatePath.js"
+              "id": null,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\matchPath.js",
+              "name": "./node_modules/react-router/es/matchPath.js"
             }
           ],
           "failed": false,
@@ -27312,9 +27322,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 257,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-              "name": "./node_modules/core-js/modules/es6.array.find-index.js"
+              "id": 269,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+              "name": "./node_modules/core-js/modules/es6.weak-map.js"
             },
             {
               "id": 24,
@@ -27379,9 +27389,9 @@
               "name": "./node_modules/core-js/es6/index.js"
             },
             {
-              "id": 257,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-              "name": "./node_modules/core-js/modules/es6.array.find-index.js"
+              "id": 269,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+              "name": "./node_modules/core-js/modules/es6.weak-map.js"
             },
             {
               "id": 24,
@@ -31721,14 +31731,14 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": 330,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\generatePath.js",
-              "name": "./node_modules/react-router-dom/es/generatePath.js"
+              "id": 331,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\matchPath.js",
+              "name": "./node_modules/react-router-dom/es/matchPath.js"
             },
             {
-              "id": 336,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\generatePath.js",
-              "name": "./node_modules/react-router/es/generatePath.js"
+              "id": null,
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\matchPath.js",
+              "name": "./node_modules/react-router/es/matchPath.js"
             },
             {
               "id": 147,
@@ -36663,18 +36673,18 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
-                  "module": "./node_modules/history/es/createBrowserHistory.js",
-                  "moduleName": "./node_modules/history/es/createBrowserHistory.js",
+                  "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
+                  "module": "./node_modules/history/es/createMemoryHistory.js",
+                  "moduleName": "./node_modules/history/es/createMemoryHistory.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./LocationUtils",
                   "loc": "7:0-49"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
-                  "module": "./node_modules/history/es/createMemoryHistory.js",
-                  "moduleName": "./node_modules/history/es/createMemoryHistory.js",
+                  "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
+                  "module": "./node_modules/history/es/createBrowserHistory.js",
+                  "moduleName": "./node_modules/history/es/createBrowserHistory.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./LocationUtils",
                   "loc": "7:0-49"
@@ -37137,9 +37147,9 @@
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapDispatchToProps.js",
+              "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapStateToProps.js",
               "issuerId": null,
-              "issuerName": "./node_modules/react-redux/es/connect/mapDispatchToProps.js",
+              "issuerName": "./node_modules/react-redux/es/connect/mapStateToProps.js",
               "issuerPath": [
                 {
                   "id": 150,
@@ -37163,8 +37173,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapDispatchToProps.js",
-                  "name": "./node_modules/react-redux/es/connect/mapDispatchToProps.js"
+                  "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapStateToProps.js",
+                  "name": "./node_modules/react-redux/es/connect/mapStateToProps.js"
                 }
               ],
               "failed": false,
@@ -38042,9 +38052,9 @@
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
+              "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createHashHistory.js",
               "issuerId": null,
-              "issuerName": "./node_modules/history/es/createMemoryHistory.js",
+              "issuerName": "./node_modules/history/es/createHashHistory.js",
               "issuerPath": [
                 {
                   "id": 150,
@@ -38073,8 +38083,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
-                  "name": "./node_modules/history/es/createMemoryHistory.js"
+                  "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createHashHistory.js",
+                  "name": "./node_modules/history/es/createHashHistory.js"
                 }
               ],
               "failed": false,
@@ -39754,7 +39764,7 @@
           "name": "css ./node_modules/css-loader??ref--5-1!./src/client/components/App/style.css",
           "index": 407,
           "index2": 403,
-          "size": 247,
+          "size": 249,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -46861,9 +46871,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.array.includes.js",
-      "issuerId": 297,
-      "issuerName": "./node_modules/core-js/modules/es7.array.includes.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+      "issuerId": 301,
+      "issuerName": "./node_modules/core-js/modules/es7.string.pad-end.js",
       "issuerPath": [
         {
           "id": 150,
@@ -46876,14 +46886,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 296,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\array\\includes.js",
-          "name": "./node_modules/core-js/fn/array/includes.js"
+          "id": 300,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-end.js",
+          "name": "./node_modules/core-js/fn/string/pad-end.js"
         },
         {
-          "id": 297,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.array.includes.js",
-          "name": "./node_modules/core-js/modules/es7.array.includes.js"
+          "id": 301,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+          "name": "./node_modules/core-js/modules/es7.string.pad-end.js"
         }
       ],
       "failed": false,
@@ -48128,9 +48138,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-      "issuerId": 313,
-      "issuerName": "./node_modules/core-js/modules/web.timers.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+      "issuerId": 178,
+      "issuerName": "./node_modules/core-js/modules/es6.number.constructor.js",
       "issuerPath": [
         {
           "id": 150,
@@ -48143,14 +48153,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 312,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
-          "name": "./node_modules/core-js/web/index.js"
+          "id": 152,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+          "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 313,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-          "name": "./node_modules/core-js/modules/web.timers.js"
+          "id": 178,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.number.constructor.js"
         }
       ],
       "failed": false,
@@ -48442,9 +48452,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.freeze.js",
-      "issuerId": 162,
-      "issuerName": "./node_modules/core-js/modules/es6.object.freeze.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.prevent-extensions.js",
+      "issuerId": 164,
+      "issuerName": "./node_modules/core-js/modules/es6.object.prevent-extensions.js",
       "issuerPath": [
         {
           "id": 150,
@@ -48462,9 +48472,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 162,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.freeze.js",
-          "name": "./node_modules/core-js/modules/es6.object.freeze.js"
+          "id": 164,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.prevent-extensions.js",
+          "name": "./node_modules/core-js/modules/es6.object.prevent-extensions.js"
         }
       ],
       "failed": false,
@@ -48756,9 +48766,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_promise-resolve.js",
-      "issuerId": 122,
-      "issuerName": "./node_modules/core-js/modules/_promise-resolve.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
+      "issuerId": 153,
+      "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
       "issuerPath": [
         {
           "id": 150,
@@ -48771,19 +48781,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 310,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
-          "name": "./node_modules/core-js/fn/promise/finally.js"
+          "id": 152,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+          "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 311,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es7.promise.finally.js"
-        },
-        {
-          "id": 122,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_promise-resolve.js",
-          "name": "./node_modules/core-js/modules/_promise-resolve.js"
+          "id": 153,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
+          "name": "./node_modules/core-js/modules/es6.symbol.js"
         }
       ],
       "failed": false,
@@ -49532,9 +49537,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
       "issuerId": null,
-      "issuerName": "./node_modules/history/es/createMemoryHistory.js",
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "issuerPath": [
         {
           "id": 150,
@@ -49563,8 +49568,8 @@
         },
         {
           "id": null,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
-          "name": "./node_modules/history/es/createMemoryHistory.js"
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
+          "name": "./node_modules/history/es/createBrowserHistory.js"
         }
       ],
       "failed": false,
@@ -50166,9 +50171,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_for-of.js",
-      "issuerId": 58,
-      "issuerName": "./node_modules/core-js/modules/_for-of.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_string-pad.js",
+      "issuerId": 127,
+      "issuerName": "./node_modules/core-js/modules/_string-pad.js",
       "issuerPath": [
         {
           "id": 150,
@@ -50181,19 +50186,19 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 310,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
-          "name": "./node_modules/core-js/fn/promise/finally.js"
+          "id": 298,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-start.js",
+          "name": "./node_modules/core-js/fn/string/pad-start.js"
         },
         {
-          "id": 120,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
-          "name": "./node_modules/core-js/modules/es6.promise.js"
+          "id": 299,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-start.js",
+          "name": "./node_modules/core-js/modules/es7.string.pad-start.js"
         },
         {
-          "id": 58,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_for-of.js",
-          "name": "./node_modules/core-js/modules/_for-of.js"
+          "id": 127,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_string-pad.js",
+          "name": "./node_modules/core-js/modules/_string-pad.js"
         }
       ],
       "failed": false,
@@ -51384,9 +51389,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-      "issuerId": 153,
-      "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
+      "issuerId": 315,
+      "issuerName": "./node_modules/core-js/modules/web.dom.iterable.js",
       "issuerPath": [
         {
           "id": 150,
@@ -51399,14 +51404,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 152,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-          "name": "./node_modules/core-js/es6/index.js"
+          "id": 312,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
+          "name": "./node_modules/core-js/web/index.js"
         },
         {
-          "id": 153,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "name": "./node_modules/core-js/modules/es6.symbol.js"
+          "id": 315,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
+          "name": "./node_modules/core-js/modules/web.dom.iterable.js"
         }
       ],
       "failed": false,
@@ -51706,9 +51711,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.get-prototype-of.js",
-      "issuerId": 159,
-      "issuerName": "./node_modules/core-js/modules/es6.object.get-prototype-of.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.keys.js",
+      "issuerId": 160,
+      "issuerName": "./node_modules/core-js/modules/es6.object.keys.js",
       "issuerPath": [
         {
           "id": 150,
@@ -51726,9 +51731,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 159,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.get-prototype-of.js",
-          "name": "./node_modules/core-js/modules/es6.object.get-prototype-of.js"
+          "id": 160,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.keys.js",
+          "name": "./node_modules/core-js/modules/es6.object.keys.js"
         }
       ],
       "failed": false,
@@ -52305,9 +52310,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-      "issuerId": 257,
-      "issuerName": "./node_modules/core-js/modules/es6.array.find-index.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+      "issuerId": 269,
+      "issuerName": "./node_modules/core-js/modules/es6.weak-map.js",
       "issuerPath": [
         {
           "id": 150,
@@ -52325,9 +52330,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 257,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-          "name": "./node_modules/core-js/modules/es6.array.find-index.js"
+          "id": 269,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+          "name": "./node_modules/core-js/modules/es6.weak-map.js"
         }
       ],
       "failed": false,
@@ -52463,14 +52468,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 296,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\array\\includes.js",
-          "name": "./node_modules/core-js/fn/array/includes.js"
+          "id": 300,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-end.js",
+          "name": "./node_modules/core-js/fn/string/pad-end.js"
         },
         {
-          "id": 297,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.array.includes.js",
-          "name": "./node_modules/core-js/modules/es7.array.includes.js"
+          "id": 301,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+          "name": "./node_modules/core-js/modules/es7.string.pad-end.js"
         },
         {
           "id": 2,
@@ -52587,9 +52592,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_species-constructor.js",
-      "issuerId": 59,
-      "issuerName": "./node_modules/core-js/modules/_species-constructor.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_bind.js",
+      "issuerId": 106,
+      "issuerName": "./node_modules/core-js/modules/_bind.js",
       "issuerPath": [
         {
           "id": 150,
@@ -52602,19 +52607,19 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 310,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
-          "name": "./node_modules/core-js/fn/promise/finally.js"
+          "id": 152,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+          "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 311,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+          "id": 173,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.function.bind.js",
+          "name": "./node_modules/core-js/modules/es6.function.bind.js"
         },
         {
-          "id": 59,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_species-constructor.js",
-          "name": "./node_modules/core-js/modules/_species-constructor.js"
+          "id": 106,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_bind.js",
+          "name": "./node_modules/core-js/modules/_bind.js"
         }
       ],
       "failed": false,
@@ -52880,9 +52885,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 159,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.get-prototype-of.js",
-          "name": "./node_modules/core-js/modules/es6.object.get-prototype-of.js"
+          "id": 160,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.keys.js",
+          "name": "./node_modules/core-js/modules/es6.object.keys.js"
         },
         {
           "id": 20,
@@ -53133,9 +53138,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.uint32-array.js",
-      "issuerId": 279,
-      "issuerName": "./node_modules/core-js/modules/es6.typed.uint32-array.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.float32-array.js",
+      "issuerId": 280,
+      "issuerName": "./node_modules/core-js/modules/es6.typed.float32-array.js",
       "issuerPath": [
         {
           "id": 150,
@@ -53153,9 +53158,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 279,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.uint32-array.js",
-          "name": "./node_modules/core-js/modules/es6.typed.uint32-array.js"
+          "id": 280,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.float32-array.js",
+          "name": "./node_modules/core-js/modules/es6.typed.float32-array.js"
         }
       ],
       "failed": false,
@@ -53999,9 +54004,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-      "issuerId": 153,
-      "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/core-js/modules/_object-to-array.js",
       "issuerPath": [
         {
           "id": 150,
@@ -54014,14 +54019,19 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 152,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-          "name": "./node_modules/core-js/es6/index.js"
+          "id": 306,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+          "name": "./node_modules/core-js/fn/object/values.js"
         },
         {
-          "id": 153,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "name": "./node_modules/core-js/modules/es6.symbol.js"
+          "id": 307,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+          "name": "./node_modules/core-js/modules/es7.object.values.js"
+        },
+        {
+          "id": 128,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+          "name": "./node_modules/core-js/modules/_object-to-array.js"
         }
       ],
       "failed": false,
@@ -54236,9 +54246,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-      "issuerId": 155,
-      "issuerName": "./node_modules/core-js/modules/es6.object.create.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+      "issuerId": 178,
+      "issuerName": "./node_modules/core-js/modules/es6.number.constructor.js",
       "issuerPath": [
         {
           "id": 150,
@@ -54256,9 +54266,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 155,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-          "name": "./node_modules/core-js/modules/es6.object.create.js"
+          "id": 178,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.number.constructor.js"
         }
       ],
       "failed": false,
@@ -54584,9 +54594,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-      "issuerId": 153,
-      "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+      "issuerId": 120,
+      "issuerName": "./node_modules/core-js/modules/es6.promise.js",
       "issuerPath": [
         {
           "id": 150,
@@ -54599,14 +54609,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 152,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-          "name": "./node_modules/core-js/es6/index.js"
+          "id": 310,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\promise\\finally.js",
+          "name": "./node_modules/core-js/fn/promise/finally.js"
         },
         {
-          "id": 153,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "name": "./node_modules/core-js/modules/es6.symbol.js"
+          "id": 120,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "name": "./node_modules/core-js/modules/es6.promise.js"
         }
       ],
       "failed": false,
@@ -54691,9 +54701,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.iterator.js",
-      "issuerId": 86,
-      "issuerName": "./node_modules/core-js/modules/es6.array.iterator.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
+      "issuerId": 315,
+      "issuerName": "./node_modules/core-js/modules/web.dom.iterable.js",
       "issuerPath": [
         {
           "id": 150,
@@ -54714,11 +54724,6 @@
           "id": 315,
           "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.dom.iterable.js",
           "name": "./node_modules/core-js/modules/web.dom.iterable.js"
-        },
-        {
-          "id": 86,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es6.array.iterator.js"
         }
       ],
       "failed": false,
@@ -55231,9 +55236,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-      "issuerId": 268,
-      "issuerName": "./node_modules/core-js/modules/es6.set.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+      "issuerId": 267,
+      "issuerName": "./node_modules/core-js/modules/es6.map.js",
       "issuerPath": [
         {
           "id": 150,
@@ -55251,9 +55256,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 268,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-          "name": "./node_modules/core-js/modules/es6.set.js"
+          "id": 267,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+          "name": "./node_modules/core-js/modules/es6.map.js"
         }
       ],
       "failed": false,
@@ -55545,9 +55550,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-      "issuerId": 153,
-      "issuerName": "./node_modules/core-js/modules/es6.symbol.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/core-js/modules/_object-to-array.js",
       "issuerPath": [
         {
           "id": 150,
@@ -55560,14 +55565,19 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 152,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-          "name": "./node_modules/core-js/es6/index.js"
+          "id": 306,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+          "name": "./node_modules/core-js/fn/object/values.js"
         },
         {
-          "id": 153,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "name": "./node_modules/core-js/modules/es6.symbol.js"
+          "id": 307,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+          "name": "./node_modules/core-js/modules/es7.object.values.js"
+        },
+        {
+          "id": 128,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+          "name": "./node_modules/core-js/modules/_object-to-array.js"
         }
       ],
       "failed": false,
@@ -56088,9 +56098,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.replace.js",
-      "issuerId": 262,
-      "issuerName": "./node_modules/core-js/modules/es6.regexp.replace.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
+      "issuerId": 264,
+      "issuerName": "./node_modules/core-js/modules/es6.regexp.split.js",
       "issuerPath": [
         {
           "id": 150,
@@ -56108,9 +56118,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 262,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.replace.js",
-          "name": "./node_modules/core-js/modules/es6.regexp.replace.js"
+          "id": 264,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
+          "name": "./node_modules/core-js/modules/es6.regexp.split.js"
         }
       ],
       "failed": false,
@@ -56266,9 +56276,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-      "issuerId": 311,
-      "issuerName": "./node_modules/core-js/modules/es7.promise.finally.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+      "issuerId": 120,
+      "issuerName": "./node_modules/core-js/modules/es6.promise.js",
       "issuerPath": [
         {
           "id": 150,
@@ -56286,9 +56296,9 @@
           "name": "./node_modules/core-js/fn/promise/finally.js"
         },
         {
-          "id": 311,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+          "id": 120,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "name": "./node_modules/core-js/modules/es6.promise.js"
         }
       ],
       "failed": false,
@@ -56355,9 +56365,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-      "issuerId": 313,
-      "issuerName": "./node_modules/core-js/modules/web.timers.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+      "issuerId": 301,
+      "issuerName": "./node_modules/core-js/modules/es7.string.pad-end.js",
       "issuerPath": [
         {
           "id": 150,
@@ -56370,14 +56380,14 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 312,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
-          "name": "./node_modules/core-js/web/index.js"
+          "id": 300,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\string\\pad-end.js",
+          "name": "./node_modules/core-js/fn/string/pad-end.js"
         },
         {
-          "id": 313,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.timers.js",
-          "name": "./node_modules/core-js/modules/web.timers.js"
+          "id": 301,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.string.pad-end.js",
+          "name": "./node_modules/core-js/modules/es7.string.pad-end.js"
         }
       ],
       "failed": false,
@@ -56444,9 +56454,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-      "issuerId": 268,
-      "issuerName": "./node_modules/core-js/modules/es6.set.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+      "issuerId": 267,
+      "issuerName": "./node_modules/core-js/modules/es6.map.js",
       "issuerPath": [
         {
           "id": 150,
@@ -56464,9 +56474,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 268,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.set.js",
-          "name": "./node_modules/core-js/modules/es6.set.js"
+          "id": 267,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.map.js",
+          "name": "./node_modules/core-js/modules/es6.map.js"
         }
       ],
       "failed": false,
@@ -56533,9 +56543,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.array-buffer.js",
-      "issuerId": 271,
-      "issuerName": "./node_modules/core-js/modules/es6.typed.array-buffer.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.data-view.js",
+      "issuerId": 272,
+      "issuerName": "./node_modules/core-js/modules/es6.typed.data-view.js",
       "issuerPath": [
         {
           "id": 150,
@@ -56553,9 +56563,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 271,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.array-buffer.js",
-          "name": "./node_modules/core-js/modules/es6.typed.array-buffer.js"
+          "id": 272,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.typed.data-view.js",
+          "name": "./node_modules/core-js/modules/es6.typed.data-view.js"
         }
       ],
       "failed": false,
@@ -56803,9 +56813,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_task.js",
-      "issuerId": 88,
-      "issuerName": "./node_modules/core-js/modules/_task.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
+      "issuerId": 39,
+      "issuerName": "./node_modules/core-js/modules/_object-create.js",
       "issuerPath": [
         {
           "id": 150,
@@ -56818,19 +56828,19 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 312,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\web\\index.js",
-          "name": "./node_modules/core-js/web/index.js"
+          "id": 152,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
+          "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 314,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\web.immediate.js",
-          "name": "./node_modules/core-js/modules/web.immediate.js"
+          "id": 178,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.number.constructor.js"
         },
         {
-          "id": 88,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_task.js",
-          "name": "./node_modules/core-js/modules/_task.js"
+          "id": 39,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
+          "name": "./node_modules/core-js/modules/_object-create.js"
         }
       ],
       "failed": false,
@@ -57068,9 +57078,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 155,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-          "name": "./node_modules/core-js/modules/es6.object.create.js"
+          "id": 178,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.number.constructor.js"
         },
         {
           "id": 39,
@@ -57133,9 +57143,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
-      "issuerId": 39,
-      "issuerName": "./node_modules/core-js/modules/_object-create.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+      "issuerId": 37,
+      "issuerName": "./node_modules/core-js/modules/_object-keys.js",
       "issuerPath": [
         {
           "id": 150,
@@ -57148,19 +57158,24 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 152,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-          "name": "./node_modules/core-js/es6/index.js"
+          "id": 306,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+          "name": "./node_modules/core-js/fn/object/values.js"
         },
         {
-          "id": 155,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-          "name": "./node_modules/core-js/modules/es6.object.create.js"
+          "id": 307,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+          "name": "./node_modules/core-js/modules/es7.object.values.js"
         },
         {
-          "id": 39,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-create.js",
-          "name": "./node_modules/core-js/modules/_object-create.js"
+          "id": 128,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+          "name": "./node_modules/core-js/modules/_object-to-array.js"
+        },
+        {
+          "id": 37,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+          "name": "./node_modules/core-js/modules/_object-keys.js"
         }
       ],
       "failed": false,
@@ -57318,9 +57333,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 155,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.object.create.js",
-          "name": "./node_modules/core-js/modules/es6.object.create.js"
+          "id": 178,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.number.constructor.js"
         },
         {
           "id": 39,
@@ -58033,9 +58048,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
-      "issuerId": 264,
-      "issuerName": "./node_modules/core-js/modules/es6.regexp.split.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
+      "issuerId": 259,
+      "issuerName": "./node_modules/core-js/modules/es6.regexp.constructor.js",
       "issuerPath": [
         {
           "id": 150,
@@ -58053,9 +58068,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 264,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.split.js",
-          "name": "./node_modules/core-js/modules/es6.regexp.split.js"
+          "id": 259,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.regexp.constructor.js"
         }
       ],
       "failed": false,
@@ -59890,9 +59905,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-gopn.js",
-      "issuerId": 40,
-      "issuerName": "./node_modules/core-js/modules/_object-gopn.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+      "issuerId": 37,
+      "issuerName": "./node_modules/core-js/modules/_object-keys.js",
       "issuerPath": [
         {
           "id": 150,
@@ -59905,19 +59920,24 @@
           "name": "./node_modules/@babel/polyfill/lib/index.js"
         },
         {
-          "id": 152,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\es6\\index.js",
-          "name": "./node_modules/core-js/es6/index.js"
+          "id": 306,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\fn\\object\\values.js",
+          "name": "./node_modules/core-js/fn/object/values.js"
         },
         {
-          "id": 153,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.symbol.js",
-          "name": "./node_modules/core-js/modules/es6.symbol.js"
+          "id": 307,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.object.values.js",
+          "name": "./node_modules/core-js/modules/es7.object.values.js"
         },
         {
-          "id": 40,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-gopn.js",
-          "name": "./node_modules/core-js/modules/_object-gopn.js"
+          "id": 128,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-to-array.js",
+          "name": "./node_modules/core-js/modules/_object-to-array.js"
+        },
+        {
+          "id": 37,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\_object-keys.js",
+          "name": "./node_modules/core-js/modules/_object-keys.js"
         }
       ],
       "failed": false,
@@ -60681,9 +60701,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.iterator.js",
-      "issuerId": 211,
-      "issuerName": "./node_modules/core-js/modules/es6.string.iterator.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.code-point-at.js",
+      "issuerId": 212,
+      "issuerName": "./node_modules/core-js/modules/es6.string.code-point-at.js",
       "issuerPath": [
         {
           "id": 150,
@@ -60701,9 +60721,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 211,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.iterator.js",
-          "name": "./node_modules/core-js/modules/es6.string.iterator.js"
+          "id": 212,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.string.code-point-at.js",
+          "name": "./node_modules/core-js/modules/es6.string.code-point-at.js"
         }
       ],
       "failed": false,
@@ -60909,9 +60929,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce.js",
-      "issuerId": 250,
-      "issuerName": "./node_modules/core-js/modules/es6.array.reduce.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce-right.js",
+      "issuerId": 251,
+      "issuerName": "./node_modules/core-js/modules/es6.array.reduce-right.js",
       "issuerPath": [
         {
           "id": 150,
@@ -60929,9 +60949,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 250,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce.js",
-          "name": "./node_modules/core-js/modules/es6.array.reduce.js"
+          "id": 251,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.reduce-right.js",
+          "name": "./node_modules/core-js/modules/es6.array.reduce-right.js"
         }
       ],
       "failed": false,
@@ -61279,9 +61299,9 @@
           "name": "./node_modules/core-js/fn/promise/finally.js"
         },
         {
-          "id": 311,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+          "id": 120,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "name": "./node_modules/core-js/modules/es6.promise.js"
         },
         {
           "id": 122,
@@ -61335,9 +61355,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-      "issuerId": 311,
-      "issuerName": "./node_modules/core-js/modules/es7.promise.finally.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+      "issuerId": 120,
+      "issuerName": "./node_modules/core-js/modules/es6.promise.js",
       "issuerPath": [
         {
           "id": 150,
@@ -61355,9 +61375,9 @@
           "name": "./node_modules/core-js/fn/promise/finally.js"
         },
         {
-          "id": 311,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es7.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es7.promise.finally.js"
+          "id": 120,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.promise.js",
+          "name": "./node_modules/core-js/modules/es6.promise.js"
         }
       ],
       "failed": false,
@@ -63342,9 +63362,9 @@
       "chunks": [
         0
       ],
-      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\generatePath.js",
-      "issuerId": 336,
-      "issuerName": "./node_modules/react-router/es/generatePath.js",
+      "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\matchPath.js",
+      "issuerId": null,
+      "issuerName": "./node_modules/react-router/es/matchPath.js",
       "issuerPath": [
         {
           "id": 150,
@@ -63362,14 +63382,14 @@
           "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": 330,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\generatePath.js",
-          "name": "./node_modules/react-router-dom/es/generatePath.js"
+          "id": 331,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\matchPath.js",
+          "name": "./node_modules/react-router-dom/es/matchPath.js"
         },
         {
-          "id": 336,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\generatePath.js",
-          "name": "./node_modules/react-router/es/generatePath.js"
+          "id": null,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\matchPath.js",
+          "name": "./node_modules/react-router/es/matchPath.js"
         }
       ],
       "failed": false,
@@ -68953,9 +68973,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 257,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-          "name": "./node_modules/core-js/modules/es6.array.find-index.js"
+          "id": 269,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+          "name": "./node_modules/core-js/modules/es6.weak-map.js"
         },
         {
           "id": 24,
@@ -69020,9 +69040,9 @@
           "name": "./node_modules/core-js/es6/index.js"
         },
         {
-          "id": 257,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.array.find-index.js",
-          "name": "./node_modules/core-js/modules/es6.array.find-index.js"
+          "id": 269,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\core-js\\modules\\es6.weak-map.js",
+          "name": "./node_modules/core-js/modules/es6.weak-map.js"
         },
         {
           "id": 24,
@@ -73362,14 +73382,14 @@
           "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": 330,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\generatePath.js",
-          "name": "./node_modules/react-router-dom/es/generatePath.js"
+          "id": 331,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router-dom\\es\\matchPath.js",
+          "name": "./node_modules/react-router-dom/es/matchPath.js"
         },
         {
-          "id": 336,
-          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\generatePath.js",
-          "name": "./node_modules/react-router/es/generatePath.js"
+          "id": null,
+          "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-router\\es\\matchPath.js",
+          "name": "./node_modules/react-router/es/matchPath.js"
         },
         {
           "id": 147,
@@ -78304,18 +78324,18 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
-              "module": "./node_modules/history/es/createMemoryHistory.js",
-              "moduleName": "./node_modules/history/es/createMemoryHistory.js",
+              "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
+              "module": "./node_modules/history/es/createBrowserHistory.js",
+              "moduleName": "./node_modules/history/es/createBrowserHistory.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./LocationUtils",
               "loc": "7:0-49"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createBrowserHistory.js",
-              "module": "./node_modules/history/es/createBrowserHistory.js",
-              "moduleName": "./node_modules/history/es/createBrowserHistory.js",
+              "moduleIdentifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
+              "module": "./node_modules/history/es/createMemoryHistory.js",
+              "moduleName": "./node_modules/history/es/createMemoryHistory.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./LocationUtils",
               "loc": "7:0-49"
@@ -78778,9 +78798,9 @@
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapDispatchToProps.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapStateToProps.js",
           "issuerId": null,
-          "issuerName": "./node_modules/react-redux/es/connect/mapDispatchToProps.js",
+          "issuerName": "./node_modules/react-redux/es/connect/mapStateToProps.js",
           "issuerPath": [
             {
               "id": 150,
@@ -78804,8 +78824,8 @@
             },
             {
               "id": null,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapDispatchToProps.js",
-              "name": "./node_modules/react-redux/es/connect/mapDispatchToProps.js"
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\react-redux\\es\\connect\\mapStateToProps.js",
+              "name": "./node_modules/react-redux/es/connect/mapStateToProps.js"
             }
           ],
           "failed": false,
@@ -79683,9 +79703,9 @@
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
+          "issuer": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createHashHistory.js",
           "issuerId": null,
-          "issuerName": "./node_modules/history/es/createMemoryHistory.js",
+          "issuerName": "./node_modules/history/es/createHashHistory.js",
           "issuerPath": [
             {
               "id": 150,
@@ -79714,8 +79734,8 @@
             },
             {
               "id": null,
-              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createMemoryHistory.js",
-              "name": "./node_modules/history/es/createMemoryHistory.js"
+              "identifier": "C:\\Users\\Andy\\Development\\WIP\\uws-journal\\node_modules\\history\\es\\createHashHistory.js",
+              "name": "./node_modules/history/es/createHashHistory.js"
             }
           ],
           "failed": false,
@@ -82318,7 +82338,7 @@
       "name": "css ./node_modules/css-loader??ref--5-1!./src/client/components/App/style.css",
       "index": 407,
       "index2": 403,
-      "size": 247,
+      "size": 249,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -84696,14 +84716,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 3337,
+          "size": 3341,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "a390a6b2c50031cf48c5",
+          "hash": "cbf5ebd5b71a490a6fbd",
           "siblings": [
           ],
           "parents": [
@@ -84719,7 +84739,7 @@
               "name": "./node_modules/css-loader??ref--5-1!./src/client/components/App/style.css",
               "index": 0,
               "index2": 1,
-              "size": 1077,
+              "size": 1081,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -84823,7 +84843,7 @@
           "name": "./node_modules/css-loader??ref--5-1!./src/client/components/App/style.css",
           "index": 0,
           "index2": 1,
-          "size": 1077,
+          "size": 1081,
           "cacheable": true,
           "built": true,
           "optional": false,
