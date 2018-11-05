@@ -8,7 +8,7 @@ import style from './style.css';
  * @function Header
  * @return {jsx} Component
  */
-const Header = () => {
+const Footer = () => {
   return (
     <div className={style.footer}>
       &copy; Andy Willis 2018
@@ -16,4 +16,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;

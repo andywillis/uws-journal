@@ -20,6 +20,13 @@ export const setFetchSuccess = (data) => {
   };
 };
 
+export const setJournalDisplayed = (bool) => {
+  return {
+    type: 'SET_JOURNAL_DISPLAYED',
+    isDisplayed: bool
+  };
+};
+
 export const fetchData = (endpoint) => {
   return async (dispatch) => {
     dispatch(setFetchLoader(true));
@@ -28,8 +35,10 @@ export const fetchData = (endpoint) => {
       dispatch(setFetchLoader(false));
       const data = await response.json();
       dispatch(setFetchSuccess(data));
+      // callback();
     } catch (e) {
       dispatch(setFetchError(true));
+      dispatch(setFetchLoader(false));
     }
   };
 };
