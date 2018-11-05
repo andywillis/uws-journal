@@ -14,7 +14,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  optimization: {
+	resolve: {
+	    alias: {
+	      react: 'preact-compat',
+	      'react-dom': 'preact-compat'
+	    }
+	  },
+    optimization: {
     minimizer: [new UglifyJsPlugin()]
   },
   module: {
