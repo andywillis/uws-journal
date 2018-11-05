@@ -21,7 +21,10 @@ module.exports = {
 	    }
 	  },
     optimization: {
-    minimizer: [new UglifyJsPlugin()]
+    minimizer: [new UglifyJsPlugin({
+    	parallel: true,
+    	cache: true
+    })]
   },
   module: {
     rules: [
