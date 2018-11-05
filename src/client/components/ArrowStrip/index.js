@@ -39,7 +39,7 @@ const ArrowStrip = (props) => {
         );
       })}
       <Link key="home" to={{ pathname: '/' }}>
-        <Arrow type={'Home'} />
+        <Arrow type="Home" />
       </Link>
     </div>
   );

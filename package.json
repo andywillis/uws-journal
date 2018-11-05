@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "builddev": "webpack-dev-server --devtool inline-source-map --hot",
+    "builddev": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "serverdev": "nodemon src/server/index.js",
-    "buildclient": "webpack",
+    "buildclient": "webpack --mode production",
     "serverprod": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run builddev\" \"npm run serverdev\"",
     "prod": "npm run buildclient && npm run serverprod",

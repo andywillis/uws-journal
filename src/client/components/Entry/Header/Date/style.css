@@ -1,0 +1,12 @@
+.date {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .date {
+    font-size: 2em;
+  }
+}

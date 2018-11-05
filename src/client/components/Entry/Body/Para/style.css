@@ -1,0 +1,30 @@
+.para {
+  font-size: 1.4em;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+}
+
+.para a,
+.para a:link,
+.para a:visited,
+.para a:active {
+  text-decoration: none;
+  color: #c60000;
+}
+
+.para a:hover {
+  cursor: pointer;
+  background-color: #CFE6FD;
+}
+
+.para:first-child + .blockquote {
+  margin-top: 2.6em;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .para {
+    font-size: 1.7em;
+  }
+}

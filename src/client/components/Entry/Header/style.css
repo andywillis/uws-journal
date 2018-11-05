@@ -1,0 +1,10 @@
+.entryHeader {
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.entryHeader .inline {
+  display: flex;
+  flex-direction: row;
+}
