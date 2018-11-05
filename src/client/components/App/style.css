@@ -9,7 +9,9 @@
 }
 
 .visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s linear;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
 }
