@@ -3,8 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-module.exports = {
+module.exports = (env, argv) => ({
   entry: [
     '@babel/polyfill',
     './src/client/index.js',
@@ -12,19 +14,22 @@ module.exports = {
   output: {
     publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: argv.mode === 'development' ? 'bundle.js' : 'bundle.[hash].js',
   },
-	resolve: {
-	    alias: {
-	      react: 'preact-compat',
-	      'react-dom': 'preact-compat'
-	    }
-	  },
-    optimization: {
-    minimizer: [new UglifyJsPlugin({
-    	parallel: true,
-    	cache: true
-    })]
+  resolve: {
+    alias: {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat'
+    }
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        parallel: true,
+        cache: false
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
   },
   module: {
     rules: [
@@ -39,7 +44,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: argv.mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader
           },
           {
             loader: 'css-loader',
@@ -71,6 +76,10 @@ module.exports = {
       template: './public/index.html',
       favicon: './public/favicon.ico'
     }),
+    new MiniCssExtractPlugin({
+      filename: argv.mode === 'development' ? '[name].css' : '[name].[hash].css',
+      chunkFilename: argv.mode === 'development' ? '[id].css' : '[id].[hash].css',
+    }),
     new BundleAnalyzerPlugin({
       analyzerMode: 'disabled',
       generateStatsFile: true,
@@ -78,4 +87,4 @@ module.exports = {
     })
   ]
 
-};
+});

@@ -13,11 +13,11 @@ import EntryBody from '../EntryBody';
  */
 const NotFound = () => {
   return (
-    <div className="NotFound">
+    <div>
       <Title txt="404" />
       <SubTitle txt="Page not found" />
       <Link to="/">
-        <EntryBody parts={['Go back to the main page']} />
+        <EntryBody body={[{ id: 0, type: 'para', html: 'Return to home page' }]} />
       </Link>
     </div>
   );

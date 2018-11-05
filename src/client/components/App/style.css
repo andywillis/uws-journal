@@ -4,4 +4,12 @@
   margin-right: 5%;
   margin-left: 5%;
   min-height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
