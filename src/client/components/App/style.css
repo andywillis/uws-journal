@@ -4,14 +4,15 @@
   margin-right: 5%;
   margin-left: 5%;
   min-height: 100vh;
-  visibility: hidden;
   opacity: 0;
 }
 
 .visible {
-  animation: fadeIn 0.5s;
+  opacity: 1;
+  animation: fadeIn 0.5s linear;
 }
 
 @keyframes fadeIn { 
-  from { opacity: 0; } 
+  0% { opacity: 0; } 
+  100% { opacity: 1 }
 }
