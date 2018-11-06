@@ -1,6 +1,8 @@
 // Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import classNames from 'classnames';
 
 // React
 import Byline from '../Byline';
@@ -68,14 +70,23 @@ const buildJournal = (props) => {
  * @return {jsx} Component
  */
 const Journal = (props) => {
+  const { isDisplayed } = props;
+  const journalClasses = classNames(style.journal, isDisplayed && style.visible);
   return (
-    <div className={style.journal}>
+    <div className={journalClasses}>
       {buildJournal(props)}
     </div>
   );
 };
 
-export default Journal;
+const mapStateToProps = ({ journal }, props) => {
+  return {
+    ...props,
+    isDisplayed: journal.isDisplayed
+  };
+};
+
+export default connect(mapStateToProps)(Journal);
 
 // Function proptypes
 createByline.propTypes = {

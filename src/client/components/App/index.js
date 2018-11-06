@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import classNames from 'classnames';
 
 // React
 import Header from '../Header';
@@ -46,11 +45,8 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props)
-    const { isDisplayed } = this.props;
-    const appClasses = classNames(style.app, isDisplayed && style.visible);
     return (
-      <div className={appClasses} ref={node => (this.node = node)}>
+      <div className={style.app} ref={node => (this.node = node)}>
         <Header />
         {App.getRoutes(this.props)}
         <Footer />
@@ -63,7 +59,6 @@ class App extends Component {
 const mapStateToProps = ({ journal }) => {
   return {
     entries: journal.entries,
-    isDisplayed: journal.isDisplayed,
     isLoading: journal.isLoading
   };
 };

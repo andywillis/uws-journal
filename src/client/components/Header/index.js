@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 
 // React
 import Icon from '../Icon';
@@ -14,8 +15,9 @@ import style from './style.css';
  * @return {jsx} Component
  */
 const Header = () => {
+  const headerClasses = classNames(style.header, style.visible);
   return (
-    <div className={style.header}>
+    <div className={headerClasses}>
       <Link to={{ pathname: '/' }}>
         <Icon type="avatar" />
       </Link>
