@@ -6,5 +6,16 @@
   font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  opacity: 0;
   border-top: 1px solid black;
+}
+
+.visible {
+  opacity: 1;
+  animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn { 
+  0% { opacity: 0; } 
+  100% { opacity: 1 }
 }
