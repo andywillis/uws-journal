@@ -6,4 +6,16 @@
   padding-bottom: 2em;
   margin-bottom: 1em;
   border-bottom: 1px solid black;
+  opacity: 0;
+  animation: fadeIn 0.3s linear;
+}
+
+.visible {
+  opacity: 1;
+  animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn { 
+  0% { opacity: 0; } 
+  100% { opacity: 1 }
 }
