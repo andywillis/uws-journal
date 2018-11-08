@@ -39,9 +39,7 @@ class ProgressiveImage extends Component {
     const [ , txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/);
     const aspectRatio = w / h;
     const height = 971 / aspectRatio;
-    const imageClasses = isLoaded && fadeIn
-      ? classNames(style.imageFadeIn, isLoaded && style.loaded)
-      : classNames(style.image);
+    const imageClasses = classNames(style.imageFadeIn, isLoaded && style.loaded);
 
     return (
       <div className={style.imageContainer}>
