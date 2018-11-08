@@ -16,12 +16,6 @@ module.exports = (env, argv) => ({
     path: path.resolve(__dirname, 'dist'),
     filename: argv.mode === 'development' ? 'bundle.js' : 'bundle.[hash].js',
   },
-  resolve: {
-    alias: {
-      react: 'preact-compat',
-      'react-dom': 'preact-compat'
-    }
-  },
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
