@@ -38,13 +38,14 @@ class ProgressiveImage extends Component {
     const [ , txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/);
     const { x } = getDimensions();
     const aspectRatio = w / h;
-    const height = 971 / aspectRatio;
+    const width = x <= 380 ? 380 : 971;
+    const height = width / aspectRatio;
     const imageClasses = classNames(style.imageFadeIn, isLoaded && style.loaded);
 
     return (
       <div className={style.imageContainer}>
         <img
-          width={x < 380 ? 380 : 971}
+          width={width}
           height={height}
           className={style.placeholder}
           src={this.getImageSrc(x, 'placeholder')}
