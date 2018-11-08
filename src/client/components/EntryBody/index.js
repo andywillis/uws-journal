@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Subtitle from '../Subtitle';
 import Para from '../Para';
 import Blockquote from '../Blockquote';
-import Image from '../Image';
+import Image from '../ProgressiveImage';
 import Table from '../Table';
 
 /**
