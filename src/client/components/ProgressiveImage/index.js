@@ -18,11 +18,10 @@ class ProgressiveImage extends Component {
     this.handleLoaded = this.handleLoaded.bind(this);
   }
 
-  getImageSrc(type) {
+  getImageSrc(x, type) {
     const { src } = this.props;
     const [ root, ext ] = src.split(/(\.jpg)/);
     if (type === 'placeholder') return `${root}_m${ext}`;
-    const { x } = getDimensions();
     if (x > 1000) return `${root}_c.jpg`;
     if (x < 380) return `${root}_n.jpg`;
     return `${src}.jpg`;
@@ -37,6 +36,7 @@ class ProgressiveImage extends Component {
     const { alt } = this.props;
     const { isLoaded, fadeIn } = this.state;
     const [ , txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/);
+    const { x } = getDimensions();
     const aspectRatio = w / h;
     const height = 971 / aspectRatio;
     const imageClasses = classNames(style.imageFadeIn, isLoaded && style.loaded);
@@ -44,15 +44,15 @@ class ProgressiveImage extends Component {
     return (
       <div className={style.imageContainer}>
         <img
-          width="971"
+          width={x < 380 ? 380 : 971}
           height={height}
           className={style.placeholder}
-          src={this.getImageSrc('placeholder')}
+          src={this.getImageSrc(x, 'placeholder')}
           alt={txt}
         />
         <img
           className={imageClasses}
-          src={this.getImageSrc()}
+          src={this.getImageSrc(x)}
           alt={txt}
           onLoad={this.handleLoaded}
         />
