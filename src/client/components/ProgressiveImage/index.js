@@ -28,7 +28,8 @@ class ProgressiveImage extends Component {
   }
 
   handleLoaded() {
-    this.setState({ isLoaded: true, fadeIn: false });
+    const { isLoaded } = this.state;
+    if (!isLoaded) this.setState({ isLoaded: true, fadeIn: false });
   }
 
   render() {
@@ -36,7 +37,6 @@ class ProgressiveImage extends Component {
     const { isLoaded, fadeIn } = this.state;
     const [ , txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/);
     const { x } = getDimensions();
-    console.log(x)
     const aspectRatio = w / h;
     const width = (x /100) * 71.8;
     const height = width / aspectRatio;
