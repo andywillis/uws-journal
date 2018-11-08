@@ -28,8 +28,7 @@ class ProgressiveImage extends Component {
   }
 
   handleLoaded() {
-    const { isLoaded } = this.state;
-    this.setState({ isLoaded: !isLoaded, fadeIn: false });
+    this.setState({ isLoaded: true, fadeIn: false });
   }
 
   render() {
@@ -41,7 +40,7 @@ class ProgressiveImage extends Component {
     const aspectRatio = w / h;
     const width = (x /100) * 71.8;
     const height = width / aspectRatio;
-    const imageClasses = classNames(fadeIn ? style.imageFadeIn : style.image, (isLoaded && !fadeIn) && style.loaded);
+    const imageClasses = classNames(fadeIn ? style.imageFadeIn : style.image, (isLoaded && fadeIn) && style.loaded);
 
     return (
       <div className={style.imageContainer}>
