@@ -37,8 +37,9 @@ class ProgressiveImage extends Component {
     const { isLoaded, fadeIn } = this.state;
     const [ , txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/);
     const { x } = getDimensions();
+    console.log(x)
     const aspectRatio = w / h;
-    const width = x <= 380 ? 380 : 971;
+    const width = (x /100) * 70;
     const height = width / aspectRatio;
     const imageClasses = classNames(style.imageFadeIn, isLoaded && style.loaded);
 
