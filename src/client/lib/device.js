@@ -1,14 +1,14 @@
 export function isMobile() {
   const ua = navigator.userAgent;
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)) {
     return true;
   }
   return false;
 }
 
-export function getDimensions() {
+export function getDeviceDimensions() {
   return {
-    x: document.documentElement.clientWidth,
-    y: document.documentElement.clientHeight
-  }
+    deviceWidth: document.documentElement.clientWidth,
+    deviceHeight: document.documentElement.clientHeight
+  };
 }

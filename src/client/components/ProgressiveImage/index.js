@@ -3,43 +3,50 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import { getDimensions } from '../../lib/device';
+import { getDeviceDimensions } from '../../lib/device';
 
 // Style
 import style from './style.css';
 
+const { deviceWidth } = getDeviceDimensions();
 
 class ProgressiveImage extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { isLoaded: false, fadeIn: true };
+    this.state = { hasLoaded: false };
     this.getImageSrc = this.getImageSrc.bind(this);
     this.handleLoaded = this.handleLoaded.bind(this);
   }
 
-  getImageSrc(x, type) {
+  getImageSrc(deviceWidth) {
     const { src } = this.props;
     const [ root, ext ] = src.split(/(\.jpg)/);
-    if (type === 'placeholder') return `${root}_m${ext}`;
-    if (x > 1000) return `${root}_c.jpg`;
-    if (x < 380) return `${root}_n.jpg`;
+    if (deviceWidth > 1000) return `${root}_c${ext}`;
+    if (deviceWidth < 380) return `${root}_n${ext}`;
     return `${src}`;
   }
 
+  static getImageDimensions(w, h) {
+    const aspectRatio = w / h;
+    const width = (deviceWidth / 100) * 71.2;
+    const height = width / aspectRatio;
+    return [ width, height ];
+  }
+
   handleLoaded() {
-    this.setState({ isLoaded: true, fadeIn: false });
+    const { hasLoaded } = this.state;
+    if (!hasLoaded) {
+      this.setState({ hasLoaded: true });
+    }
   }
 
   render() {
     const { alt } = this.props;
-    const { isLoaded, fadeIn } = this.state;
-    const [ , txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/);
-    const { x } = getDimensions();
-    const aspectRatio = w / h;
-    const width = (x /100) * 71.8;
-    const height = width / aspectRatio;
-    const imageClasses = classNames(fadeIn ? style.imageFadeIn : style.image, (isLoaded && fadeIn) && style.loaded);
+    const { hasLoaded } = this.state;
+    const [ txt, w, h ] = alt.match(/(.+) (\d+)x(\d+)/).slice(1);
+    const [ width, height ] = ProgressiveImage.getImageDimensions(w, h);
+    const imageClasses = classNames(style.imageFadeIn, hasLoaded && style.loaded);
 
     return (
       <div className={style.imageContainer}>
@@ -47,14 +54,13 @@ class ProgressiveImage extends Component {
           width={width}
           height={height}
           className={style.placeholder}
-          src={this.getImageSrc(x, 'placeholder')}
           alt={txt}
         />
         <img
           className={imageClasses}
-          src={this.getImageSrc(x)}
+          src={this.getImageSrc(deviceWidth)}
           alt={txt}
-          onLoad={!isLoaded && this.handleLoaded}
+          onLoad={this.handleLoaded}
         />
       </div>
     );
