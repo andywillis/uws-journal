@@ -24,7 +24,7 @@ class ProgressiveImage extends Component {
     if (type === 'placeholder') return `${root}_m${ext}`;
     if (x > 1000) return `${root}_c.jpg`;
     if (x < 380) return `${root}_n.jpg`;
-    return `${src}.jpg`;
+    return `${src}`;
   }
 
   handleLoaded() {
