@@ -20,13 +20,19 @@ const EntryBody = ({ body }) => {
       {body.map((part) => {
         switch (part.type) {
           case 'image':
-            return <Image key={part.id} src={part.src} alt={part.alt} />;
+            return (
+              <Image
+                key={part.id}
+                src={part.src}
+                alt={part.alt}
+              />
+            );
           case 'blockquote':
             return <Blockquote key={part.id} html={part.html} />;
           case 'h2':
             return <Subtitle key={part.id} txt={part.txt} />;
           case 'table':
-            return <Table key={part.id} html={part.html} />
+            return <Table key={part.id} html={part.html} />;
           default:
             return <Para key={part.id} html={part.html} />;
         }
