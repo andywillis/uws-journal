@@ -14,7 +14,7 @@
   position: relative;
   border: 1px solid #ababab;
   width: 100%;
-  filter: blur(5px);
+  background-color: #efefef;
 }
 
 .imageFadeIn {
@@ -22,7 +22,7 @@
   opacity: 0;
   width: 100%;
   border: 2px solid #ababab;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.2s linear;
 }
 
 .image {
