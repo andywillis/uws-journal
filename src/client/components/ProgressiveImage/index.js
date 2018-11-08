@@ -28,8 +28,7 @@ class ProgressiveImage extends Component {
   }
 
   handleLoaded() {
-    const { isLoaded } = this.state;
-    if (!isLoaded) this.setState({ isLoaded: true, fadeIn: false });
+    this.setState({ isLoaded: true, fadeIn: false });
   }
 
   render() {
@@ -55,7 +54,7 @@ class ProgressiveImage extends Component {
           className={imageClasses}
           src={this.getImageSrc(x)}
           alt={txt}
-          onLoad={this.handleLoaded}
+          onLoad={!isLoaded && this.handleLoaded}
         />
       </div>
     );
