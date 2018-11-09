@@ -10,6 +10,7 @@ module.exports = function babelConfig(api) {
     plugins: [
       '@babel/plugin-proposal-object-rest-spread',
       '@babel/plugin-transform-regenerator',
+      '@babel/plugin-proposal-class-properties'
     ],
     env: {
       test: {
