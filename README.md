@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/andywillis/uws-journal.svg?branch=dev)](https://travis-ci.org/andywillis/uws-journal)
+	
+# Journal
 
-# uws-journal
-
-# to do
+## To do?
 
 * home icon for filtered entries?
 * favourites filter
