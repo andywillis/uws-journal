@@ -3,22 +3,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // React
-import Title from '../Title';
+import Heading from '../Common/Heading';
 import Date from '../Date';
 import Favourite from '../Favourite';
 
 // Style
 import style from './style.css';
 
-const EntryHeader = (props) => {
+const Header = (props) => {
 
-  const {
-    link, type, title, date, id
-  } = props;
+  const { link, type, title } = props;
+  const { date, id } = props;
 
   return (
-    <div className={style.entryHeader}>
-      <Title link={link} type={type}>{title}</Title>
+    <div className={style.header}>
+      <Heading
+        link={type === 'page' && link}
+        level="h2"
+        type={type}
+      >{title}
+      </Heading>
       <div className={style.inline}>
         <Date date={date} />
         <Favourite id={id} status="inactive" />
@@ -27,9 +31,9 @@ const EntryHeader = (props) => {
   );
 };
 
-export default EntryHeader;
+export default Header;
 
-EntryHeader.propTypes = {
+Header.propTypes = {
   link: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
