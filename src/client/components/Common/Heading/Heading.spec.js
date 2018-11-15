@@ -3,13 +3,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // React
-import Date from './index';
+import Heading from './index';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
     <div>
-      <Date date="020206" />
+      <Heading
+        level="h2"
+        type="entry"
+        text="Test heading"
+      />
     </div>,
     div
   );
