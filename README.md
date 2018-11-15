@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andywillis/uws-journal.svg?branch=dev)](https://travis-ci.org/andywillis/uws-journal)
+
 # uws-journal
 
 # to do
