@@ -12,11 +12,11 @@ import EntryList from '../EntryList';
 // Style
 import style from './style.css';
 
-const createByline = ({ type, value }) => {
+const createByline = ({ viewType, value }) => {
   return (
     <Byline
-      type={type !== 'page' ? type : 'date'}
-      value={type !== 'page' ? value : ''}
+      viewType={viewType !== 'page' ? viewType : 'date'}
+      value={viewType !== 'page' ? value : ''}
     />
   );
 };
@@ -44,7 +44,7 @@ const buildJournal = (props) => {
     pageNumber
   } = props;
 
-  const isEntry = filter.type === 'entry';
+  const isEntry = filter.viewType === 'entry';
 
   return (
     <div>
@@ -90,7 +90,7 @@ export default connect(mapStateToProps)(Journal);
 
 // Function proptypes
 createByline.propTypes = {
-  type: PropTypes.string.isRequired,
+  viewType: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired
 };
 

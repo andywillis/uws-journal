@@ -21,36 +21,38 @@ class Favourite extends Component {
   constructor(props) {
     super(props);
     this.state = { status: props.status };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleFavourite = this.handleFavourite.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
     this.setState({ status: newProps.status });
   }
 
-  handleClick() {
+  handleFavourite() {
 
-    const status = this.state.status === 'active'
-      ? 'inactive'
-      : 'active';
+    const { addFavourite, removeFavourite, id } = this.props;
+    const { status } = this.state;
 
-    if (status === 'active') {
-      this.props.addFavourite(this.props.id);
+    if (status !== 'active') {
+      addFavourite(id);
     } else {
-      this.props.removeFavourite(this.props.id);
+      removeFavourite(id);
     }
 
   }
 
   render() {
+    const { status } = this.state;
     return (
       <div className={style.favourite}>
         <span
           tabIndex="0"
           role="button"
-          className={style[this.state.status]}
-          onClick={this.handleClick}
-        >&#x2605;</span>
+          className={style[status]}
+          onClick={this.handleFavourite}
+          onKeyUp={this.handleFavourite}
+        >&#x2605;
+        </span>
       </div>
     );
   }
@@ -81,7 +83,6 @@ export default connect(
 
 Favourite.propTypes = {
   status: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
   addFavourite: PropTypes.func.isRequired,
   removeFavourite: PropTypes.func.isRequired
 };

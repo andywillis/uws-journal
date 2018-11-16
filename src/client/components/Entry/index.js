@@ -18,18 +18,12 @@ import style from './style.css';
 const Entry = (props) => {
 
   const {
-    id, title, link, date, type, body, tags
+    id, body, tags, ...headerProps
   } = props;
 
   return (
     <div className={style.entry} id={id}>
-      <EntryHeader
-        id={id}
-        title={title}
-        link={link}
-        type={type}
-        date={date}
-      />
+      <EntryHeader props={headerProps} />
       <EntryBody body={body} />
       <EntryFooter tags={tags} />
     </div>
@@ -42,10 +36,6 @@ export default Entry;
 // Function proptypes
 Entry.propTypes = {
   id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
   body: PropTypes.arrayOf(PropTypes.object).isRequired,
   tags: PropTypes.arrayOf(PropTypes.object).isRequired,
-  link: PropTypes.string.isRequired
 };

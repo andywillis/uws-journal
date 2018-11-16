@@ -46,8 +46,6 @@ const Heading = (props) => {
 export default Heading;
 
 Heading.propTypes = {
-  color: PropTypes.string,
-  link: PropTypes.string,
   level: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired
 };

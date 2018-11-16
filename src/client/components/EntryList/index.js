@@ -29,7 +29,7 @@ class EntryList extends Component {
         key={entry.id}
         id={entry.id}
         link={entry.link}
-        type={filter.type}
+        viewType={filter.viewType}
         title={entry.title}
         date={entry.date}
         body={entry.body}
@@ -50,8 +50,12 @@ class EntryList extends Component {
   }
 
   buildEntryList() {
-    const { entries, links, filter, totalEntries } = this.props;
-    if (filter.type === 'entry') {
+
+    const {
+      entries, links, filter, totalEntries
+    } = this.props;
+
+    if (filter.viewType === 'entry') {
       return EntryList.buildContainer(entries[0], links, totalEntries, filter);
     }
     return (

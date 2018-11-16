@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo|Maitree');
 
 * {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   border: 0;

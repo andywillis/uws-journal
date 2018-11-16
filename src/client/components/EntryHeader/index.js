@@ -4,39 +4,39 @@ import PropTypes from 'prop-types';
 
 // React
 import Heading from '../Common/Heading';
-import Date from '../Date';
 import Favourite from '../Favourite';
 
 // Style
 import style from './style.css';
 
-const Header = (props) => {
+const EntryHeader = ({ props }) => {
 
-  const { link, type, title } = props;
+  const { link, viewType, title } = props;
   const { date, id } = props;
 
   return (
+
     <div className={style.header}>
+
       <Heading
-        link={type === 'page' && link}
+        link={[ 'page', 'tag' ].includes(viewType) && link}
         level="h2"
-        type={type}
+        type="Entry heading"
+        viewType={viewType}
       >{title}
       </Heading>
+
       <div className={style.inline}>
-        <Date date={date} />
+        <Heading level="h3" color="black" type="date">{date}</Heading>
         <Favourite id={id} status="inactive" />
       </div>
+
     </div>
   );
 };
 
-export default Header;
+export default EntryHeader;
 
-Header.propTypes = {
-  link: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired
+EntryHeader.propTypes = {
+  props: PropTypes.objectOf(PropTypes.string).isRequired
 };

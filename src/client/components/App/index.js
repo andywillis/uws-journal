@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/" component={JournalContainer} />
-        <Route exact path="/:type/:value" component={JournalContainer} />
+        <Route exact path="/:viewType/:value" component={JournalContainer} />
         <Route path="*" component={NotFound} />
       </Switch>
     );
