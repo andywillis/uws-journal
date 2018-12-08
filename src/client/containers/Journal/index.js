@@ -13,7 +13,7 @@ import Journal from '../../components/Journal';
  * @return {array} Entries
  */
 function filterData(entries, filter, pageLimit, pageNumber) {
-  switch (filter.type) {
+  switch (filter.viewType) {
     case 'entry':
       return entries.filter((entry) => {
         return entry.link === filter.value;
@@ -36,13 +36,13 @@ function filterData(entries, filter, pageLimit, pageNumber) {
 const mapStateToProps = (state, ownProps) => {
 
   const { entries, pageLimit, links } = state.journal;
-  const { type, value } = ownProps.match.params;
+  const { viewType, value } = ownProps.match.params;
 
-  const pageNumber = type === 'page' ? Number(value) : 1;
-  const filter = { type: type || 'page', value: value || 'date' };
+  const pageNumber = viewType === 'page' ? Number(value) : 1;
+  const filter = { viewType: viewType || 'page', value: value || 'date' };
   const filteredEntries = filterData(entries, filter, pageLimit, pageNumber);
   const totalEntries = entries.length;
-  const totalFilteredEntries = filter.type === 'tag' ? filteredEntries.length : totalEntries;
+  const totalFilteredEntries = filter.viewType === 'tag' ? filteredEntries.length : totalEntries;
 
   return {
     entries: filteredEntries,

@@ -7,13 +7,14 @@ import Icon from '../Icon';
 // Style
 import style from './style.css';
 
-function processAnchor(e) {
-  const type = e.target.getAttribute('type');
+function processAnchor(type) {
   switch (type) {
     case 'mail': {
       const address = 'dev@awillis.fastmail.fm';
       const subject = 'Message from uws site';
-      window.location.href = ['mailto:', address, '?', 'subject=', subject].join('');
+      window.location.href = [
+        'mailto:', address, '?', 'subject=', subject
+      ].join('');
       break;
     }
     case 'flickr': {
@@ -30,16 +31,24 @@ function processAnchor(e) {
 }
 
 const locations = [
-  { id: 0, type: 'mail' },
-  { id: 1, type: 'flickr' }
+  { id: 0, type: 'mail', active: true },
+  { id: 1, type: 'flickr', active: true },
+  { id: 2, type: 'rss', active: false }
 ];
 
 const IconStrip = () => {
 
   return (
-    <div role="Group" className={style.iconStrip} onClick={processAnchor}>
-      {locations.map((location) => {
-        return <Icon key={location.id} type={location.type} />;
+    <div className={style.iconStrip}>
+      {locations.map(({ id, type, active }) => {
+        return (
+          <Icon
+            key={id}
+            type={type}
+            handleClick={() => processAnchor(type)}
+            active={active}
+          />
+        );
       })}
     </div>
   );

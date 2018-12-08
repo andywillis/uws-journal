@@ -1,0 +1,42 @@
+.heading {
+  font-family: Arvo;
+  font-weight: 400;
+}
+
+.heading[type="Entry Heading"]:hover {
+  background-color: #efefff;
+  cursor: pointer;
+}
+
+/* colors */
+
+.default {
+  color: #154380;
+};
+
+.black {
+  color: #111111;
+}
+
+/* headings */
+
+h2 {
+  margin-bottom: 0.3em;
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 600px;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 600px) {
+  h2 {
+    margin-bottom: 0.3em;
+    font-size: 2.6em;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+}

@@ -13,7 +13,21 @@ function buildItems(entries, host) {
   }).join('');
 }
 
-function writeRSS(xml, root) {
+function verifyFolderExists(path) {
+  return new Promise((resolve, reject) => {
+    fs.stat(path, (err) => {
+      if (err) {
+        fs.mkdir(path, (err) => {
+          if (err) reject(err);
+          resolve();
+        });
+      }
+    });
+  });
+}
+
+async function writeRSS(xml, root) {
+  await verifyFolderExists(`${root}/dist/`);
   const fileStream = fs.createWriteStream(`${root}/dist/uws.rss`, { flags: 'w', encoding: 'utf-8', mode: '0666' });
   fileStream.write(xml);
   fileStream.end();

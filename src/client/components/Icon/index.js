@@ -1,8 +1,6 @@
-// Dependencies
 import React from 'react';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
-// Style
 import style from './style.css';
 
 /**
@@ -10,29 +8,16 @@ import style from './style.css';
  * @param  {object} props Component properties
  * @return {jsx} Component
  */
-const Icon = ({ type, clicked }) => {
-  if (type === 'avatar') {
-    return (
-      <div
-        role="Img"
-        className={style.icon}
-        type={type}
-        onClick={clicked}
-      />
-    );
-  }
+const Icon = ({ type, handleClick, active }) => {
+  const className = classNames(style.icon, active && style.active);
   return (
-    <div
-      className={style.icon}
-      type={type}
+    <button
+      type="button"
+      className={className}
+      onClick={handleClick}
+      data-type={type}
     />
   );
 };
 
 export default Icon;
-
-// Function proptypes
-Icon.propTypes = {
-  type: PropTypes.string.isRequired,
-  clicked: PropTypes.func
-};

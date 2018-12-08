@@ -3,26 +3,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // React
-import Title from '../Title';
-import Date from '../Date';
+import Heading from '../Common/Heading';
 import Favourite from '../Favourite';
 
 // Style
 import style from './style.css';
 
-const EntryHeader = (props) => {
+const EntryHeader = ({ props }) => {
 
-  const {
-    link, type, title, date, id
-  } = props;
+  const { link, viewType, title } = props;
+  const { date, id } = props;
 
   return (
-    <div className={style.entryHeader}>
-      <Title link={link} type={type}>{title}</Title>
+
+    <div className={style.header}>
+
+      <Heading
+        link={[ 'page', 'tag' ].includes(viewType) && link}
+        level="h2"
+        type="Entry heading"
+        viewType={viewType}
+      >{title}
+      </Heading>
+
       <div className={style.inline}>
-        <Date date={date} />
+        <Heading level="h3" color="black" type="date">{date}</Heading>
         <Favourite id={id} status="inactive" />
       </div>
+
     </div>
   );
 };
@@ -30,9 +38,5 @@ const EntryHeader = (props) => {
 export default EntryHeader;
 
 EntryHeader.propTypes = {
-  link: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired
+  props: PropTypes.objectOf(PropTypes.string).isRequired
 };

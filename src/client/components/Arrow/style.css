@@ -30,13 +30,13 @@ and (min-width : 600px) {
 }
 
 .arrow[type="arrowleft"] {
-  background-image: url("../../assets/images/1495294636_arrow_left.svg");
+  background-image: url("../../assets/images/arrow_left.svg");
 }
 
 .arrow[type="arrowright"] {
-  background-image: url("../../assets/images/1495294629_arrow_right.svg");
+  background-image: url("../../assets/images/arrow_right.svg");
 }
 
 .arrow[type="home"] {
-  background-image: url("../../assets/images/1498580984_Home.svg");
+  background-image: url("../../assets/images/arrow-home.svg");
 }
