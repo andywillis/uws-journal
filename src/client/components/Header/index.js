@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className={headerClasses}>
       <Link to={{ pathname: '/' }}>
-        <Icon type="avatar" />
+        <Icon type="avatar" active />
       </Link>
       <IconStrip type="header" />
     </div>
