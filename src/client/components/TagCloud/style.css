@@ -3,13 +3,10 @@
 }
 
 .tagCloud {
+  overflow: hidden;
   visibility: hidden;
   height: 0px;
   transition: height 1s cubic-bezier(0, 1, 0.5, 1), visibility 1s linear;
-}
-
-ul {
-  padding-bottom: 3em;
 }
 
 .visible {

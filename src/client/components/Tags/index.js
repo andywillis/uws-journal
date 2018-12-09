@@ -24,7 +24,7 @@ class Tags extends Component {
     const { tags, cloud, tagList } = this.props;
     return (
       <div className={style.tags}>
-        <ul ref={node => (this.node = node)}>
+        <ul className={cloud && style.pad} ref={node => (this.node = node)}>
           {tags.map((tag) => {
             return (
               <Tag

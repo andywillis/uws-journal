@@ -36,17 +36,22 @@ class TagCloud extends Component {
 
   render() {
 
-    const { visible, tagList } = this.props;
+    const { visible, tagList, isDisplayed } = this.props;
 
     if (tagList) {
 
       const arr = getSortedWordArray(tagList);
-      const className = classNames(style.tagCloud, visible && style.visible);
+
+      const containerClass = classNames(
+        style.tagCloud,
+        visible && style.visible
+      );
 
       return (
         <React.Fragment>
-          <div className={className}>
+          <div className={containerClass}>
             <Tags
+              visible={isDisplayed}
               tags={arr}
               tagList={tagList}
               cloud
@@ -61,9 +66,9 @@ class TagCloud extends Component {
 }
 
 function mapStateToProps(state) {
-  const { tags, tagCloud } = state.journal;
+  const { tags, tagCloud, isDisplayed } = state.journal;
   const { visible, height } = tagCloud;
-  return { tagList: tags, visible, height };
+  return { tagList: tags, visible, height, isDisplayed };
 }
 
 function mapDispatchToProps(dispatch) {

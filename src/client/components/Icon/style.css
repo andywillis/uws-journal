@@ -12,7 +12,7 @@
 }
 
 .on {
-  border: 2px solid #565656;
+  border: 2px solid #565656;  
 }
 
 .icon.active:hover {
@@ -70,5 +70,5 @@ and (min-width : 600px) {
 }
 
 .icon[data-type="tagcloud"] {
-  background-image: url("../../assets/images/tagcloud6.svg");
+  background-image: url("../../assets/images/tagcloud.svg");
 }

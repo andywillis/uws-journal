@@ -8,6 +8,10 @@
   margin-top: 1em;
 }
 
+.pad {
+  padding-bottom: 3em;
+}
+
 .tags a,
 .tags a:link
 .tags a:visited,
