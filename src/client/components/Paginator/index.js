@@ -1,11 +1,8 @@
 // Dependencies
 import React from 'react';
-import PropTypes from 'prop-types';
 
-// React
 import PageNumber from '../PageNumber';
 
-// Style
 import style from './style.css';
 
 function getNumbers(props) {
@@ -40,10 +37,3 @@ const Paginator = (props) => {
 };
 
 export default Paginator;
-
-// Function proptypes
-Paginator.propTypes = {
-  totalEntries: PropTypes.number.isRequired,
-  pageLimit: PropTypes.number.isRequired,
-  pageNumber: PropTypes.number.isRequired
-};

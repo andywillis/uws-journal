@@ -1,11 +1,8 @@
-// Dependencies
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// React
 import Tag from '../Tag';
 
-// Style
 import style from './style.css';
 
 /**
@@ -13,16 +10,35 @@ import style from './style.css';
  * @param  {type} tags Components
  * @return {type} {description}
  */
-const Tags = ({ tags }) => {
-  return (
-    <div className={style.tags}>
-      <ul>
-        {tags.map((tag) => {
-          return <Tag key={tag.id} txt={tag.txt} />;
-        })}
-      </ul>
-    </div>
-  );
+class Tags extends Component {
+
+  componentDidMount() {
+    const { updateTagListHeight } = this.props;
+    if (updateTagListHeight) {
+      const { height } = window.getComputedStyle(this.node);
+      updateTagListHeight(height);
+    }
+  }
+
+  render() {
+    const { tags, cloud, tagList } = this.props;
+    return (
+      <div className={style.tags}>
+        <ul className={cloud && style.pad} ref={node => (this.node = node)}>
+          {tags.map((tag) => {
+            return (
+              <Tag
+                key={tag.id}
+                txt={tag.txt}
+                cloud={cloud}
+                count={cloud && tagList[tag.txt]}
+              />
+            );
+          })}
+        </ul>
+      </div>
+    );  
+  }
 };
 
 export default Tags;

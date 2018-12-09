@@ -1,11 +1,34 @@
 .tag {
   font-family: 'Arvo', serif;
   font-size: 1em;
-  display: inline-block;
-  margin: 0.3em 0.4em 0.3em 0.4em;
   background-color: #d6dce4;
-  padding: 0.3em 0.9em 0.3em 0.9em;
   border: 1px solid #bcbcbc;
+  margin: 1em 0em 0em 1em;
+}
+
+.pad {
+  padding: 0.3em 0.75em 0.3em 0.75em;
+}
+
+.tag, .text, .count {
+  display: inline-block;
+}
+
+.text {
+  color: #232323;
+}
+
+.text, .count {
+  display: inline-block;
+  padding: 0.3em 0.75em 0.3em 0.75em;
+}
+
+.text {
+}
+
+.count {
+  background-color: #9CB0C9;
+  color: #154769;
 }
 
 .tag:hover {

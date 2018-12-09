@@ -1,7 +1,6 @@
 // Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import classNames from 'classnames';
 
 // React
@@ -45,11 +44,12 @@ const buildJournal = (props) => {
   } = props;
 
   const isEntry = filter.viewType === 'entry';
+  const isTag = filter.viewType === 'tag';
 
   return (
     <div>
       <div className={style.bylineContainer}>
-        {!isEntry && createByline(filter)}
+        {isTag && createByline(filter)}
       </div>
       {!isEntry && getPaginator(totalEntries, pageNumber, pageLimit)}
       <EntryList
@@ -79,14 +79,7 @@ const Journal = (props) => {
   );
 };
 
-const mapStateToProps = ({ journal }, props) => {
-  return {
-    ...props,
-    isDisplayed: journal.isDisplayed
-  };
-};
-
-export default connect(mapStateToProps)(Journal);
+export default Journal;
 
 // Function proptypes
 createByline.propTypes = {

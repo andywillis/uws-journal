@@ -1,21 +1,29 @@
-// Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-// React
 import Header from '../Header';
 import JournalContainer from '../../containers/Journal';
 import Footer from '../Footer';
 import NotFound from '../NotFound';
+import TagCloud from '../TagCloud';
 import Spinner from '../Spinner';
 
-// Redux
-import { fetchData, setJournalDisplayed } from '../../redux/actions/journal';
+import {
+  fetchData,
+  setJournalDisplayed,
+  toggleTagCloudVisibility
+} from '../../redux/actions/journal';
 
-// Style
 import style from './style.css';
+
+const icons = [
+  { id: 3, type: 'tagcloud', active: true, sticky: true },
+  { id: 0, type: 'mail', active: true },
+  { id: 1, type: 'flickr', active: true },
+  { id: 4, type: 'rss', active: false }
+];
 
 /**
  * @function App
@@ -34,6 +42,11 @@ class App extends Component {
     );
   }
 
+  constructor(props) {
+    super(props);
+    this.handleIconClick = this.handleIconClick.bind(this);
+  }
+
   async componentDidMount() {
     const { fetchData, setJournalDisplayed } = this.props;
     await fetchData('/entries');
@@ -44,10 +57,48 @@ class App extends Component {
     this.node.scrollIntoView();
   }
 
+  handleIconClick(type) {
+
+    const { toggleTagCloudVisibility } = this.props;
+
+    switch (type) {
+      case 'mail': {
+        const address = 'dev@awillis.fastmail.fm';
+        const subject = 'Message from uws site';
+        window.location.href = [
+          'mailto:', address, '?', 'subject=', subject
+        ].join('');
+        break;
+      }
+
+      case 'flickr': {
+        window.open('https://www.flickr.com/photos/urbanwhaleshark/');
+        break;
+      }
+
+      case 'twitter': {
+        window.open('https://twitter.com/urbanwhaleshark');
+        break;
+      }
+
+      case 'tagcloud': {
+        toggleTagCloudVisibility();
+        break;
+      }
+
+      default:
+        break;
+    }
+  }
+
   render() {
+
+    const { tagCloudVisibility } = this.props;
+
     return (
       <div className={style.app} ref={node => (this.node = node)}>
-        <Header />
+        <Header icons={icons} handleIconClick={this.handleIconClick} />
+        <TagCloud visible={tagCloudVisibility} />
         {App.getRoutes(this.props)}
         <Footer />
       </div>
@@ -55,18 +106,19 @@ class App extends Component {
   }
 }
 
-// Connect
 const mapStateToProps = ({ journal }) => {
   return {
     entries: journal.entries,
-    isLoading: journal.isLoading
+    isLoading: journal.isLoading,
+    tagCloudVisibility: journal.tagCloud.visible
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchData: (url, callback) => dispatch(fetchData(url, callback)),
-    setJournalDisplayed: bool => dispatch(setJournalDisplayed(bool))
+    setJournalDisplayed: bool => dispatch(setJournalDisplayed(bool)),
+    toggleTagCloudVisibility: () => dispatch(toggleTagCloudVisibility())
   };
 };
 
