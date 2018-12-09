@@ -2,32 +2,32 @@ const jsdom = require('jsdom');
 const markdown = require('markdown-it')();
 
 const { JSDOM } = jsdom;
-const { document } = (new JSDOM(`<div>`)).window;
+const { document } = (new JSDOM('<div>')).window;
 const div = document.querySelector('div');
 
-const splitMarkdown = (md, sep) => {
+function splitMarkdown(md, sep) {
   return md.split(sep).reverse();
-};
+}
 
-const removeElement = (el) => {
+function removeElement(el) {
   el.parentNode.removeChild(el);
-};
+}
 
-const getTitle = (parent) => {
+function getTitle(parent) {
   const element = parent.querySelector('h1');
   const text = element.textContent;
   removeElement(element);
   return text;
-};
+}
 
-const getDate = (parent) => {
+function getDate(parent) {
   const element = parent.querySelector('h2');
   const text = element.textContent;
   removeElement(element);
   return text;
-};
+}
 
-const getTags = (parent) => {
+function getTags(parent) {
   const element = parent.querySelector('ul');
   const items = element.querySelectorAll('li');
   const tags = [...items].map((tag, i) => {
@@ -35,18 +35,18 @@ const getTags = (parent) => {
   });
   removeElement(element);
   return tags;
-};
+}
 
-const getLink = (id, title) => {
+function getLink(id, title) {
   return (
     `${title}-${id}`
       .replace(/[.,/#!$%^&*;:'{}=_`~()]/g, '')
       .replace(/\s/g, '-')
       .toLowerCase()
   );
-};
+}
 
-const getBody = (el) => {
+function getBody(el) {
 
   const selector = 'p, h2, h3, h4, blockquote, img, table';
 
@@ -60,7 +60,9 @@ const getBody = (el) => {
       }
 
       case 'IMG': {
-        p.push({ id: i, type: 'image', src: c.src, alt: c.alt });
+        p.push({
+          id: i, type: 'image', src: c.src, alt: c.alt
+        });
         break;
       }
 
@@ -91,9 +93,9 @@ const getBody = (el) => {
     }
     return p;
   }, []);
-};
+}
 
-const buildEntry = (md, id) => {
+function buildEntry(md, id) {
   const html = markdown.render(md);
   div.innerHTML = html;
 
@@ -116,20 +118,30 @@ const buildEntry = (md, id) => {
 
   return entry;
 
-};
+}
 
-const wrangleData = (data) => {
+function buildTagList(entries) {
+  return entries.reduce((acc, { tags }) => {
+    tags.forEach(({ txt }) => {
+      acc[txt] = (acc[txt] || 0) + 1;
+    });
+    return acc;
+  }, {});
+}
+
+function wrangleData(data) {
   return new Promise((resolve, reject) => {
     const sep = '\r\n\r\n----\r\n\r\n';
     const md = splitMarkdown(data, sep);
     const entries = md.map(buildEntry).reverse();
     const links = entries.map(entry => entry.link);
+    const tags = buildTagList(entries);
     try {
-      resolve({ entries, links });
+      resolve({ entries, links, tags });
     } catch (e) {
       reject(e);
     }
   });
-};
+}
 
 module.exports = wrangleData;

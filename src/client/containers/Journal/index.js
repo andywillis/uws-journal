@@ -35,7 +35,7 @@ function filterData(entries, filter, pageLimit, pageNumber) {
 
 const mapStateToProps = (state, ownProps) => {
 
-  const { entries, pageLimit, links } = state.journal;
+  const { entries, pageLimit, links, tags, isDisplayed } = state.journal;
   const { viewType, value } = ownProps.match.params;
 
   const pageNumber = viewType === 'page' ? Number(value) : 1;
@@ -48,8 +48,10 @@ const mapStateToProps = (state, ownProps) => {
     entries: filteredEntries,
     totalEntries: totalFilteredEntries,
     links,
+    tags,
     pageLimit,
     filter,
+    isDisplayed,
     pageNumber
   };
 };

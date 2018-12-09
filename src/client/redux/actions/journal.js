@@ -16,7 +16,8 @@ export const setFetchSuccess = (data) => {
   return {
     type: 'SET_FETCH_SUCCESS',
     entries: data.entries,
-    links: data.links
+    links: data.links,
+    tags: data.tags
   };
 };
 
@@ -24,6 +25,19 @@ export const setJournalDisplayed = (bool) => {
   return {
     type: 'SET_JOURNAL_DISPLAYED',
     isDisplayed: bool
+  };
+};
+
+export const toggleTagCloudVisibility = () => {
+  return {
+    type: 'TOGGLE_TAGCLOUD_VISIBILITY'
+  };
+};
+
+export const setTagCloudHeight = (height) => {
+  return {
+    type: 'SET_TAGCLOUD_HEIGHT',
+    height
   };
 };
 
