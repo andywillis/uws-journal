@@ -1,21 +1,14 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// React
 import EntryHeader from '../EntryHeader';
 import EntryBody from '../EntryBody';
 import EntryFooter from '../EntryFooter';
 
-// Style
 import style from './style.css';
 
-/**
- * @function Entry
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
-const Entry = (props) => {
+
+function Entry(props) {
 
   const {
     id, body, tags, ...headerProps
@@ -29,11 +22,11 @@ const Entry = (props) => {
     </div>
   );
 
-};
+}
+
 
 export default Entry;
 
-// Function proptypes
 Entry.propTypes = {
   id: PropTypes.number.isRequired,
   body: PropTypes.arrayOf(PropTypes.object).isRequired,

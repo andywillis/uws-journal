@@ -1,16 +1,10 @@
-// Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// React
 import Entry from '../Entry';
 import ArrowStrip from '../ArrowStrip';
 
-/**
- * @function EntryList
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
+
 class EntryList extends Component {
 
   static buildArrowStrip(entry, links, totalEntries) {
@@ -73,9 +67,9 @@ class EntryList extends Component {
   }
 }
 
+
 export default EntryList;
 
-// Function proptypes
 EntryList.propTypes = {
   entries: PropTypes.arrayOf(PropTypes.any).isRequired,
   links: PropTypes.arrayOf(PropTypes.string).isRequired,

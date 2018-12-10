@@ -11,7 +11,7 @@ const initialState = {
   }
 };
 
-const journal = (state = initialState, action) => {
+function journal(state = initialState, action) {
 
   switch (action.type) {
 
@@ -60,6 +60,6 @@ const journal = (state = initialState, action) => {
       return state;
   }
 
-};
+}
 
 export default journal;

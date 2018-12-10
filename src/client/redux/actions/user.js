@@ -1,20 +1,20 @@
-export const addFavourite = (id) => {
+export function addFavourite(id) {
   return {
     type: 'ADD_FAVOURITE',
     id
   };
-};
+}
 
-export const removeFavourite = (id) => {
+export function removeFavourite(id) {
   return {
     type: 'REMOVE_FAVOURITE',
     id
   };
-};
+}
 
-export const inflateUser = (user) => {
+export function inflateUser(user) {
   return {
     type: 'INFLATE_USER',
     user
   };
-};
+}

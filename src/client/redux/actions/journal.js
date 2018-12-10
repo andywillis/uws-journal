@@ -1,47 +1,47 @@
-export const setFetchError = (bool) => {
+export function setFetchError(bool) {
   return {
     type: 'SET_FETCH_ERROR',
     hasErrored: bool
   };
-};
+}
 
-export const setFetchLoader = (bool) => {
+export function setFetchLoader(bool) {
   return {
     type: 'SET_FETCH_LOADER',
     isLoading: bool
   };
-};
+}
 
-export const setFetchSuccess = (data) => {
+export function setFetchSuccess(data) {
   return {
     type: 'SET_FETCH_SUCCESS',
     entries: data.entries,
     links: data.links,
     tags: data.tags
   };
-};
+}
 
-export const setJournalDisplayed = (bool) => {
+export function setJournalDisplayed(bool) {
   return {
     type: 'SET_JOURNAL_DISPLAYED',
     isDisplayed: bool
   };
-};
+}
 
-export const toggleTagCloudVisibility = () => {
+export function toggleTagCloudVisibility() {
   return {
     type: 'TOGGLE_TAGCLOUD_VISIBILITY'
   };
-};
+}
 
-export const setTagCloudHeight = (height) => {
+export function setTagCloudHeight(height) {
   return {
     type: 'SET_TAGCLOUD_HEIGHT',
     height
   };
-};
+}
 
-export const fetchData = (endpoint) => {
+export function fetchData(endpoint) {
   return async (dispatch) => {
     dispatch(setFetchLoader(true));
     try {
@@ -55,4 +55,4 @@ export const fetchData = (endpoint) => {
       dispatch(setFetchLoader(false));
     }
   };
-};
+}

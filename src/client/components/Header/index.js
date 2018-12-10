@@ -7,11 +7,8 @@ import IconStrip from '../IconStrip';
 
 import style from './style.css';
 
-/**
- * @function Header
- * @return {jsx} Component
- */
-const Header = ({ icons, handleIconClick }) => {
+
+function Header({ icons, handleIconClick }) {
   const headerClasses = classNames(style.header, style.visible);
   return (
     <div className={headerClasses}>
@@ -24,6 +21,6 @@ const Header = ({ icons, handleIconClick }) => {
       />
     </div>
   );
-};
+}
 
 export default Header;

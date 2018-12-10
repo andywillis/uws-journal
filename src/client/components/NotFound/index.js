@@ -1,17 +1,12 @@
-// Dependencies
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// React
 import Title from '../Title';
 import SubTitle from '../Subtitle';
 import EntryBody from '../EntryBody';
 
-/**
- * @function NotFound
- * @return {jsx} Component
- */
-const NotFound = () => {
+
+function NotFound() {
   return (
     <div>
       <Title txt="404" />
@@ -21,6 +16,7 @@ const NotFound = () => {
       </Link>
     </div>
   );
-};
+}
+
 
 export default NotFound;

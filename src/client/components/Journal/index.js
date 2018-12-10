@@ -1,26 +1,23 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-// React
 import Byline from '../Byline';
 import Paginator from '../Paginator';
 import EntryList from '../EntryList';
 
-// Style
 import style from './style.css';
 
-const createByline = ({ viewType, value }) => {
+function createByline({ viewType, value }) {
   return (
     <Byline
       viewType={viewType !== 'page' ? viewType : 'date'}
       value={viewType !== 'page' ? value : ''}
     />
   );
-};
+}
 
-const getPaginator = (totalEntries, pageNumber, pageLimit) => {
+function getPaginator(totalEntries, pageNumber, pageLimit) {
   if (totalEntries > pageLimit) {
     return (
       <Paginator
@@ -30,9 +27,9 @@ const getPaginator = (totalEntries, pageNumber, pageLimit) => {
       />
     );
   }
-};
+}
 
-const buildJournal = (props) => {
+function buildJournal(props) {
 
   const {
     entries,
@@ -62,14 +59,10 @@ const buildJournal = (props) => {
     </div>
   );
 
-};
+}
 
-/**
- * @function Journal
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
-const Journal = (props) => {
+
+function Journal(props) {
   const { isDisplayed } = props;
   const journalClasses = classNames(style.journal, isDisplayed && style.visible);
   return (
@@ -77,11 +70,11 @@ const Journal = (props) => {
       {buildJournal(props)}
     </div>
   );
-};
+}
+
 
 export default Journal;
 
-// Function proptypes
 createByline.propTypes = {
   viewType: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired

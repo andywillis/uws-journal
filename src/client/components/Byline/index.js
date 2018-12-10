@@ -1,11 +1,8 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// React
 import Keyword from '../Keyword';
 
-// Style
 import style from './style.css';
 
 function getByline(type, value) {
@@ -25,18 +22,14 @@ function getByline(type, value) {
 
 }
 
-/**
- * @function Byline
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
-const Byline = ({ type, value }) => {
+
+function Byline({ type, value }) {
   return getByline(type, value);
-};
+}
+
 
 export default Byline;
 
-// Function proptypes
 Byline.propTypes = {
   type: PropTypes.string,
   value: PropTypes.string

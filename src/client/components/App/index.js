@@ -25,6 +25,7 @@ const icons = [
   { id: 4, type: 'rss', active: false }
 ];
 
+
 /**
  * @function App
  * @return {jsx} Component
@@ -45,6 +46,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleIconClick = this.handleIconClick.bind(this);
+    this.setNode = this.setNode.bind(this);
   }
 
   async componentDidMount() {
@@ -55,6 +57,10 @@ class App extends Component {
 
   componentDidUpdate() {
     this.node.scrollIntoView();
+  }
+
+  setNode(node) {
+    this.node = node;
   }
 
   handleIconClick(type) {
@@ -96,7 +102,7 @@ class App extends Component {
     const { tagCloudVisibility } = this.props;
 
     return (
-      <div className={style.app} ref={node => (this.node = node)}>
+      <div className={style.app} ref={this.setNode}>
         <Header icons={icons} handleIconClick={this.handleIconClick} />
         <TagCloud visible={tagCloudVisibility} />
         {App.getRoutes(this.props)}
@@ -106,28 +112,28 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = ({ journal }) => {
+
+function mapStateToProps({ journal }) {
   return {
     entries: journal.entries,
     isLoading: journal.isLoading,
     tagCloudVisibility: journal.tagCloud.visible
   };
-};
+}
 
-const mapDispatchToProps = (dispatch) => {
+function mapDispatchToProps(dispatch) {
   return {
     fetchData: (url, callback) => dispatch(fetchData(url, callback)),
     setJournalDisplayed: bool => dispatch(setJournalDisplayed(bool)),
     toggleTagCloudVisibility: () => dispatch(toggleTagCloudVisibility())
   };
-};
+}
 
 export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
 )(App));
 
-// Proptpypes
 App.propTypes = {
   fetchData: PropTypes.func.isRequired,
   setJournalDisplayed: PropTypes.func.isRequired

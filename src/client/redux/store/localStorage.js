@@ -1,20 +1,27 @@
-export const loadUser = () => {
+export function loadUser() {
   try {
-    const serialisedUser = localStorage.getItem('user');
-    if (serialisedUser === null) {
-      return undefined;
+    if (window.localStorage) {
+      const serialisedUser = localStorage.getItem('user');
+      if (serialisedUser === null) {
+        return undefined;
+      }
+      return JSON.parse(serialisedUser);
     }
-    return JSON.parse(serialisedUser);
+    throw new Error('localStorage not found');
   } catch (e) {
-    return undefined;
+    console.log(e);
   }
-};
+}
 
-export const saveUser = (state) => {
+export function saveUser(state) {
   try {
-    const serialisedUser = JSON.stringify(state);
-    localStorage.setItem('user', serialisedUser);
+    if (window.localStorage) {
+      const serialisedUser = JSON.stringify(state);
+      localStorage.setItem('user', serialisedUser);
+    } else {
+      throw new Error('localStorate not found');
+    }
   } catch (e) {
-    // Ignore
+    console.log(e);
   }
-};
+}

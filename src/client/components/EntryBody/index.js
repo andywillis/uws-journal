@@ -1,20 +1,14 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// React
 import Subtitle from '../Subtitle';
 import Para from '../Para';
 import Blockquote from '../Blockquote';
 import Image from '../Image';
 import Table from '../Table';
 
-/**
- * @function Paras
- * @param  {object} parts Component properties
- * @return {jsx} Component
- */
-const EntryBody = ({ body }) => {
+
+function EntryBody({ body }) {
   return (
     <div className="EntryBody">
       {body.map((part) => {
@@ -39,11 +33,11 @@ const EntryBody = ({ body }) => {
       })}
     </div>
   );
-};
+}
+
 
 export default EntryBody;
 
-// Function proptypes
 EntryBody.propTypes = {
   body: PropTypes.arrayOf(PropTypes.object).isRequired
 };

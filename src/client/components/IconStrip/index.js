@@ -1,19 +1,11 @@
-// Dependencies
 import React from 'react';
 
-// React
 import Icon from '../Icon';
 
-// Style
 import style from './style.css';
 
-// const locations = [
-//   { id: 0, type: 'mail', active: true },
-//   { id: 1, type: 'flickr', active: true },
-//   { id: 2, type: 'rss', active: false }
-// ];
 
-const IconStrip = ({ icons, handleIconClick }) => {
+function IconStrip({ icons, handleIconClick }) {
 
   return (
     <div className={style.iconStrip}>
@@ -31,6 +23,6 @@ const IconStrip = ({ icons, handleIconClick }) => {
     </div>
   );
 
-};
+}
 
 export default IconStrip;
