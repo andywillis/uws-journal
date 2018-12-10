@@ -1,10 +1,8 @@
-// Dependencies
 import React, { createElement } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-// Style
 import style from './style.css';
 
 function compileClasses(styles) {
@@ -29,7 +27,8 @@ function getHeading(classes, headingProps) {
   return heading;
 }
 
-const Heading = (props) => {
+
+function Heading(props) {
 
   const { color, ...headingProps } = props;
 
@@ -41,7 +40,8 @@ const Heading = (props) => {
 
   return getHeading(classes, headingProps);
 
-};
+}
+
 
 export default Heading;
 

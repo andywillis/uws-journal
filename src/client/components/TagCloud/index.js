@@ -17,6 +17,7 @@ function getSortedWordArray(tags) {
     .sort((a, b) => a.txt > b.txt);
 }
 
+
 class TagCloud extends Component {
 
   constructor(props) {
@@ -64,6 +65,7 @@ class TagCloud extends Component {
     return <div />;
   }
 }
+
 
 function mapStateToProps(state) {
   const { tags, tagCloud, isDisplayed } = state.journal;

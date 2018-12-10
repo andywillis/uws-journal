@@ -1,7 +1,5 @@
-// Dependencies
 import { connect } from 'react-redux';
 
-// React
 import Journal from '../../components/Journal';
 
 /**

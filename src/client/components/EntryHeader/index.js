@@ -1,15 +1,13 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// React
 import Heading from '../Common/Heading';
 import Favourite from '../Favourite';
 
-// Style
 import style from './style.css';
 
-const EntryHeader = ({ props }) => {
+
+function EntryHeader({ props }) {
 
   const { link, viewType, title } = props;
   const { date, id } = props;
@@ -33,7 +31,8 @@ const EntryHeader = ({ props }) => {
 
     </div>
   );
-};
+}
+
 
 export default EntryHeader;
 

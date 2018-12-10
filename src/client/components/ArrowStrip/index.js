@@ -1,11 +1,8 @@
-// Dependencies
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// React
 import Arrow from '../Arrow';
 
-// Style
 import style from './style.css';
 
 function displayArrows({ entry, links, totalEntries }) {
@@ -20,7 +17,8 @@ function displayArrows({ entry, links, totalEntries }) {
   return arrows;
 }
 
-const ArrowStrip = (props) => {
+
+function ArrowStrip(props) {
 
   return (
     <div className={style.arrowStrip}>
@@ -44,6 +42,7 @@ const ArrowStrip = (props) => {
     </div>
   );
 
-};
+}
+
 
 export default ArrowStrip;

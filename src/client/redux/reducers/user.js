@@ -2,14 +2,14 @@ const initialState = {
   favourites: []
 };
 
-const user = (state = initialState, action) => {
+function user(state = initialState, action) {
 
   switch (action.type) {
 
     case 'ADD_FAVOURITE':
       return {
         ...state,
-        favourites: [...state.favourites, action.id]
+        favourites: [ ...state.favourites, action.id ]
       };
 
     case 'REMOVE_FAVOURITE':
@@ -22,6 +22,6 @@ const user = (state = initialState, action) => {
       return state;
   }
 
-};
+}
 
 export default user;

@@ -5,12 +5,13 @@ import Tag from '../Tag';
 
 import style from './style.css';
 
-/**
- * @function Tags
- * @param  {type} tags Components
- * @return {type} {description}
- */
+
 class Tags extends Component {
+
+  constructor(props) {
+    super(props);
+    this.setNode = this.setNode.bind(this);
+  }
 
   componentDidMount() {
     const { updateTagListHeight } = this.props;
@@ -20,11 +21,15 @@ class Tags extends Component {
     }
   }
 
+  setNode(node) {
+    this.node = node;
+  }
+
   render() {
     const { tags, cloud, tagList } = this.props;
     return (
       <div className={style.tags}>
-        <ul className={cloud && style.pad} ref={node => (this.node = node)}>
+        <ul className={cloud && style.pad} ref={this.setNode}>
           {tags.map((tag) => {
             return (
               <Tag
@@ -37,13 +42,13 @@ class Tags extends Component {
           })}
         </ul>
       </div>
-    );  
+    );
   }
-};
+}
+
 
 export default Tags;
 
-// Function proptypes
 Tags.propTypes = {
   tags: PropTypes.arrayOf(PropTypes.object).isRequired
 };

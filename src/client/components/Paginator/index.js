@@ -1,9 +1,9 @@
-// Dependencies
 import React from 'react';
 
 import PageNumber from '../PageNumber';
 
 import style from './style.css';
+
 
 function getNumbers(props) {
   const { totalEntries, pageLimit, pageNumber } = props;
@@ -23,17 +23,14 @@ function getNumbers(props) {
   return arr;
 }
 
-/**
- * @function Paginator
- * @param  {object}  Component properties
- * @return {jsx} Component
- */
-const Paginator = (props) => {
+
+function Paginator(props) {
   return (
     <div className={style.paginator}>
       {getNumbers(props)}
     </div>
   );
-};
+}
+
 
 export default Paginator;

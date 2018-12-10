@@ -1,18 +1,12 @@
-// Dependencies
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-// Style
 import style from './style.css';
 
-/**
- * @function Tag
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
-const Tag = (props) => {
+
+function Tag(props) {
   const { txt, cloud, count } = props;
   if (cloud) {
     return (
@@ -31,11 +25,11 @@ const Tag = (props) => {
       </Link>
     </li>
   );
-};
+}
+
 
 export default Tag;
 
-// Function proptypes
 Tag.propTypes = {
   txt: PropTypes.string.isRequired
 };

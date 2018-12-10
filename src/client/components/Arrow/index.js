@@ -1,17 +1,11 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-// Style
 import style from './style.css';
 
-/**
- * @function Arrow
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
-const Arrow = (props) => {
+
+function Arrow(props) {
 
   const { disabled, type, location } = props;
 
@@ -22,7 +16,9 @@ const Arrow = (props) => {
       data-location={location}
     />
   );
-};
+
+}
+
 
 export default Arrow;
 
@@ -31,7 +27,6 @@ Arrow.defaultProps = {
   disabled: false
 };
 
-// Function proptypes
 Arrow.propTypes = {
   disabled: PropTypes.bool,
   type: PropTypes.string.isRequired,

@@ -1,21 +1,15 @@
-// Dependencies
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-// Redux
 import {
   addFavourite,
   removeFavourite
 } from '../../redux/actions/user';
 
-// Style
 import style from './style.css';
 
-/**
- * @function Favourite
- * @return {jsx} Component
- */
+
 class Favourite extends Component {
 
   constructor(props) {
@@ -58,23 +52,21 @@ class Favourite extends Component {
   }
 }
 
-const mapStateToProps = (state, newProps) => {
 
+function mapStateToProps(state, newProps) {
   const { favourites } = state.user;
-
   const status = favourites.includes(newProps.id)
     ? 'active'
     : 'inactive';
-
   return { status };
-};
+}
 
-const mapDispatchToProps = (dispatch) => {
+function mapDispatchToProps(dispatch) {
   return {
     addFavourite: id => dispatch(addFavourite(id)),
     removeFavourite: id => dispatch(removeFavourite(id))
   };
-};
+}
 
 export default connect(
   mapStateToProps,

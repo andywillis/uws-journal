@@ -3,11 +3,7 @@ import classNames from 'classnames';
 
 import style from './style.css';
 
-/**
- * @function Icon
- * @param  {object} props Component properties
- * @return {jsx} Component
- */
+
 class Icon extends Component {
 
   constructor(props) {
@@ -47,5 +43,6 @@ class Icon extends Component {
     );
   }
 }
+
 
 export default Icon;
