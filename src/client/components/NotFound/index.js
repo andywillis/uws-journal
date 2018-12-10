@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Title from '../Title';
-import SubTitle from '../Subtitle';
-import EntryBody from '../EntryBody';
+import Heading from '../Common/Heading';
+import Body from '../Entry/Body';
 
+import style from './style.css';
 
 function NotFound() {
   return (
-    <div>
-      <Title txt="404" />
-      <SubTitle txt="Page not found" />
+    <div className={style.notFound}>
+      <Heading level="h1" color="black">404</Heading>
       <Link to="/">
-        <EntryBody body={[{ id: 0, type: 'para', html: 'Return to home page' }]} />
+        <Body body={[{
+          id: 0,
+          type: 'para',
+          html: '> return to the main page <'
+        }]}
+        />
       </Link>
     </div>
   );

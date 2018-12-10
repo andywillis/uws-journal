@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 
 import {
   addFavourite,
@@ -10,6 +9,12 @@ import {
 import style from './style.css';
 
 
+/**
+ * Favourite box with click/key accessibilty
+ *
+ * @class Favourite
+ * @extends {Component}
+ */
 class Favourite extends Component {
 
   constructor(props) {
@@ -22,15 +27,21 @@ class Favourite extends Component {
     this.setState({ status: newProps.status });
   }
 
-  handleFavourite() {
+  handleFavourite(e) {
 
-    const { addFavourite, removeFavourite, id } = this.props;
-    const { status } = this.state;
+    const { key, type } = e;
 
-    if (status !== 'active') {
-      addFavourite(id);
-    } else {
-      removeFavourite(id);
+    if (type === 'click' || (type === 'keyup' && key === 'Enter')) {
+
+      const { addFavourite, removeFavourite, id } = this.props;
+      const { status } = this.state;
+
+      if (status !== 'active') {
+        addFavourite(id);
+      } else {
+        removeFavourite(id);
+      }
+
     }
 
   }
@@ -68,13 +79,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Favourite);
-
-Favourite.propTypes = {
-  status: PropTypes.string.isRequired,
-  addFavourite: PropTypes.func.isRequired,
-  removeFavourite: PropTypes.func.isRequired
-};
+export default connect(mapStateToProps, mapDispatchToProps)(Favourite);

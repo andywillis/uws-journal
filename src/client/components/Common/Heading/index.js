@@ -1,17 +1,12 @@
 import React, { createElement } from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import compileClasses from 'classnames';
 
 import style from './style.css';
 
-function compileClasses(styles) {
-  return classNames(styles);
-}
 
-function getLevel(classes, levelProps) {
-  const { level, type, children } = levelProps;
-  return createElement(level, { className: classes, type }, children);
+function createHeadingLevel(classes, level, children) {
+  return createElement(level, { className: classes }, children);
 }
 
 function wrapLink(link, heading) {
@@ -21,13 +16,21 @@ function wrapLink(link, heading) {
 }
 
 function getHeading(classes, headingProps) {
-  const { link, ...levelProps } = headingProps;
-  const heading = getLevel(classes, levelProps);
+  const { link, level, children } = headingProps;
+  const heading = createHeadingLevel(classes, level, children);
   if (link) return wrapLink(link, heading);
   return heading;
 }
 
 
+/**
+ * Heading component
+ *
+ * @param {string} level = heading level - required
+ * @param {string?} color: green/default (blue) - optional
+ * @param {string?} link: URI - optional
+ * @returns JSX
+ */
 function Heading(props) {
 
   const { color, ...headingProps } = props;
@@ -35,17 +38,11 @@ function Heading(props) {
   const classes = compileClasses({
     [style.heading]: true,
     [style.default]: !color,
-    [style.color]: color && true
+    [style[color]]: color && true
   });
 
   return getHeading(classes, headingProps);
 
 }
 
-
 export default Heading;
-
-Heading.propTypes = {
-  level: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired
-};

@@ -1,24 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import EntryHeader from '../EntryHeader';
-import EntryBody from '../EntryBody';
-import EntryFooter from '../EntryFooter';
+import Header from './Header';
+import Body from './Body';
+import Footer from './Footer';
 
 import style from './style.css';
 
 
 function Entry(props) {
 
-  const {
-    id, body, tags, ...headerProps
-  } = props;
+  const { id, body, tags, ...headerProps } = props;
 
   return (
     <div className={style.entry} id={id}>
-      <EntryHeader props={headerProps} />
-      <EntryBody body={body} />
-      <EntryFooter tags={tags} />
+      <Header props={headerProps} />
+      <Body body={body} />
+      <Footer tags={tags} />
     </div>
   );
 
@@ -26,9 +23,3 @@ function Entry(props) {
 
 
 export default Entry;
-
-Entry.propTypes = {
-  id: PropTypes.number.isRequired,
-  body: PropTypes.arrayOf(PropTypes.object).isRequired,
-  tags: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
