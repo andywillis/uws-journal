@@ -10,13 +10,17 @@
 
 /* colors */
 
+.black {
+  color: black;
+}
+
+.green {
+  color: #15804b;
+}
+
 .default {
   color: #154380;
 };
-
-.black {
-  color: #111111;
-}
 
 /* headings */
 
@@ -29,6 +33,8 @@ h3 {
   font-size: 1.7em;
   font-weight: 600px;
 }
+
+/* Media queries */
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 600px) {

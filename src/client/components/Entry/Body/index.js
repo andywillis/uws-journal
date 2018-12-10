@@ -1,16 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import Subtitle from '../Subtitle';
-import Para from '../Para';
-import Blockquote from '../Blockquote';
-import Image from '../Image';
-import Table from '../Table';
+import Heading from '../../Common/Heading';
+import Para from '../../Para';
+import Blockquote from '../../Blockquote';
+import Image from '../../Image';
+import Table from '../../Table';
 
 
-function EntryBody({ body }) {
+function Body({ body }) {
   return (
-    <div className="EntryBody">
+    <div>
       {body.map((part) => {
         switch (part.type) {
           case 'image':
@@ -24,7 +23,7 @@ function EntryBody({ body }) {
           case 'blockquote':
             return <Blockquote key={part.id} html={part.html} />;
           case 'h2':
-            return <Subtitle key={part.id} txt={part.txt} />;
+            return <Heading key={part.id} level="h3" color="black">{part.txt}</Heading>            ;
           case 'table':
             return <Table key={part.id} html={part.html} />;
           default:
@@ -36,8 +35,4 @@ function EntryBody({ body }) {
 }
 
 
-export default EntryBody;
-
-EntryBody.propTypes = {
-  body: PropTypes.arrayOf(PropTypes.object).isRequired
-};
+export default Body;
