@@ -1,8 +1,14 @@
-const http = require('http');
+const fs = require('fs');
+const https = require('https');
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+
+const privateKey = fs.readFileSync(path.join(__dirname, 'server.key'));
+const certificate = fs.readFileSync(path.join(__dirname, 'server.cert'));
+
+const credentials = { key: privateKey, cert: certificate };
 
 const { authorise, getData } = require('./auth');
 const wrangleData = require('./lib/wrangleData');
@@ -59,11 +65,13 @@ function init() {
 init();
 
 app.get('/entries', (req, res) => {
+  console.log('entries');
   res.json(app.dataStore);
 });
 
 app.get('/reload', (req, res) => {
   init();
+  console.log('reload');
   res.send('Data reloaded.');
 });
 
@@ -71,7 +79,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../../dist', 'index.html'));
 });
 
-const server = http.createServer(app);
+const server = https.createServer(credentials, app);
 
 server.listen(app.get('port'), () => {
   console.log('Listening on port', app.get('port'));
