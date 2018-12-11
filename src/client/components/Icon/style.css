@@ -30,7 +30,7 @@ and (min-width : 600px) {
   }
 }
 
-.icon[data-type="avatar"] {
+.icon[data-type="home"] {
   background-image: url("../../assets/images/home.jpg");
 }
 

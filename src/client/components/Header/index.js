@@ -13,7 +13,7 @@ function Header({ icons, handleIconClick }) {
   return (
     <div className={headerClasses}>
       <Link to={{ pathname: '/' }}>
-        <Icon type="avatar" active />
+        <Icon type="home" active />
       </Link>
       <IconStrip
         icons={icons}

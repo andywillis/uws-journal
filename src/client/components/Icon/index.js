@@ -9,17 +9,27 @@ class Icon extends Component {
   constructor(props) {
     super(props);
     this.state = { on: false };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleEvent = this.handleEvent.bind(this);
   }
 
-  handleClick(e) {
-    const { dataset } = e.target;
-    const { sticky, handleIconClick } = this.props;
-    handleIconClick(dataset.type);
-    if (sticky) {
-      const { on } = this.state;
-      this.setState({ on: !on });
+  handleEvent(e) {
+
+    const { key, type } = e;
+
+    if (type === 'click' || (type === 'keyup' && key === 'Enter')) {
+
+      const { dataset } = e.target;
+      const { sticky, handleIconClick } = this.props;
+
+      handleIconClick(dataset.type);
+
+      if (sticky) {
+        const { on } = this.state;
+        this.setState({ on: !on });
+      }
+
     }
+  
   }
 
   render() {
@@ -37,7 +47,10 @@ class Icon extends Component {
       <button
         type="button"
         className={className}
-        onClick={this.handleClick}
+        tabIndex="0"
+        aria-label={type}
+        onClick={this.handleEvent}
+        onKeyUp={this.handleEvent}
         data-type={type}
       />
     );
