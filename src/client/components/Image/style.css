@@ -1,9 +1,20 @@
-.image {
+.imageContainer {
+  border: 1px solid #dfdfdf;
   width: 80%;
   display: flex;
-  border: 2px solid #ababab;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.6em;
   margin-bottom: 1.6em;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }

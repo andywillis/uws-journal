@@ -60,9 +60,7 @@ function getBody(el) {
       }
 
       case 'IMG': {
-        p.push({
-          id: i, type: 'image', src: c.src, alt: c.alt
-        });
+        p.push({ id: i, type: 'image', src: c.src, alt: c.alt });
         break;
       }
 
