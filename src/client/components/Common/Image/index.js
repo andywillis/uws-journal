@@ -1,7 +1,7 @@
 import React, { createElement, Component } from 'react';
 import compileClasses from 'classnames';
 
-import { getDeviceDimensions } from '../../lib/device';
+import { getDeviceDimensions } from '../../../lib/device';
 
 import style from './style.css';
 
@@ -58,7 +58,7 @@ class Image extends Component {
   render() {
 
     const { isLoaded } = this.state;
-    const { alt, src: url } = this.props;
+    const { alt, src: url, stretch } = this.props;
 
     const [ , altText, width, height ] = splitAltString(alt);
     const { deviceWidth } = getDeviceDimensions();
@@ -75,7 +75,7 @@ class Image extends Component {
     return (
       <div
         className={style.imageContainer}
-        style={{ width: '80%', height: `${containerHeight}px` }}
+        style={{ width: stretch, height: `${containerHeight}px` }}
         ref={this.setNode}
       >
         {this.getImageElement({ className, width, height, altText, src })}

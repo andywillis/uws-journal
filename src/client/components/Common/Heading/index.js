@@ -33,10 +33,11 @@ function getHeading(classes, headingProps) {
  */
 function Heading(props) {
 
-  const { color, ...headingProps } = props;
+  const { color, highlightHover, ...headingProps } = props;
 
   const classes = compileClasses({
     [style.heading]: true,
+    [style.highlightHover]: highlightHover && true,
     [style.default]: !color,
     [style[color]]: color && true
   });

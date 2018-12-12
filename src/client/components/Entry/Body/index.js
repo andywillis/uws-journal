@@ -3,7 +3,7 @@ import React from 'react';
 import Heading from '../../Common/Heading';
 import Para from '../../Para';
 import Blockquote from '../../Blockquote';
-import Image from '../../Image';
+import Image from '../../Common/Image';
 import Table from '../../Table';
 
 
@@ -18,6 +18,7 @@ function Body({ body }) {
                 key={part.id}
                 src={part.src}
                 alt={part.alt}
+                stretch="80%"
               />
             );
           case 'blockquote':

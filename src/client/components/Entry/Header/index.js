@@ -13,7 +13,12 @@ function Header({ props }) {
 
   return (
     <div className={style.header}>
-      <Heading link={isLink && link} level="h2">{title}</Heading>
+      <Heading
+        link={isLink && link}
+        highlightHover={viewType !== 'entry' && true}
+        level="h2"
+      >{title}
+      </Heading>
       <div className={style.inline}>
         <Heading level="h3" color="black">{date}</Heading>
         <Favourite id={id} status="inactive" />
