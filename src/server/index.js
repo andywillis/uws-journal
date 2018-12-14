@@ -4,14 +4,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
-const { authorise, getData } = require('./auth');
-const wrangleData = require('./lib/wrangleData');
-const getCredentials = require('./auth/getCredentials');
-const createRSS = require('./lib/createRss');
+// App setup
 
 const app = express();
-
 const applicationName = 'uws-journal';
+app.store = {};
 
 app.set('port', (process.env.PORT || 3000));
 app.set('root', __dirname);
@@ -20,16 +17,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../../dist')));
 
-function storeCredentials({ credentials, token }) {
-  return new Promise((resolve) => {
-    app.credentials = credentials;
-    app.token = token;
-    resolve();
-  });
-}
+const { authorise, getData } = require('./auth');
+const processMarkdown = require('./lib/processMarkdown');
+const getCredentials = require('./auth/getCredentials');
+const createRSS = require('./lib/createRss');
 
-function getJournalData() {
-  const { credentials, token } = app;
+function getJournalData(credentials, token) {
   const fileId = '0BxWypIdOuW0YZ3Nidk16SDZLQzA';
   return new Promise((resolve) => {
     authorise({ credentials, token }, (authentication) => {
@@ -40,26 +33,25 @@ function getJournalData() {
   });
 }
 
-function storeJournalData(data) {
+function storeData(type, data) {
   return new Promise((resolve) => {
-    app.dataStore = data;
-    resolve(data);
+    app.store[type] = data;
+    resolve();
   });
 }
 
-function init() {
-  getCredentials(applicationName)
-    .then(storeCredentials)
-    .then(getJournalData)
-    .then(wrangleData)
-    .then(storeJournalData)
-    .then(createRSS);
+async function init() {
+  const { credentials, token } = await getCredentials(applicationName);
+  const markdown = await getJournalData(credentials, token);
+  const data = await processMarkdown(markdown);
+  storeData('journal', data);
+  createRSS(data);
 }
 
 init();
 
-app.get('/entries', (req, res) => {
-  res.json(app.dataStore);
+app.get('/journal', (req, res) => {
+  res.json(app.store.journal);
 });
 
 app.get('/reload', (req, res) => {

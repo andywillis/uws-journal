@@ -51,7 +51,7 @@ function wrapItems(items) {
 function createRSS({ entries }) {
   const root = path.join(__dirname, '../../../');
   const host = 'https://uws-journal.herokuapp.com';
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const items = buildItems(entries, host);
     const xml = wrapItems(items);
     writeRSS(xml, root);
