@@ -20,9 +20,8 @@ app.use(express.static(path.join(__dirname, '../../dist')));
 
 // Main
 
-const { authorise, getData } = require('./auth');
+const { getCredentials, authorise, getData } = require('./auth');
 const processMarkdown = require('./data');
-const getCredentials = require('./auth/getCredentials');
 const createRSS = require('./feed');
 
 function getJournalData(credentials, token) {
