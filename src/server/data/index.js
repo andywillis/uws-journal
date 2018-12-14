@@ -127,11 +127,11 @@ function buildTagList(entries) {
   }, {});
 }
 
-function wrangleData(data) {
+function processMarkdown(markdown) {
   return new Promise((resolve, reject) => {
     const sep = '\r\n\r\n----\r\n\r\n';
-    const md = splitMarkdown(data, sep);
-    const entries = md.map(buildEntry).reverse();
+    const markdownArr = splitMarkdown(markdown, sep);
+    const entries = markdownArr.map(buildEntry).reverse();
     const links = entries.map(entry => entry.link);
     const tags = buildTagList(entries);
     try {
@@ -142,4 +142,4 @@ function wrangleData(data) {
   });
 }
 
-module.exports = wrangleData;
+module.exports = processMarkdown;

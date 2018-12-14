@@ -4,12 +4,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
-const { authorise, getData } = require('./auth');
-const wrangleData = require('./lib/wrangleData');
-const getCredentials = require('./auth/getCredentials');
-const createRSS = require('./lib/createRss');
+// App setup
 
 const app = express();
+app.store = {};
 
 const applicationName = 'uws-journal';
 
@@ -20,16 +18,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../../dist')));
 
-function storeCredentials({ credentials, token }) {
-  return new Promise((resolve) => {
-    app.credentials = credentials;
-    app.token = token;
-    resolve();
-  });
-}
+// Main
 
-function getJournalData() {
-  const { credentials, token } = app;
+const { authorise, getData } = require('./auth');
+const processMarkdown = require('./data');
+const getCredentials = require('./auth/getCredentials');
+const createRSS = require('./feed');
+
+function getJournalData(credentials, token) {
   const fileId = '0BxWypIdOuW0YZ3Nidk16SDZLQzA';
   return new Promise((resolve) => {
     authorise({ credentials, token }, (authentication) => {
@@ -40,26 +36,20 @@ function getJournalData() {
   });
 }
 
-function storeJournalData(data) {
-  return new Promise((resolve) => {
-    app.dataStore = data;
-    resolve(data);
-  });
-}
-
-function init() {
-  getCredentials(applicationName)
-    .then(storeCredentials)
-    .then(getJournalData)
-    .then(wrangleData)
-    .then(storeJournalData)
-    .then(createRSS);
+async function init() {
+  const { credentials, token } = await getCredentials(applicationName);
+  const markdown = await getJournalData(credentials, token);
+  const data = await processMarkdown(markdown);
+  app.store.journal = data;
+  createRSS(data);
 }
 
 init();
 
-app.get('/entries', (req, res) => {
-  res.json(app.dataStore);
+// Routes
+
+app.get('/journal', (req, res) => {
+  res.json(app.store.journal);
 });
 
 app.get('/reload', (req, res) => {
@@ -70,6 +60,8 @@ app.get('/reload', (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../../dist', 'index.html'));
 });
+
+// Server
 
 const server = http.createServer(app);
 

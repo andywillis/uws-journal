@@ -1,5 +1,5 @@
-const fs = require('fs');
 const path = require('path');
+const { verifyFolderExists, writeFile } = require('../IO');
 
 function buildItems(entries, host) {
   return entries.map((entry) => {
@@ -11,27 +11,6 @@ function buildItems(entries, host) {
       </item>
     `);
   }).join('');
-}
-
-function verifyFolderExists(path) {
-  return new Promise((resolve, reject) => {
-    fs.stat(path, (err) => {
-      if (err) {
-        fs.mkdir(path, (err) => {
-          if (err) reject(err);
-          resolve();
-        });
-      }
-    });
-  });
-}
-
-async function writeRSS(xml, root) {
-  await verifyFolderExists(`${root}/dist/`);
-  const fileStream = fs.createWriteStream(`${root}/dist/uws.rss`, { flags: 'w', encoding: 'utf-8', mode: '0666' });
-  fileStream.write(xml);
-  fileStream.end();
-  console.log('RSS created');
 }
 
 function wrapItems(items) {
@@ -48,10 +27,23 @@ function wrapItems(items) {
   `);
 }
 
-function createRSS({ entries }) {
+async function writeRSS(xml, root) {
+  try {
+    await verifyFolderExists(`${root}/dist/`);
+    const filePath = `${root}/dist/uws.rss`;
+    const options = { flags: 'w', encoding: 'utf-8', mode: '0666' };
+    await writeFile(xml, filePath, options);
+    console.log('RSS created');
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+function createRSS(data) {
+  const { entries } = data;
   const root = path.join(__dirname, '../../../');
   const host = 'https://uws-journal.herokuapp.com';
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const items = buildItems(entries, host);
     const xml = wrapItems(items);
     writeRSS(xml, root);

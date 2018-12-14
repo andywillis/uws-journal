@@ -78,7 +78,7 @@ module.exports = (env, argv) => ({
     historyApiFallback: true,
     proxy: {
       open: true,
-      '/entries': 'http://localhost:3000',
+      '/journal': 'http://localhost:3000',
       '/reload': 'http://localhost:3000'
     }
   },
