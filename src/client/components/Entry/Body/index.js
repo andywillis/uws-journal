@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Heading from '../../Common/Heading';
 import Para from '../../Para';
@@ -7,7 +8,7 @@ import Image from '../../Common/Image';
 import Table from '../../Table';
 
 
-function Body({ body }) {
+function Body({ body, deviceWidth }) {
   return (
     <div>
       {body.map((part) => {
@@ -18,7 +19,9 @@ function Body({ body }) {
                 key={part.id}
                 src={part.src}
                 alt={part.alt}
-                stretch="80%"
+                deviceWidth={deviceWidth}
+                percentageStretch="80"
+                percentageMarginCorrection="10"
               />
             );
           case 'blockquote':
@@ -35,5 +38,10 @@ function Body({ body }) {
   );
 }
 
+function mapStateToProps(state) {
+  return {
+    deviceWidth: state.journal.deviceWidth
+  };
+}
 
-export default Body;
+export default connect(mapStateToProps)(Body);

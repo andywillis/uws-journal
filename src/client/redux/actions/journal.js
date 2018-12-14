@@ -41,6 +41,13 @@ export function setTagCloudHeight(height) {
   };
 }
 
+export function setDeviceWidth(width) {
+  return {
+    type: 'SET_DEVICE_WIDTH',
+    width
+  };
+}
+
 export function fetchData(endpoint) {
   return async (dispatch) => {
     dispatch(setFetchLoader(true));
@@ -49,7 +56,6 @@ export function fetchData(endpoint) {
       dispatch(setFetchLoader(false));
       const data = await response.json();
       dispatch(setFetchSuccess(data));
-      // callback();
     } catch (e) {
       dispatch(setFetchError(true));
       dispatch(setFetchLoader(false));

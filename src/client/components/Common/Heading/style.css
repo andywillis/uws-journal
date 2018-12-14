@@ -1,3 +1,29 @@
+/* headings */
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 600px;
+}
+
+/* Media queries */
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 600px) {
+  h2 {
+    margin-bottom: 0.3em;
+    font-size: 2.6em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+}
+
+
 .heading {
   font-family: Arvo;
   font-weight: 400;
@@ -21,28 +47,3 @@
 .default {
   color: #154380;
 };
-
-/* headings */
-
-h2 {
-  margin-bottom: 0.3em;
-  font-size: 2.2em;
-}
-
-h3 {
-  font-size: 1.7em;
-  font-weight: 600px;
-}
-
-/* Media queries */
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 600px) {
-  h2 {
-    margin-bottom: 0.3em;
-    font-size: 2.6em;
-  }
-  h3 {
-    font-size: 2.2em;
-  }
-}
