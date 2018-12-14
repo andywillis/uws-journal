@@ -8,12 +8,20 @@ const initialState = {
   tagCloud: {
     visible: false,
     height: '0px'
-  }
+  },
+  deviceWidth: 0
 };
 
 function journal(state = initialState, action) {
 
   switch (action.type) {
+
+    case 'SET_DEVICE_WIDTH': {
+      return {
+        ...state,
+        deviceWidth: action.width
+      };
+    }
 
     case 'TOGGLE_TAGCLOUD_VISIBILITY': {
       const isVisible = state.tagCloud.visible;

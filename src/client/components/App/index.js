@@ -10,10 +10,13 @@ import NotFound from '../NotFound';
 import TagCloud from '../TagCloud';
 import Spinner from '../Spinner';
 
+import { getDeviceDimensions } from '../../lib/device';
+
 import {
   fetchData,
   setJournalDisplayed,
-  toggleTagCloudVisibility
+  toggleTagCloudVisibility,
+  setDeviceWidth
 } from '../../redux/actions/journal';
 
 import style from './style.css';
@@ -56,6 +59,8 @@ class App extends Component {
   }
 
   componentDidUpdate() {
+    const { isDisplayed, setDeviceWidth } = this.props;
+    if (isDisplayed) setDeviceWidth(getDeviceDimensions().deviceWidth);
     this.node.scrollIntoView();
   }
 
@@ -117,6 +122,7 @@ function mapStateToProps({ journal }) {
   return {
     entries: journal.entries,
     isLoading: journal.isLoading,
+    isDisplayed: journal.isDisplayed,
     tagCloudVisibility: journal.tagCloud.visible
   };
 }
@@ -125,7 +131,8 @@ function mapDispatchToProps(dispatch) {
   return {
     fetchData: (url, callback) => dispatch(fetchData(url, callback)),
     setJournalDisplayed: bool => dispatch(setJournalDisplayed(bool)),
-    toggleTagCloudVisibility: () => dispatch(toggleTagCloudVisibility())
+    toggleTagCloudVisibility: () => dispatch(toggleTagCloudVisibility()),
+    setDeviceWidth: width => dispatch(setDeviceWidth(width))
   };
 }
 
