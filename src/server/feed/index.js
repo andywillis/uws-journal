@@ -1,5 +1,5 @@
 const path = require('path');
-const { verifyFolderExists, writeFile } = require('../IO');
+const { verifyFolderExists, writeFile } = require('../io');
 
 function buildItems(entries, host) {
   return entries.map((entry) => {
