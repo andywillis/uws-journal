@@ -3,8 +3,8 @@
   font-weight: 400;
 }
 
-.heading[type="Entry Heading"]:hover {
-  background-color: #efefff;
+.highlightHover:hover {
+  text-shadow: 0px 0px 10px #bcc9bc;
   cursor: pointer;
 }
 
