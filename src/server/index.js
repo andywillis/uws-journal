@@ -7,8 +7,9 @@ const compression = require('compression');
 // App setup
 
 const app = express();
-const applicationName = 'uws-journal';
 app.store = {};
+
+const applicationName = 'uws-journal';
 
 app.set('port', (process.env.PORT || 3000));
 app.set('root', __dirname);
@@ -17,10 +18,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../../dist')));
 
+// Main
+
 const { authorise, getData } = require('./auth');
-const processMarkdown = require('./lib/processMarkdown');
+const processMarkdown = require('./data');
 const getCredentials = require('./auth/getCredentials');
-const createRSS = require('./lib/createRss');
+const createRSS = require('./feed');
 
 function getJournalData(credentials, token) {
   const fileId = '0BxWypIdOuW0YZ3Nidk16SDZLQzA';
@@ -33,22 +36,17 @@ function getJournalData(credentials, token) {
   });
 }
 
-function storeData(type, data) {
-  return new Promise((resolve) => {
-    app.store[type] = data;
-    resolve();
-  });
-}
-
 async function init() {
   const { credentials, token } = await getCredentials(applicationName);
   const markdown = await getJournalData(credentials, token);
   const data = await processMarkdown(markdown);
-  storeData('journal', data);
+  app.store.journal = data;
   createRSS(data);
 }
 
 init();
+
+// Routes
 
 app.get('/journal', (req, res) => {
   res.json(app.store.journal);
@@ -62,6 +60,8 @@ app.get('/reload', (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../../dist', 'index.html'));
 });
+
+// Server
 
 const server = http.createServer(app);
 

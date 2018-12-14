@@ -22,6 +22,7 @@ module.exports = function (appName) {
       const HOME_DIR = `${process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE}/.credentials/`;
       const CREDENTIALS_PATH = `${HOME_DIR}${appName}-credentials.json`;
       const TOKEN_PATH = `${HOME_DIR}${appName}-token.json`;
+
       fs.readFile(`${CREDENTIALS_PATH}`, (err, credentialsData) => {
         fs.readFile(`${TOKEN_PATH}`, (err, tokenData) => {
           if (err) reject(err);
