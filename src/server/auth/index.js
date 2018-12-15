@@ -59,18 +59,4 @@ function authorise({ credentials, token }, callback) {
   callback(oAuth2Client);
 }
 
-function getData(auth, fileId) {
-  const drive = google.drive('v3');
-  return new Promise((resolve, reject) => {
-    drive.files.get({
-      auth,
-      fileId,
-      alt: 'media'
-    }, (err, data) => {
-      if (err) reject(err);
-      resolve(data.data);
-    });
-  });
-}
-
-module.exports = { authorise, getData, getCredentials };
+module.exports = { authorise, getCredentials };

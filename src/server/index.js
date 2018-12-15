@@ -20,7 +20,8 @@ app.use(express.static(path.join(__dirname, '../../dist')));
 
 // Main
 
-const { getCredentials, authorise, getData } = require('./auth');
+const { getCredentials, authorise } = require('./auth');
+const { getDriveData } = require('./io');
 const processMarkdown = require('./data');
 const createRSS = require('./feed');
 
@@ -28,7 +29,7 @@ function getJournalData(credentials, token) {
   const fileId = '0BxWypIdOuW0YZ3Nidk16SDZLQzA';
   return new Promise((resolve) => {
     authorise({ credentials, token }, (authentication) => {
-      getData(authentication, fileId).then((data) => {
+      getDriveData(authentication, fileId).then((data) => {
         resolve(data);
       });
     });

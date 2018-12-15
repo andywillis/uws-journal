@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { google } = require('googleapis');
 
 function writeFile(data, filePath, options) {
   return new Promise((resolve, reject) => {
@@ -24,6 +25,20 @@ function verifyFolderExists(path) {
   });
 }
 
+function getDriveData(auth, fileId) {
+  const drive = google.drive('v3');
+  return new Promise((resolve, reject) => {
+    drive.files.get({
+      auth,
+      fileId,
+      alt: 'media'
+    }, (err, data) => {
+      if (err) reject(err);
+      resolve(data.data);
+    });
+  });
+}
+
 module.exports = {
-  writeFile, verifyFolderExists
+  getDriveData, writeFile, verifyFolderExists
 };
