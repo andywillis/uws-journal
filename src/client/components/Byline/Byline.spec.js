@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Heading from './index';
+import Byline from './index';
 
-describe('Heading component', () => {
+describe('App component', () => {
 
-  const wrapper = shallow(<Heading />);
+  const wrapper = shallow(<Byline />);
 
   it('the component is rendered', () => {
     expect(wrapper).not.toBe(undefined);

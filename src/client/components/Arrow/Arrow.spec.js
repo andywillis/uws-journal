@@ -1,26 +1,14 @@
-// Dependencies
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 
-// React
-import Blockquote from './index';
+import Arrow from './index';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
+describe('Arrow component', () => {
 
-  const disabled = false;
-  const location = '1';
-  const type = 'left';
+  const wrapper = shallow(<Arrow />);
 
-  ReactDOM.render(
-    <div>
-      <Blockquote
-        type={type}
-        location={location}
-        disabled={disabled}
-      />
-    </div>,
-    div
-  );
+  it('the component is rendered', () => {
+    expect(wrapper).not.toBe(undefined);
+  });
 
 });
