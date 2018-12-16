@@ -12,7 +12,7 @@ function Header({ props }) {
   const isLink = [ 'page', 'tag' ].includes(viewType);
 
   return (
-    <div className={style.header}>
+    <header className={style.header}>
       <Heading
         link={isLink && link}
         highlightHover={viewType !== 'entry' && true}
@@ -23,7 +23,7 @@ function Header({ props }) {
         <Heading level="h3" color="black">{date}</Heading>
         <Favourite id={id} status="inactive" />
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -8,9 +8,9 @@ import style from './style.css';
 function Footer({ isDisplayed }) {
   const footerClasses = classNames(style.footer, isDisplayed && style.visible);
   return (
-    <div className={footerClasses}>
+    <footer className={footerClasses}>
       &copy; Andy Willis 2018
-    </div>
+    </footer>
   );
 }
 

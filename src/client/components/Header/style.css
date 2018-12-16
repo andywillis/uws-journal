@@ -8,6 +8,12 @@
   animation: fadeIn 0.3s linear;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .visible {
   opacity: 1;
   animation: fadeIn 0.3s linear;

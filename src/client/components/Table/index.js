@@ -6,9 +6,9 @@ import style from './style.css';
 
 function Table({ html }) {
   return (
-    <div className={style.table}>
-      <table dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    <React.Fragment>
+      <table className={style.table} dangerouslySetInnerHTML={{ __html: html }} />
+    </React.Fragment>
   );
 }
 

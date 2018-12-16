@@ -13,12 +13,12 @@ function PageNumber(props) {
 
   return (
     <Link to={{ pathname: `/page/${number}` }}>
-      <div
+      <button
+        type="button"
         className={pageNumberClasses}
         data-number={number}
-      >
-        {number}
-      </div>
+      >{number}
+      </button>
     </Link>
   );
 

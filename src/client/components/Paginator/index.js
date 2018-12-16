@@ -26,9 +26,9 @@ function getNumbers(props) {
 
 function Paginator(props) {
   return (
-    <div className={style.paginator}>
+    <nav className={style.paginator}>
       {getNumbers(props)}
-    </div>
+    </nav>
   );
 }
 

@@ -8,7 +8,7 @@ import style from './style.css';
 
 function NotFound() {
   return (
-    <div className={style.notFound}>
+    <section className={style.notFound}>
       <Heading level="h1" color="black">404</Heading>
       <Link to="/">
         <Body body={[{
@@ -18,7 +18,7 @@ function NotFound() {
         }]}
         />
       </Link>
-    </div>
+    </section>
   );
 }
 

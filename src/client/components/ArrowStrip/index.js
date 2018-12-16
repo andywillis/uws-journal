@@ -21,7 +21,7 @@ function displayArrows({ entry, links, totalEntries }) {
 function ArrowStrip(props) {
 
   return (
-    <div className={style.arrowStrip}>
+    <nav className={style.arrowStrip}>
       {displayArrows(props).map((arrow) => {
         if (arrow.disabled) {
           return (
@@ -37,9 +37,9 @@ function ArrowStrip(props) {
         );
       })}
       <Link key="home" to={{ pathname: '/' }}>
-        <Arrow type="Home" />
+        <Arrow type="arrowhome" />
       </Link>
-    </div>
+    </nav>
   );
 
 }

@@ -5,7 +5,7 @@ import style from './style.css';
 
 
 function Keyword({ keyword }) {
-  return <li className={style.keyword}>{keyword}</li>;
+  return <span className={style.keyword}>{keyword}</span>;
 }
 
 
