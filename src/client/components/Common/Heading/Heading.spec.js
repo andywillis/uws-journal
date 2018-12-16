@@ -1,14 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from './index';
+import Heading from './index';
 
 describe('App component', () => {
 
-  const wrapper = shallow(<App />);
+  const wrapper = shallow(<Heading />);
 
   it('renders the component', () => {
-    expect(wrapper.length).not(undefined);
+    expect(wrapper).not.toBe(undefined);
   });
 
 });

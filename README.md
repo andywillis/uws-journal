@@ -8,3 +8,5 @@
 * favourites filter
 * image pre-fetch
 * maps
+* more tests
+* fragments for tidy dom
