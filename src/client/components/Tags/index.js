@@ -28,7 +28,7 @@ class Tags extends Component {
   render() {
     const { tags, cloud, tagList } = this.props;
     return (
-      <div className={style.tags}>
+      <nav className={style.tags}>
         <ul className={cloud && style.pad} ref={this.setNode}>
           {tags.map((tag) => {
             return (
@@ -41,7 +41,7 @@ class Tags extends Component {
             );
           })}
         </ul>
-      </div>
+      </nav>
     );
   }
 }

@@ -3,18 +3,17 @@
   width: 48px;
   background-size: 48px 48px;
   background-color: transparent;
-  opacity: 0.3;
 }
 
-.enabled {
-  opacity: 1;
+.disabled {
+  opacity: 0.3;
 }
 
 .arrow:not(:last-child) {
   margin-right: 10px;
 }
 
-.enabled:hover {
+.arrow:not(.disabled):hover {
   cursor: pointer;
   background-color: #dfdfdf;
 }
@@ -29,14 +28,14 @@ and (min-width : 600px) {
   }
 }
 
-.arrow[type="arrowleft"] {
+.arrowleft {
   background-image: url("../../assets/images/arrow_left.svg");
 }
 
-.arrow[type="arrowright"] {
+.arrowright {
   background-image: url("../../assets/images/arrow_right.svg");
 }
 
-.arrow[type="home"] {
+.arrowhome {
   background-image: url("../../assets/images/arrow-home.svg");
 }

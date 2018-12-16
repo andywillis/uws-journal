@@ -3,25 +3,25 @@
   margin-left: 1em;
 }
 
-.favourite span {
+.favourite {
   padding: 0 0.3em 0 0.3em;
 }
 
-.favourite span.active {
+.favourite.active {
   background-color: #E3D04B;
   border: 1px solid #E3D04B;
 }
 
-.favourite span.inactive {
+.favourite.inactive {
   border: 1px solid #efefef;
   background-color:  #efefef;
 }
 
-.favourite span:hover {
+.favourite:hover {
   cursor: pointer;
 }
 
-.favourite span.inactive:hover {
+.favourite.inactive:hover {
   border: 1px solid #898989;
 }
 

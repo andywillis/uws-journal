@@ -4,7 +4,11 @@ import Tags from '../../Tags';
 
 
 function Footer({ tags }) {
-  return <Tags tags={tags} />;
+  return ( 
+    <footer>
+      <Tags tags={tags} />
+    </footer>
+  );
 }
 
 

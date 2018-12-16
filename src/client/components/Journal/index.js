@@ -66,9 +66,9 @@ function Journal(props) {
   const { isDisplayed } = props;
   const journalClasses = classNames(style.journal, isDisplayed && style.visible);
   return (
-    <div className={journalClasses}>
+    <main className={journalClasses}>
       {buildJournal(props)}
-    </div>
+    </main>
   );
 }
 

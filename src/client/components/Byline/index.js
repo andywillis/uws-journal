@@ -8,16 +8,16 @@ import style from './style.css';
 function getByline(type, value) {
   if (value) {
     return (
-      <div className={style.byline}>
+      <aside className={style.byline}>
         Arranged by {type}
         <Keyword keyword={value} />
-      </div>
+      </aside>
     );
   }
   return (
-    <div className={style.byline}>
+    <aside className={style.byline}>
       Arranged by {type}
-    </div>
+    </aside>
   );
 
 }

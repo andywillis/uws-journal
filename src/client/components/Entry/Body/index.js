@@ -10,7 +10,7 @@ import Table from '../../Table';
 
 function Body({ body, deviceWidth }) {
   return (
-    <div>
+    <section>
       {body.map((part) => {
         switch (part.type) {
           case 'image':
@@ -34,7 +34,7 @@ function Body({ body, deviceWidth }) {
             return <Para key={part.id} html={part.html} />;
         }
       })}
-    </div>
+    </section>
   );
 }
 

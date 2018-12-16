@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import compileClasses from 'classnames';
 
 import style from './style.css';
 
@@ -9,10 +9,16 @@ function Arrow(props) {
 
   const { disabled, type, location } = props;
 
+  const classNames = compileClasses({
+    [style.arrow]: true,
+    [style[type]]: true,
+    [style.disabled]: disabled && true
+  });
+
   return (
-    <div
-      className={disabled ? style.arrow : classnames(style.arrow, style.enabled)}
-      type={type}
+    <button
+      className={classNames}
+      type="button"
       data-location={location}
     />
   );

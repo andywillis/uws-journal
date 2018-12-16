@@ -35,11 +35,11 @@ class EntryList extends Component {
   static buildContainer(entry, links, totalEntries, filter) {
     const arrowStrip = EntryList.buildArrowStrip(entry, links, totalEntries);
     return (
-      <div>
+      <React.Fragment>
         {arrowStrip}
         {EntryList.buildEntry(entry, filter)}
         {arrowStrip}
-      </div>
+      </React.Fragment>
     );
   }
 

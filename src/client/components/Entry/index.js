@@ -12,11 +12,11 @@ function Entry(props) {
   const { id, body, tags, ...headerProps } = props;
 
   return (
-    <div className={style.entry} id={id}>
+    <article className={style.entry} id={id}>
       <Header props={headerProps} />
       <Body body={body} />
       <Footer tags={tags} />
-    </div>
+    </article>
   );
 
 }

@@ -6,10 +6,7 @@ import style from './style.css';
 
 function Para({ html }) {
   return (
-    <div
-      className={style.para}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <p className={style.para} dangerouslySetInnerHTML={{ __html: html }} />
   );
 }
 

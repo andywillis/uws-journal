@@ -85,6 +85,17 @@ module.exports = (env, argv) => ({
   plugins: [
     new CleanWebpackPlugin(['dist/*.*']),
     new HtmlWebpackPlugin({
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      },
       template: './public/index.html',
       favicon: './public/favicon.ico'
     }),
