@@ -1,15 +1,14 @@
-// Dependencies
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 
-// React
 import Blockquote from './index';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <div>
-      <Blockquote html="<h1>Title</h1>" />
-    </div>
-  , div);
+describe('App component', () => {
+
+  const wrapper = shallow(<Blockquote />);
+
+  it('the component is rendered', () => {
+    expect(wrapper).not.toBe(undefined);
+  });
+
 });

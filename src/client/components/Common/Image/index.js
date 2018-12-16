@@ -47,6 +47,7 @@ class Image extends Component {
   render() {
 
     const { isLoaded } = this.state;
+
     const {
       alt,
       src: url,
