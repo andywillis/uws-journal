@@ -1,33 +1,29 @@
 .favourite {
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-left: 0.5em;
+  padding: 0em 0.3em 0em 0.3em;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 600px) {
-  .favourite {
-    font-size: 2em;
-  }
-}
-
-.favourite span {
-  padding: 0 0.3em 0 0.3em;
-}
-
-.favourite span.active {
+.favourite.active {
   background-color: #E3D04B;
   border: 1px solid #E3D04B;
 }
 
-.favourite span.inactive {
+.favourite.inactive {
   border: 1px solid #efefef;
   background-color:  #efefef;
 }
 
-.favourite span:hover {
+.favourite:hover {
   cursor: pointer;
 }
 
-.favourite span.inactive:hover {
+.favourite.inactive:hover {
   border: 1px solid #898989;
+}
+
+@media only screen and (min-width : 600px) {
+  .favourite {
+    font-size: 2em;
+  }
 }
