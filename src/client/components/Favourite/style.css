@@ -1,5 +1,13 @@
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .favourite {
+    font-size: 2em;
+    margin-left: 0.5em;
+  }
+}
+
 .favourite {
-  display:  block;
   font-size: 1.4em;
   margin-left: 1em;
 }
@@ -24,13 +32,4 @@
 
 .favourite span.inactive:hover {
   border: 1px solid #898989;
-}
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 600px) {
-  .favourite {
-    font-size: 2em;
-    margin-left: 0.5em;
-  }
 }
