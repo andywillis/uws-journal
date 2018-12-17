@@ -1,6 +1,6 @@
 .favourite {
   font-size: 1.4em;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .favourite span {
@@ -30,5 +30,6 @@
 and (min-width : 600px) {
   .favourite {
     font-size: 2em;
+    margin-left: 0.5em;
   }
 }
