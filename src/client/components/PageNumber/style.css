@@ -3,18 +3,21 @@
   font-size: 1.4em;
   display: inline-flex;
   margin-right: 0.5em;
-  padding: 0.35em 1em 0.35em 1em;
-  border: 1px solid #565656;
+  padding: 0.35em 0.9em 0.35em 0.9em;
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
 }
 
 .pageNumber.active {
-  background-color: #9dc19e;
+  background-color: #95b4c9;
 }
 
 .pageNumber.inactive:hover {
   cursor: pointer;
-  background-color: #dfdfdf;
+  background-color: #bfdbca;
+  border: 1px solid #454545;
 }
+
 
 /* Desktops and laptops ----------- */
 @media only screen

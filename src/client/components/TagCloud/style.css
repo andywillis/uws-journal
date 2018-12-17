@@ -13,16 +13,5 @@
   visibility: visible;
   height: var(--slide-height);
   transition: height 1s cubic-bezier(0, 1, 0.5, 1), visibility 1s linear;
-  border-bottom: 1px solid #898989;
-}
-
-.button {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #efefef;
-  width: 100px;
-}
-
-.button:hover {
-  cursor: pointer;
+  border-bottom: 1px inset #dddddd;
 }

@@ -1,19 +1,16 @@
 .favourite {
   font-size: 1.4em;
-  margin-left: 1em;
-}
-
-.favourite {
+  margin-left: 0.6em;
   padding: 0 0.3em 0 0.3em;
+  border: 2px solid white;
 }
 
 .favourite.active {
   background-color: #E3D04B;
-  border: 1px solid #E3D04B;
+  border: 2px solid #E3D04B;
 }
 
 .favourite.inactive {
-  border: 1px solid #efefef;
   background-color:  #efefef;
 }
 
@@ -21,14 +18,15 @@
   cursor: pointer;
 }
 
-.favourite.inactive:hover {
-  border: 1px solid #898989;
+.favourite:hover {
+  border: 2px solid #E3D04B;
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
   .favourite {
+    margin-left: 0.4em;
     font-size: 2em;
   }
 }
