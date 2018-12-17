@@ -1,15 +1,13 @@
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 600px) {
-  .favourite {
-    font-size: 2em;
-    margin-left: 0.5em;
-  }
-}
-
 .favourite {
   font-size: 1.4em;
-  margin-left: 1em;
+  margin-left: 0.5em;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 600px) {
+  .favourite {
+    font-size: 2em;
+  }
 }
 
 .favourite span {
