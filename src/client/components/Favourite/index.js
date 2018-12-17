@@ -49,16 +49,17 @@ class Favourite extends Component {
 
   render() {
     const { status } = this.state;
-    const classNames = compileClasses(style.favourite, style[status]);
     return (
-      <button
-        className={classNames}
-        type="button"
-        tabIndex="0"
-        onClick={this.handleFavourite}
-        onKeyUp={this.handleFavourite}
-      >&#x2605;
-      </button>
+      <div className={style.favourite}>
+        <span
+          tabIndex="0"
+          role="button"
+          className={style[status]}
+          onClick={this.handleFavourite}
+          onKeyUp={this.handleFavourite}
+        >&#x2605;
+        </span>
+      </div>
     );
   }
 }

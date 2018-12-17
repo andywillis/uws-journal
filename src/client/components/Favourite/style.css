@@ -1,34 +1,34 @@
 .favourite {
   font-size: 1.4em;
-  margin-left: 0.6em;
+  margin-left: 1em;
+}
+
+.favourite span {
   padding: 0 0.3em 0 0.3em;
-  border: 2px solid white;
 }
 
-.favourite.active {
+.favourite span.active {
   background-color: #E3D04B;
-  border: 2px solid #E3D04B;
+  border: 1px solid #E3D04B;
 }
 
-.favourite.inactive {
+.favourite span.inactive {
+  border: 1px solid #efefef;
   background-color:  #efefef;
 }
 
-.favourite:hover {
+.favourite span:hover {
   cursor: pointer;
 }
 
-.favourite:hover {
-  border: 2px solid #E3D04B;
+.favourite span.inactive:hover {
+  border: 1px solid #898989;
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 600px) {
   .favourite {
-    margin-left: 0.4em;
-    padding: 0 0.3em 0 0.3em;
     font-size: 2em;
-    border: 2px solid white;
   }
 }
