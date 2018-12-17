@@ -27,6 +27,7 @@
 and (min-width : 600px) {
   .favourite {
     margin-left: 0.4em;
+    padding: 0 0.3em 0 0.3em;
     font-size: 2em;
   }
 }
