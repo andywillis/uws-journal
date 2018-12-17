@@ -7,7 +7,7 @@
   padding-top: 1em;
   padding-bottom: 1em;
   opacity: 0;
-  border-top: 1px solid black;
+  border-top: 1px solid #dddddd;
 }
 
 .visible {
