@@ -6,11 +6,11 @@
 
 .favourite.active {
   background-color: #E3D04B;
-  border: 1px solid #E3D04B;
+  border: 2px solid #E3D04B;
 }
 
 .favourite.inactive {
-  border: 1px solid #efefef;
+  border: 2px solid #efefef;
   background-color:  #efefef;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .favourite.inactive:hover {
-  border: 1px solid #898989;
+  border: 2px solid #E3D04B;
 }
 
 @media only screen and (min-width : 600px) {

@@ -30,19 +30,13 @@ class Favourite extends Component {
 
   handleFavourite(e) {
 
-    const { key, type } = e;
+    const { addFavourite, removeFavourite, id } = this.props;
+    const { status } = this.state;
 
-    if (type === 'click' || (type === 'keyup' && key === 'Enter')) {
-
-      const { addFavourite, removeFavourite, id } = this.props;
-      const { status } = this.state;
-
-      if (status !== 'active') {
-        addFavourite(id);
-      } else {
-        removeFavourite(id);
-      }
-
+    if (status !== 'active') {
+      addFavourite(id);
+    } else {
+      removeFavourite(id);
     }
 
   }
@@ -56,7 +50,6 @@ class Favourite extends Component {
         type="button"
         tabIndex="0"
         onClick={this.handleFavourite}
-        onKeyUp={this.handleFavourite}
       >&#x2605;
       </button>
     );
