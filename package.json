@@ -9,7 +9,7 @@
     "buildprod": "webpack --mode production",
     "serverprod": "node src/server/index.js",
     "dev": "concurrently \"npm run builddev\" \"npm run serverdev\"",
-    "prod": "npm run buildprod && npm run serverprod",
+    "prod": "npm run serverprod && npm run buildprod",
     "report": "webpack-bundle-analyzer --port 4200 dist/stats.json",
     "heroku-postbuild": "npm run buildprod",
     "test": "jest"
@@ -54,7 +54,7 @@
     "url-loader": "^1.1.2",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
