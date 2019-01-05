@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Maitree');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Maitree|Amiri');
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@
 html, body {
   height: 100%;
   font-size: 12px;
-  font-family: 'Maitree', serif;
+  font-family: 'Maitree', 'Amiri', serif;
   color: black;
   font-weight: 400;
 }

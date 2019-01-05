@@ -10,3 +10,4 @@
 * maps
 * more tests
 * fragments for tidy dom
+* ARIA labelling
