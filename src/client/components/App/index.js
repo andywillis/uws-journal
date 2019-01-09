@@ -54,7 +54,7 @@ class App extends Component {
 
   async componentDidMount() {
     const { fetchData, setJournalDisplayed } = this.props;
-    await fetchData('/journal');
+    await fetchData('https://journal-c007kus1c.now.sh');
     setJournalDisplayed(true);
   }
 
