@@ -2,12 +2,19 @@
 	
 # Journal
 
-## To do?
+Journal tech sandbox. Allows me to experiment with new tech
 
-* home icon for filtered entries?
-* favourites filter
-* image pre-fetch
-* maps
-* more tests
-* fragments for tidy dom
-* ARIA labelling
+## Tech
+
+### Core
+
+* Redux
+* Markdown
+* Google Drive API
+* Jest
+
+### Trials
+
+* React / Preact
+* Express / Micro
+* Heroku / Now & Netlify
