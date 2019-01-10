@@ -2,7 +2,7 @@
 	
 # Journal
 
-Journal tech sandbox. Allows me to experiment with new tech
+Journal sandbox. Allows me to experiment with new tech.
 
 ## Tech
 
