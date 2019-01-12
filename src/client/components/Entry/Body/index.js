@@ -20,8 +20,6 @@ function Body({ body, deviceWidth }) {
                 src={part.src}
                 alt={part.alt}
                 deviceWidth={deviceWidth}
-                percentageStretch="80"
-                percentageMarginCorrection="10"
               />
             );
           case 'blockquote':

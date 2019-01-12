@@ -51,8 +51,6 @@ class Image extends Component {
     const {
       alt,
       src: url,
-      percentageStretch: stretch,
-      percentageMarginCorrection: correction,
       deviceWidth
     } = this.props;
 
@@ -60,6 +58,8 @@ class Image extends Component {
     const src = getResponsiveSrc(deviceWidth, url);
     const className = compileClasses(style.image, isLoaded && style.show);
     const aspectRatio = getRatio(width, height);
+    const stretch = (width < 800 ? 50 : 75);
+    const correction = 10;
     const containerHeight = (deviceWidth * (stretch - correction)) / 100 / aspectRatio;
     const inlineStyle = { width: `${stretch}%`, height: `${containerHeight}px` };
 
