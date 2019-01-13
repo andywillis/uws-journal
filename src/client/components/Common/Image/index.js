@@ -1,4 +1,4 @@
-import React, { createElement, Component } from 'react';
+import React, { createElement, PureComponent } from 'react';
 import compileClasses from 'classnames';
 
 import style from './style.css';
@@ -31,7 +31,7 @@ async function getResponsiveSrc(deviceWidth, src) {
     const data = await res.json();
     return data.sizes.size.find(photo => photo.label === size).source;
   } catch (e) {
-    return src;    
+    return src;
   }
 
 }
@@ -45,21 +45,22 @@ function getRatio(width, height) {
   return width / height;
 }
 
-class Image extends Component {
+class Image extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = { isLoaded: false, url: 'none' };
+    this.state = { isLoaded: false, src: 'none' };
     this.getImageElement = this.getImageElement.bind(this);
     this.handleLoad = this.handleLoad.bind(this);
     this.refreshImage = this.refreshImage.bind(this);
   }
 
-  componentDidMount() {
-    this.refreshImage();
-  }
+  // componentDidMount() {
+  //   this.refreshImage();
+  // }
 
   componentDidUpdate() {
+    const { src } = this.state;
     this.refreshImage();
   }
 
@@ -97,6 +98,8 @@ class Image extends Component {
   render() {
 
     const { isLoaded, src } = this.state;
+
+    console.log(src);
 
     const { alt, deviceWidth } = this.props;
 
