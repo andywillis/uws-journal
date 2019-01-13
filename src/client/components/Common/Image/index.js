@@ -31,13 +31,13 @@ async function getResponsiveSrc(deviceWidth, src) {
     const data = await res.json();
     return data.sizes.size.find(photo => photo.label === size).source;
   } catch (e) {
-    return src;
+    console.log(e);
   }
 
 }
 
 function splitAltString(alt) {
-  const m = alt.match(/^(.+) (\d+)x(\d+)( [a-zA-Z]+)?$/);
+  const m = alt.match(/^(.+) (\d+)x(\d+) ?([a-zA-Z]+)?$/);
   return { altText: m[1], width: m[2], height: m[3], type: m[4] };
 }
 
@@ -52,23 +52,19 @@ class Image extends PureComponent {
     this.state = { isLoaded: false, src: 'none' };
     this.getImageElement = this.getImageElement.bind(this);
     this.handleLoad = this.handleLoad.bind(this);
-    this.refreshImage = this.refreshImage.bind(this);
+    this.loadImage = this.loadImage.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.refreshImage();
-  // }
-
-  componentDidUpdate() {
-    const { src } = this.state;
-    this.refreshImage();
+  componentDidMount(props) {
+    this.loadImage();
   }
 
-  async refreshImage() {
+  async loadImage() {
     this.processing = true;
     const { deviceWidth, src: url, alt } = this.props;
-    const src = await getResponsiveSrc(deviceWidth, url);
+    const { type } = splitAltString(alt);
     if (this.processing) {
+      const src = type && type === 'single' ? url : await getResponsiveSrc(deviceWidth, url);
       this.processing = false;
       this.setState({ src });
     }
@@ -99,15 +95,13 @@ class Image extends PureComponent {
 
     const { isLoaded, src } = this.state;
 
-    console.log(src);
-
     const { alt, deviceWidth } = this.props;
 
-    const { altText, width, height, type } = splitAltString(alt);
+    const { altText, width, height } = splitAltString(alt);
 
     const className = compileClasses(style.image, isLoaded && style.show);
     const aspectRatio = getRatio(width, height);
-    const stretch = (width < 800 ? 50 : 75);
+    const stretch = (width < 800 ? 55 : 75);
     const correction = 10;
     const containerHeight = (deviceWidth * (stretch - correction)) / 100 / aspectRatio;
     const inlineStyle = { width: `${stretch}%`, height: `${containerHeight}px` };
