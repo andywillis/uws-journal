@@ -94,15 +94,14 @@ class Image extends PureComponent {
   render() {
 
     const { isLoaded, src } = this.state;
-
     const { alt, deviceWidth } = this.props;
-
     const { altText, width, height } = splitAltString(alt);
 
     const className = compileClasses(style.image, isLoaded && style.show);
     const aspectRatio = getRatio(width, height);
     const stretch = (width < 800 ? 55 : 75);
     const correction = 10;
+
     const containerHeight = (deviceWidth * (stretch - correction)) / 100 / aspectRatio;
     const inlineStyle = { width: `${stretch}%`, height: `${containerHeight}px` };
 
