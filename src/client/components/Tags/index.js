@@ -18,9 +18,8 @@ class Tags extends Component {
     if (updateTagListHeight) {
       setTimeout(() => {
         const { height } = window.getComputedStyle(this.node);
-        console.log(height)
         updateTagListHeight(height);
-      }, 2000);
+      }, 500);
     }
   }
 
