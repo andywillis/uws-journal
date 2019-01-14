@@ -16,10 +16,14 @@ class Tags extends Component {
   componentDidMount() {
     const { updateTagListHeight } = this.props;
     if (updateTagListHeight) {
-      const { height } = window.getComputedStyle(this.node);
-      updateTagListHeight(height);
+      setTimeout(() => {
+        const { height } = window.getComputedStyle(this.node);
+        console.log(height)
+        updateTagListHeight(height);
+      }, 2000);
     }
   }
+
 
   setNode(node) {
     this.node = node;
