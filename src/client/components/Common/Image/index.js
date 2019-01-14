@@ -11,27 +11,31 @@ function getSize(deviceWidth) {
 
 async function getResponsiveSrc(deviceWidth, src) {
 
-  const flickrPhotoId = src.split('/').pop().split('_')[0];
-  const size = getSize(deviceWidth);
+  if (deviceWidth !== 0) {
 
-  const settings = {
-    path: 'https://api.flickr.com/services/rest/',
-    method: 'method=flickr.photos.getSizes',
-    apiKey: 'api_key=354bb01ada19773305e2e54736d7a829',
-    photoId: `photo_id=${flickrPhotoId}`,
-    format: 'format=json',
-    callback: 'nojsoncallback=true'
-  };
+    const flickrPhotoId = src.split('/').pop().split('_')[0];
+    const size = getSize(deviceWidth);
 
-  const { path, method, apiKey, photoId, format, callback } = settings;
+    const settings = {
+      path: 'https://api.flickr.com/services/rest/',
+      method: 'method=flickr.photos.getSizes',
+      apiKey: 'api_key=354bb01ada19773305e2e54736d7a829',
+      photoId: `photo_id=${flickrPhotoId}`,
+      format: 'format=json',
+      callback: 'nojsoncallback=true'
+    };
 
-  try {
-    const endpoint = `${path}?${method}&${apiKey}&${photoId}&${format}&${callback}`;
-    const res = await fetch(endpoint);
-    const data = await res.json();
-    return data.sizes.size.find(photo => photo.label === size).source;
-  } catch (e) {
-    console.log(e);
+    const { path, method, apiKey, photoId, format, callback } = settings;
+
+    try {
+      const endpoint = `${path}?${method}&${apiKey}&${photoId}&${format}&${callback}`;
+      const res = await fetch(endpoint);
+      const data = await res.json();
+      return data.sizes.size.find(photo => photo.label === size).source;
+    } catch (e) {
+      console.log(e);
+    }
+
   }
 
 }
@@ -56,6 +60,10 @@ class Image extends PureComponent {
   }
 
   componentDidMount() {
+    this.loadImage();
+  }
+
+  componentDidUpdate() {
     this.loadImage();
   }
 
