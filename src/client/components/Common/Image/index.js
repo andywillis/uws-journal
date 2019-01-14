@@ -21,7 +21,7 @@ async function getResponsiveSrc(deviceWidth, src) {
     photoId: `photo_id=${flickrPhotoId}`,
     format: 'format=json',
     callback: 'nojsoncallback=true'
-  }
+  };
 
   const { path, method, apiKey, photoId, format, callback } = settings;
 
@@ -55,19 +55,8 @@ class Image extends PureComponent {
     this.loadImage = this.loadImage.bind(this);
   }
 
-  componentDidMount(props) {
+  componentDidMount() {
     this.loadImage();
-  }
-
-  async loadImage() {
-    this.processing = true;
-    const { deviceWidth, src: url, alt } = this.props;
-    const { type } = splitAltString(alt);
-    if (this.processing) {
-      const src = type && type === 'single' ? url : await getResponsiveSrc(deviceWidth, url);
-      this.processing = false;
-      this.setState({ src });
-    }
   }
 
   componentWillUnmount() {
@@ -83,6 +72,17 @@ class Image extends PureComponent {
       onLoad: this.handleLoad,
       src
     });
+  }
+
+  async loadImage() {
+    this.processing = true;
+    const { deviceWidth, src: url, alt } = this.props;
+    const { type } = splitAltString(alt);
+    if (this.processing) {
+      const src = type && type === 'single' ? url : await getResponsiveSrc(deviceWidth, url);
+      this.processing = false;
+      this.setState({ src });
+    }
   }
 
   handleLoad() {
