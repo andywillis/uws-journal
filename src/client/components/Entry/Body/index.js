@@ -26,6 +26,8 @@ function Body({ body, deviceWidth }) {
             return <Blockquote key={part.id} html={part.html} />;
           case 'h2':
             return <Heading key={part.id} level="h3" color="black">{part.txt}</Heading>            ;
+          case 'h3':
+            return <Heading key={part.id} level="h4" color="black">{part.txt}</Heading>            ;
           case 'table':
             return <Table key={part.id} html={part.html} />;
           default:
