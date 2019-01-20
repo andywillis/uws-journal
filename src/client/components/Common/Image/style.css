@@ -6,6 +6,14 @@
   margin-top: 1.6em;
   margin-bottom: 1.6em;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: radial-gradient(at 50% 100%, rgb(80, 145, 221) 0%, rgb(3, 6, 23) 200%);
+  background-origin: padding-box;
+  background-position: 0% 0%;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .image {
@@ -17,5 +25,5 @@
 
 .show {
   opacity: 1;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.2s linear;
 }
