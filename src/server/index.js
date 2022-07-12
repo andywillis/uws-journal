@@ -4,10 +4,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
+const journalData = require('./data/journal.json');
+
 // App setup
 
 const app = express();
 app.store = {};
+
+app.store.journal = journalData;
 
 const applicationName = 'uws-journal';
 
@@ -20,9 +24,9 @@ app.use(express.static(path.join(__dirname, '../../dist')));
 
 // Main
 
-const { getCredentials, authorise } = require('./auth');
-const { getDriveData } = require('./io');
-const processMarkdown = require('./data');
+// const { getCredentials, authorise } = require('./auth');
+// const { getDriveData } = require('./io');
+// const processMarkdown = require('./data');
 const createRSS = require('./feed');
 
 function getJournalData(credentials, token) {
@@ -37,11 +41,12 @@ function getJournalData(credentials, token) {
 }
 
 async function init() {
-  const { credentials, token } = await getCredentials(applicationName);
-  const markdown = await getJournalData(credentials, token);
-  const data = await processMarkdown(markdown);
-  app.store.journal = data;
-  createRSS(data);
+  // const { credentials, token } = await getCredentials(applicationName);
+  // const markdown = await getJournalData(credentials, token);
+  // const data = await processMarkdown(markdown);
+  // app.store.journal = data;
+  // createRSS(data);
+  createRSS(app.store.journal);
 }
 
 init();
